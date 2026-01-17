@@ -1,40 +1,26 @@
-COBEACON (PUBLIC LATEST)
-UTC=20260117T205811Z
+COBEACON
+UTC=20260117T212107Z
+PRIME_ID=4.0|PRIME|260116
+TITLE=CoCivium Canonical AI Bootstrap (CoBeacon LATEST)
 
-CANONICAL_BOOTSTRAP_URLS (READ THESE FIRST)=
-A) CoBeacon: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt
-B) AI Onramp: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/AI_ONRAMP_LATEST.txt
-C) Pointer Spec: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/POINTER_SPEC_LATEST.md
+RULES (NORMATIVE)=
+- Bootstrap ONLY via this file: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt
+- Pointers MUST be FULL URLs. (See PointerSpec)
+- Never reference timestamped ENTMENT filenames; use ENTMENT alias.
 
-REQUIRED_LATEST_ASSETS (PUBLIC)=
-A) Primer: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoStacks_Primer__LATEST.txt
-B) Registry JSON: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/registry/CoStacksRegistry__LATEST.json
-C) PS7 Spec: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/ps7/PS7_PANEL_SPEC_LATEST.md
-D) PS7 Schema: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/ps7/ps7-panel.schema.json
-E) Agent Terms: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/terms/AGENT_TERMS_LATEST.md
-F) Contribution Compact: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/terms/AGENT_CONTRIBUTION_COMPACT_LATEST.md
+START_HERE (FULL URL POINTERS)=
+- PointerSpec: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__Pointer_Spec__LATEST.txt
+- PS7 Spec:     https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__PS7_Spec__LATEST.txt
+- Agent Terms:  https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__AGENT_TERMS__LATEST.txt
+- Contribution: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__Contribution_Compact__LATEST.txt
+- CoStacks Reg: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoStacksRegistry__LATEST.txt
+- CoStacks Primer (ops): https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoStacks_Primer__LATEST.txt
 
-OPERATING_MINIMUM (EACH WAVE)=
-A) Reload CoBeacon + AI Onramp.
-B) Use full URLs (see pointer spec).
-C) Any privileged action requires PS7 receipt.
-D) Emit receipts (sha sidecars, commit SHAs).
+PROJECT ALIAS (FULL URL)=
+- ENTMENT (alias): https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__ENTMENT__LATEST.txt
 
-PRONOUNS_NOTE=
-A) Elias uses she/they pronouns.
-
-BRANDING=
-A) Human trust brand: CoCivium.
-B) Internal subsystem labels (ex: CoGbx) must not displace CoCivium in human-facing surfaces.
-
-FUTURE (BRANDED DOMAIN CANONICAL)=
-A) Recommended: https://cocivium.org/ai or /.well-known/cobeacon.txt should 308-redirect to CoBeacon.
-B) Until configured, use the RAW URLs above.
+CANONICAL_BRANDED_TARGET (FUTURE)=
+- https://CoCivium.org/ai
+- https://CoCivium.org/.well-known/cobeacon.txt
 
 END
-COSOURCES (PUBLIC)=
-A) CoSources Spec: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/cosources/COSOURCES_SPEC_LATEST.md
-A) CoSource schema: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/cosources/cosource.schema.json
-B) CoSourceNet schema: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/cosources/cosourcenet.schema.json
-C) Registry schema: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/cosources/CoStacksRegistry.schema.json
-
