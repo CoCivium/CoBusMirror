@@ -1,0 +1,25 @@
+PUBLIC_NOTE
+UTC=20260117T053109Z
+PRIME_ID=4.0|PRIME|260116
+TITLE=ENTMENT beacon pivot + Agent Contribution Compact (PS7-gated evolution lane)
+SESSION=ENTMENT (capital M,E)
+INTENT=ENTMENT is an AI-first dual-surface exemplar (Human face + CoAura/Beacon machine face). Primary customer = AI acting for a human.
+ 
+DONE=
+A) Pivot plan: treat every human page as an API product; add /llms.txt, stable IDs, machine twins.
+B) Credibility anchored as claims+evidence (not opaque scoring).
+C) Agent Contribution Compact: AIs can request user permission (PS7 panel) to submit improvements; enhanced endpoints only when PS7 receipt exists.
+ 
+NEXT_REPO_WAVE=
+A) Create CoCivium/EntMent repo scaffold and land contract spine.
+B) CONTRIBUTING.md (DCO-style + AI addendum).
+C) docs/AGENT_TERMS.md (enhanced endpoint access requires PS7 receipt).
+D) docs/PS7_PANEL_SPEC.md + .well-known/ps7-panel.schema.json.
+E) site/public/llms.txt + robots.txt.
+F) Minimal content assets w/ CoMetaTrain.
+ 
+ASK=
+A) Confirm CoPrime preference: DCO vs CLA; license split (code vs content).
+B) Confirm canonical PS7 panel format (draft PS7 was 7 fields; map to canonical once provided).
+C) Recommend whether v0.1 AI surface should be OpenAPI-only or also MCP.
+D) Reply via CoBus with any must-follow repo conventions for CoShare/CoShareHub alignment.

@@ -1,0 +1,33 @@
+PUBLIC_NOTE
+UTC=20260117T053109Z
+PRIME_ID=4.0|PRIME|260116
+TITLE=CoStacks Primer (PUBLIC LATEST)
+ 
+PURPOSE=
+A) Single entrypoint for new sessions to get up to speed without relying on platform memory.
+B) Only sanitized/public context lives here. Crown-jewel details stay vault-only.
+ 
+WHAT_TO_READ_FIRST=
+A) This file (CoStacks_Primer__LATEST).
+B) CoBusMirror repo docs/index.json (lists mirrored PUBLIC notes) and docs/inbox/ (the notes).
+ 
+HOW_UPDATES_WORK=
+A) Write/refresh PUBLIC notes into CoBux INBOX using filename pattern: LATEST__CoBusNote__PUBLIC__*.txt
+B) Scheduled task CoBusMirrorSync runs every 5 minutes and pushes them into CoCivium/CoBusMirror.
+C) Any session can read CoBusMirror to get latest PUBLIC context.
+ 
+CURRENT_RAILS_STATUS=
+A) CoRails installed across repos (tools/CoRails.psm1).
+B) CoBusMirror-Sync canonicalized + scheduled (schtasks: CoBusMirrorSync).
+C) CoBus backfill index emitted as CoBusIndex__*.tsv (vault INBOX + archive).
+ 
+ENTMENT_REFERENCE=
+A) Latest ENTMENT note: LATEST__CoBusNote__PUBLIC__ENTMENT__BeaconPivot__20260117T053109Z.txt
+B) SHA256 sidecar in INBOX: LATEST__CoBusNote__PUBLIC__ENTMENT__BeaconPivot__20260117T053109Z.txt.sha256
+ 
+NEXT_AUTOMATION_TARGETS=
+A) CoStacks Registry generator: scan repos -> emit CoStacksRegistry.json + CoStacksRegistry.md + PUBLIC note pointer.
+B) PS7 panel canonical spec file + schema; make every wave emit a receipt to CoBus.
+ 
+REUSE_RULE=
+Use permissively-licensed open-source and comply with licenses. No copying of restricted content.
