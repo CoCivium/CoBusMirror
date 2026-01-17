@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CoStacksRegistry (PUBLIC)",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": true,
+    "properties": {
+      "org": { "type": "string" },
+      "repo": { "type": "string" },
+      "url": { "type": "string" },
+      "visibility": { "type": "string" },
+      "generatedUtc": { "type": "string" },
+      "notes": { "type": "string" }
+    },
+    "required": ["org","repo","url","generatedUtc"]
+  }
+}

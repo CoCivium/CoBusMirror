@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CoSourceNet Graph (PUBLIC)",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "nodes": { "type": "array", "items": { "type": "object" } },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "from": { "type": "string" },
+          "to": { "type": "string" },
+          "rel": { "type": "string" },
+          "evidence": { "type": "array", "items": { "type": "string" } }
+        },
+        "required": ["from","to","rel"]
+      }
+    }
+  },
+  "required": ["nodes","edges"]
+}
