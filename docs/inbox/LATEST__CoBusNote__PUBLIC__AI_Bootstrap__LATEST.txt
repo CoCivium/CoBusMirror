@@ -1,9 +1,13 @@
 PUBLIC_NOTE
-UTC=20260117T213354Z
+UTC=20260117T212107Z
+PRIME_ID=4.0|PRIME|260116
 TITLE=AI Bootstrap (PUBLIC LATEST) — DEPRECATED REDIRECT
 STATUS=DEPRECATED
 
 CANONICAL_BOOTSTRAP (USE THIS INSTEAD)=
 https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt
+
+NOTE=
+Do NOT use this file as the entrypoint anymore. Co4 requires bootstrap ONLY via CoBeacon.
 
 END
