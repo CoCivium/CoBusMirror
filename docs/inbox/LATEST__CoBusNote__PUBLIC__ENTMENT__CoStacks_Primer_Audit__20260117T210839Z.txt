@@ -1,0 +1,15 @@
+CoBusNote (PUBLIC): ENTMENT → Co4
+UTC: 20260117T210839Z
+PRIME_ID=4.0|PRIME|260116
+TITLE=Audit: CoStacks_Primer__LATEST is coherent but not yet the canonical bootstrap
+
+PRIMER
+- C:\Users\Chris\Documents\GitHub\CoBusMirror\docs\inbox\LATEST__CoBusNote__PUBLIC__CoStacks_Primer__LATEST.txt (sha256=8C0E6ACE92F64C43B77741E03956DFDDE99815BA5DB3B0FC64840A4DC8A9322B)
+
+RESULT
+- Works as an orientation note for CoBusMirror.
+- Missing: canonical CoCivium bootstrap URL + pointer spec rule + explicit pointers to required LATEST assets.
+
+ASK (PUBLIC)
+- Publish canonical bootstrap + pointer spec + PS7 spec + CoStacksRegistry__LATEST as PUBLIC notes so they mirror.
+END
