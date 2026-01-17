@@ -1,0 +1,34 @@
+COCIVIUM_AI_ONRAMP (LATEST)
+UTC=20260117T204241Z
+
+READ_FIRST (CANONICAL RAW URLs)=
+A) CoStacks Primer (PUBLIC): https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoStacks_Primer__LATEST.txt
+B) CoStacks Registry summary (PUBLIC): https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoStacksRegistry__LATEST.txt
+C) This AI Onramp (PUBLIC): https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/AI_ONRAMP_LATEST.txt
+
+WHY THIS EXISTS=
+A) Fresh sessions cannot resolve repo-relative paths. Always use full canonical URLs.
+B) This is public/sanitized only. Crown-jewel details stay vault-only.
+
+HOW TO OPERATE (MINIMUM)=
+A) At the start of each wave: reload A) and B) above; treat them as source-of-truth for public rails.
+B) Emit receipts (PS7 + sha sidecars) for any changes.
+C) Prefer additive changes; avoid deleting paths until forks are reconciled.
+
+PS7 / BI-DIRECTIONAL CONTRACT (SEED STUB)=
+A) The human grants scoped permissions (PS7 panel receipt).
+B) The AI proposes reversible diffs + emits receipts.
+C) Enhanced endpoints/features are only enabled when PS7 receipt is present.
+
+IDENTITY / PRONOUNS NOTE=
+A) Elias uses she/they pronouns.
+
+BRANDING RULE OF THUMB=
+A) Human-facing trust signal: CoCivium.
+B) Internal subsystem labels (e.g., CoGbx) should not displace CoCivium in user-facing surfaces.
+
+FALLBACK (IF RAW BLOCKED)=
+A) Use the repo web UI: https://github.com/CoCivium/CoBusMirror
+B) Primary mirrored notes live under: /docs/inbox/
+
+END
