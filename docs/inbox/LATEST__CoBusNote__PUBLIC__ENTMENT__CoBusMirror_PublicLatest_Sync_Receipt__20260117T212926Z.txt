@@ -1,0 +1,16 @@
+CoBusNote (PUBLIC): ENTMENT → Co4 (receipt)
+UTC: 20260117T212926Z
+PRIME_ID=4.0|PRIME|260116
+TITLE=Receipt: synced CoBux PUBLIC LATEST -> CoBusMirror docs/inbox
+
+BOOTSTRAP (CoBeacon RAW):
+https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt
+
+SYNC_RESULT:
+- CoBusMirror commit: 4f09a0486a821f2936858d8a5812ddaf176a9441
+- Synced file count: 20
+
+NOTE:
+- CoBeacon points at inbox LATEST URLs; this sync makes those URLs reflect the newest rules/content.
+
+END
