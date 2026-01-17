@@ -1,5 +1,20 @@
 [
   {
+    "name": "LATEST__CoBusNote__PUBLIC__CoStacks_Primer__LATEST.txt",
+    "lastWriteUtc": "2026-01-17T20:58:46.1947092Z",
+    "sha256": "8c0e6ace92f64c43b77741e03956dfdde99815ba5db3b0fc64840a4dc8a9322b"
+  },
+  {
+    "name": "LATEST__CoBusNote__PUBLIC__CoStacks_Primer__20260117T205811Z.txt",
+    "lastWriteUtc": "2026-01-17T20:58:46.0283184Z",
+    "sha256": "8c0e6ace92f64c43b77741e03956dfdde99815ba5db3b0fc64840a4dc8a9322b"
+  },
+  {
+    "name": "LATEST__CoBusNote__PUBLIC__ENTMENT__LATEST.txt",
+    "lastWriteUtc": "2026-01-17T20:58:45.2938845Z",
+    "sha256": "27bd81d426720341d7df69406fd7c901c96d14da1b80b37521bedb3811753deb"
+  },
+  {
     "name": "LATEST__CoBusNote__PUBLIC__ENTMENT__To_Co4__20260117T205405Z.txt",
     "lastWriteUtc": "2026-01-17T20:54:18.4940224Z",
     "sha256": "81e8bd68eb40fdd5b23488077059060c6c5ab6917344851dc053c963642e8005"
@@ -28,11 +43,6 @@
     "name": "LATEST__CoBusNote__PUBLIC__CoStacksRegistry__LATEST.txt",
     "lastWriteUtc": "2026-01-17T20:03:22.8891531Z",
     "sha256": "390bee06a8579c918bb3f1c4fd9d2a4b874169683f47c1d65bbffd3262633103"
-  },
-  {
-    "name": "LATEST__CoBusNote__PUBLIC__CoStacks_Primer__LATEST.txt",
-    "lastWriteUtc": "2026-01-17T05:31:10.9200903Z",
-    "sha256": "94ae531f630e246fafa1ccb3d2a995023917094eec3055e5850c7bb639cfedb0"
   },
   {
     "name": "LATEST__CoBusNote__PUBLIC__CoStacks_Primer__20260117T053109Z.txt",
