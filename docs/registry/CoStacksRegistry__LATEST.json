@@ -1,0 +1,101 @@
+[
+  {
+    "org": "CoCivium",
+    "repo": "CoBusMirror",
+    "url": "https://github.com/CoCivium/CoBusMirror",
+    "visibility": "PUBLIC",
+    "mirrorPresent": true,
+    "hasCoRails": false,
+    "hasBookmarksSources": false,
+    "hasPs7Schema": false,
+    "generatedUtc": "20260117T205811Z"
+  },
+  {
+    "org": "CoCivium",
+    "repo": "EntMent",
+    "url": "https://github.com/CoCivium/EntMent",
+    "visibility": "PUBLIC",
+    "mirrorPresent": true,
+    "hasCoRails": false,
+    "hasBookmarksSources": false,
+    "hasPs7Schema": false,
+    "generatedUtc": "20260117T205811Z"
+  },
+  {
+    "org": "CoCivium",
+    "repo": "CoSteward",
+    "url": "https://github.com/CoCivium/CoSteward",
+    "visibility": "PRIVATE",
+    "mirrorPresent": true,
+    "hasCoRails": false,
+    "hasBookmarksSources": true,
+    "hasPs7Schema": false,
+    "generatedUtc": "20260117T205811Z"
+  },
+  {
+    "org": "CoCivium",
+    "repo": "MasterPlan",
+    "url": "https://github.com/CoCivium/MasterPlan",
+    "visibility": "PRIVATE",
+    "mirrorPresent": true,
+    "hasCoRails": false,
+    "hasBookmarksSources": false,
+    "hasPs7Schema": false,
+    "generatedUtc": "20260117T205811Z"
+  },
+  {
+    "org": "CoCivium",
+    "repo": "GIBindex",
+    "url": "https://github.com/CoCivium/GIBindex",
+    "visibility": "PRIVATE",
+    "mirrorPresent": true,
+    "hasCoRails": false,
+    "hasBookmarksSources": false,
+    "hasPs7Schema": false,
+    "generatedUtc": "20260117T205811Z"
+  },
+  {
+    "org": "CoCivium",
+    "repo": "CoPolitic-site",
+    "url": "https://github.com/CoCivium/CoPolitic-site",
+    "visibility": "PUBLIC",
+    "mirrorPresent": true,
+    "hasCoRails": false,
+    "hasBookmarksSources": false,
+    "hasPs7Schema": false,
+    "generatedUtc": "20260117T205811Z"
+  },
+  {
+    "org": "CoCivium",
+    "repo": "CoShareHub",
+    "url": "https://github.com/CoCivium/CoShareHub",
+    "visibility": "PRIVATE",
+    "mirrorPresent": true,
+    "hasCoRails": false,
+    "hasBookmarksSources": false,
+    "hasPs7Schema": false,
+    "generatedUtc": "20260117T205811Z"
+  },
+  {
+    "org": "CoCivium",
+    "repo": ".github",
+    "url": "https://github.com/CoCivium/.github",
+    "visibility": "PRIVATE",
+    "mirrorPresent": true,
+    "hasCoRails": false,
+    "hasBookmarksSources": false,
+    "hasPs7Schema": false,
+    "generatedUtc": "20260117T205811Z"
+  },
+  {
+    "org": "CoCivium",
+    "repo": "CoCivium",
+    "url": "https://github.com/CoCivium/CoCivium",
+    "visibility": "PUBLIC",
+    "mirrorPresent": true,
+    "hasCoRails": false,
+    "hasBookmarksSources": false,
+    "hasPs7Schema": false,
+    "generatedUtc": "20260117T205811Z"
+  }
+]

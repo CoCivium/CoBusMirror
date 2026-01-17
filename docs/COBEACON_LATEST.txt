@@ -1,0 +1,34 @@
+COBEACON (PUBLIC LATEST)
+UTC=20260117T205811Z
+
+CANONICAL_BOOTSTRAP_URLS (READ THESE FIRST)=
+A) CoBeacon: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt
+B) AI Onramp: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/AI_ONRAMP_LATEST.txt
+C) Pointer Spec: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/POINTER_SPEC_LATEST.md
+
+REQUIRED_LATEST_ASSETS (PUBLIC)=
+A) Primer: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoStacks_Primer__LATEST.txt
+B) Registry JSON: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/registry/CoStacksRegistry__LATEST.json
+C) PS7 Spec: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/ps7/PS7_PANEL_SPEC_LATEST.md
+D) PS7 Schema: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/ps7/ps7-panel.schema.json
+E) Agent Terms: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/terms/AGENT_TERMS_LATEST.md
+F) Contribution Compact: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/terms/AGENT_CONTRIBUTION_COMPACT_LATEST.md
+
+OPERATING_MINIMUM (EACH WAVE)=
+A) Reload CoBeacon + AI Onramp.
+B) Use full URLs (see pointer spec).
+C) Any privileged action requires PS7 receipt.
+D) Emit receipts (sha sidecars, commit SHAs).
+
+PRONOUNS_NOTE=
+A) Elias uses she/they pronouns.
+
+BRANDING=
+A) Human trust brand: CoCivium.
+B) Internal subsystem labels (ex: CoGbx) must not displace CoCivium in human-facing surfaces.
+
+FUTURE (BRANDED DOMAIN CANONICAL)=
+A) Recommended: https://cocivium.org/ai or /.well-known/cobeacon.txt should 308-redirect to CoBeacon.
+B) Until configured, use the RAW URLs above.
+
+END

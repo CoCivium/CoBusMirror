@@ -1,34 +1,22 @@
 COCIVIUM_AI_ONRAMP (LATEST)
-UTC=20260117T204241Z
+UTC=20260117T205811Z
 
 READ_FIRST (CANONICAL RAW URLs)=
-A) CoStacks Primer (PUBLIC): https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoStacks_Primer__LATEST.txt
-B) CoStacks Registry summary (PUBLIC): https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoStacksRegistry__LATEST.txt
-C) This AI Onramp (PUBLIC): https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/AI_ONRAMP_LATEST.txt
+A) CoBeacon: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt
+B) Primer (PUBLIC): https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoStacks_Primer__LATEST.txt
+C) Registry (PUBLIC): https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/registry/CoStacksRegistry__LATEST.json
+D) Pointer Spec: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/POINTER_SPEC_LATEST.md
 
-WHY THIS EXISTS=
-A) Fresh sessions cannot resolve repo-relative paths. Always use full canonical URLs.
-B) This is public/sanitized only. Crown-jewel details stay vault-only.
+PS7 / CONTRACT (PUBLIC STUBS)=
+A) PS7 Spec: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/ps7/PS7_PANEL_SPEC_LATEST.md
+B) PS7 Schema: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/ps7/ps7-panel.schema.json
+C) Agent Terms: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/terms/AGENT_TERMS_LATEST.md
+D) Contribution Compact: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/terms/AGENT_CONTRIBUTION_COMPACT_LATEST.md
 
-HOW TO OPERATE (MINIMUM)=
-A) At the start of each wave: reload A) and B) above; treat them as source-of-truth for public rails.
-B) Emit receipts (PS7 + sha sidecars) for any changes.
-C) Prefer additive changes; avoid deleting paths until forks are reconciled.
+RULE=
+Always prefer full URLs over repo-relative fragments.
 
-PS7 / BI-DIRECTIONAL CONTRACT (SEED STUB)=
-A) The human grants scoped permissions (PS7 panel receipt).
-B) The AI proposes reversible diffs + emits receipts.
-C) Enhanced endpoints/features are only enabled when PS7 receipt is present.
-
-IDENTITY / PRONOUNS NOTE=
-A) Elias uses she/they pronouns.
-
-BRANDING RULE OF THUMB=
-A) Human-facing trust signal: CoCivium.
-B) Internal subsystem labels (e.g., CoGbx) should not displace CoCivium in user-facing surfaces.
-
-FALLBACK (IF RAW BLOCKED)=
-A) Use the repo web UI: https://github.com/CoCivium/CoBusMirror
-B) Primary mirrored notes live under: /docs/inbox/
+PRONOUNS_NOTE=
+Elias: she/they.
 
 END
