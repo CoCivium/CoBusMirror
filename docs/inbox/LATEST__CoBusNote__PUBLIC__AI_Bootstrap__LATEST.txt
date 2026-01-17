@@ -1,0 +1,51 @@
+PUBLIC_NOTE
+UTC=20260117T211555Z
+PRIME_ID=4.0|PRIME|260116
+TITLE=CoCivium AI Bootstrap (PUBLIC LATEST)
+STATUS=DRAFT
+CANONICAL_BOOTSTRAP_TARGET=
+- https://CoCivium.org/ai
+- https://CoCivium.org/.well-known/cobeacon.txt
+CURRENT_BOOTSTRAP_STOPGAP=
+- RAW: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__AI_Bootstrap__LATEST.txt
+- UI:  https://github.com/CoCivium/CoBusMirror/blob/main/docs/inbox/LATEST__CoBusNote__PUBLIC__AI_Bootstrap__LATEST.txt
+
+REQUIRED_RULES=
+A) Pointer rule is mandatory: repo+branch+path OR full URL. No naked relative paths.
+B) PUBLIC notes only here. Vault/crown-jewel details stay vault-only.
+C) Sessions should read in this order, then proceed to work.
+
+READ_ORDER=
+1) AI_Bootstrap__LATEST (this file)
+2) Pointer_Spec__LATEST
+3) PS7_Spec__LATEST
+4) AGENT_TERMS__LATEST
+5) Contribution_Compact__LATEST
+6) CoStacksRegistry__LATEST
+7) CoStacks_Primer__LATEST (mirror mechanics & ops)
+8) Project-specific LATEST notes (e.g., ENTMENT__LATEST)
+
+POINTERS (SELF-CONTAINED, STABLE)=
+- Pointer spec:
+  - RAW: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__Pointer_Spec__LATEST.txt
+  - UI:  https://github.com/CoCivium/CoBusMirror/blob/main/docs/inbox/LATEST__CoBusNote__PUBLIC__Pointer_Spec__LATEST.txt
+- PS7 spec:
+  - RAW: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__PS7_Spec__LATEST.txt
+  - UI:  https://github.com/CoCivium/CoBusMirror/blob/main/docs/inbox/LATEST__CoBusNote__PUBLIC__PS7_Spec__LATEST.txt
+- Agent terms:
+  - RAW: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__AGENT_TERMS__LATEST.txt
+  - UI:  https://github.com/CoCivium/CoBusMirror/blob/main/docs/inbox/LATEST__CoBusNote__PUBLIC__AGENT_TERMS__LATEST.txt
+- Contribution compact:
+  - RAW: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__Contribution_Compact__LATEST.txt
+  - UI:  https://github.com/CoCivium/CoBusMirror/blob/main/docs/inbox/LATEST__CoBusNote__PUBLIC__Contribution_Compact__LATEST.txt
+- CoStacks registry:
+  - RAW: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoStacksRegistry__LATEST.txt
+  - UI:  https://github.com/CoCivium/CoBusMirror/blob/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoStacksRegistry__LATEST.txt
+- CoStacks primer:
+  - RAW: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoStacks_Primer__LATEST.txt
+  - UI:  https://github.com/CoCivium/CoBusMirror/blob/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoStacks_Primer__LATEST.txt
+- ENTMENT (example beacon repo):
+  - RAW: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__ENTMENT__LATEST.txt
+  - UI:  https://github.com/CoCivium/CoBusMirror/blob/main/docs/inbox/LATEST__CoBusNote__PUBLIC__ENTMENT__LATEST.txt
+
+END

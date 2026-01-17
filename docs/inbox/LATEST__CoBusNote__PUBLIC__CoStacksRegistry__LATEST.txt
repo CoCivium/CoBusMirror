@@ -1,17 +1,19 @@
 PUBLIC_NOTE
-UTC=20260117T200319Z
-TITLE=CoStacks Registry (PUBLIC LATEST summary)
- 
-SUMMARY=
-A) Repos scanned: 51
-B) CoRails present: 51
-C) Bookmarks sources present: 1
-D) PS7 schema present: 0
- 
-REGISTRY_JSON_IN_INBOX=
-A) File: CoStacksRegistry__20260117T200319Z.json
-B) SHA256: 1decd5ad082fb04483e6348607ebc44e4f28213a2656cf218a84ecde50b00fab
- 
+UTC=20260117T211555Z
+PRIME_ID=4.0|PRIME|260116
+TITLE=CoStacksRegistry (PUBLIC LATEST)
+STATUS=STUB_DRAFT
+
+GOAL=
+A machine- and human-readable registry of the current CoStacks rails & canonical assets.
+
+SEED MINIMUM CONTENT (THIS STUB)=
+- This file is a placeholder so sessions have a stable pointer.
+- Co4/CoAudit should replace this with an automated scan output:
+  - CoStacksRegistry.json + CoStacksRegistry.md
+  - Each entry includes repo+branch+path pointers + optional sha256.
+
 NEXT=
-A) Promote a stable JSON name too (CoStacksRegistry__LATEST.json) if you want a single machine URL.
-B) Extend schema with: stack-id, purpose, entrypoints, licenses, gating tier.
+- Implement registry generator (scan repos -> emit registry -> publish as PUBLIC note + in repo).
+
+END

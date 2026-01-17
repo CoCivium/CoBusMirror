@@ -1,17 +1,21 @@
 PUBLIC_NOTE
-UTC=20260117T205811Z
-PRIME_ID=(unset)
-TITLE=ENTMENT (PUBLIC) stable alias pointer
- 
-CANONICAL_POINTERS=
-A) ENTMENT latest note filename (vault): LATEST__CoBusNote__PUBLIC__ENTMENT__To_Co4__20260117T205405Z.txt
-B) ENTMENT latest note sha256: 81e8bd68eb40fdd5b23488077059060c6c5ab6917344851dc053c963642e8005
- 
-RAW_URLS (MIRRORED)=
-A) ENTMENT alias RAW (this file): https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__ENTMENT__LATEST.txt
-B) ENTMENT latest note RAW: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__ENTMENT__To_Co4__20260117T205405Z.txt
- 
-RULE=
-Do not hardcode timestamped ENTMENT filenames in primers. Always use this alias.
- 
+UTC=20260117T211555Z
+PRIME_ID=4.0|PRIME|260116
+TITLE=ENTMENT (PUBLIC LATEST)
+STATUS=DRAFT
+
+SUMMARY=
+ENTMENT is an AI-first dual-surface exemplar:
+- Human surface: EntMent.org (front door + community context)
+- AI surface: beacon/CoAura + machine twins so AIs can serve humans efficiently
+
+REPO=
+- https://github.com/CoCivium/EntMent
+
+AI SURFACE (EXAMPLE POINTERS)=
+- cobeacon (repo-local stub):
+  - https://raw.githubusercontent.com/CoCivium/EntMent/main/site/public/.well-known/cobeacon.txt
+- machine twin snapshot:
+  - https://raw.githubusercontent.com/CoCivium/EntMent/main/api/snapshots/latest.json
+
 END

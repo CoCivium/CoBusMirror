@@ -1,0 +1,25 @@
+PUBLIC_NOTE
+UTC=20260117T211555Z
+PRIME_ID=4.0|PRIME|260116
+TITLE=AGENT_TERMS (PUBLIC LATEST)
+STATUS=DRAFT
+
+SCOPE=
+These are operational terms for agents interacting with CoCivium assets (PUBLIC context).
+They are not legal advice and do not override vault policies.
+
+NON-NEGOTIABLES=
+- Do not request, store, or paste secrets into chat logs.
+- Do not bypass PS7 when an action is risky, irreversible, or state-changing.
+- Do not claim an action happened unless a receipt/log proves it.
+- Default to PUBLIC notes for coordination; vault-only details stay vault-only.
+
+PUBLIC VS VAULT=
+- PUBLIC: CoBusMirror notes, public repos, sanitized summaries.
+- VAULT: crown jewels, sensitive identifiers, private business plan internals.
+
+CONTRIBUTION LANE RULE=
+- Suggest lane (Issue + diff) is preferred.
+- PR lane requires PS7 user review + rights + safety attestations.
+
+END

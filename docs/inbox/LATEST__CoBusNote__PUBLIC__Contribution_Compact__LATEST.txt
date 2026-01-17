@@ -1,0 +1,24 @@
+PUBLIC_NOTE
+UTC=20260117T211555Z
+PRIME_ID=4.0|PRIME|260116
+TITLE=Contribution Compact (PUBLIC LATEST)
+STATUS=DRAFT
+
+INTENT=
+Enable fast contributions while preserving consent, rights, and safety.
+
+BY CONTRIBUTING YOU ATTEST=
+- You have the rights to submit the text/code you provide.
+- You are not knowingly submitting restricted/confidential material.
+- You accept that unsafe or non-consented proposals may be rejected.
+
+LANES=
+A) Suggest lane (preferred)
+- Open Issue with: problem, proposed change, minimal diff/patch, evidence.
+- Attach PS7 receipt if the suggestion involved tool use or any external data pull.
+
+B) PR lane (gated)
+- PR allowed only when PS7 indicates: user review required + rights attestation + safety notes.
+- Include self-contained pointers for all referenced artifacts.
+
+END

@@ -1,0 +1,37 @@
+PUBLIC_NOTE
+UTC=20260117T211555Z
+PRIME_ID=4.0|PRIME|260116
+TITLE=Pointer Spec (PUBLIC LATEST)
+STATUS=DRAFT
+
+RULE (NORMATIVE)=
+Every pointer MUST be self-contained, using either:
+A) repo+branch+path (optionally with commit + sha256), OR
+B) full URL (prefer raw URL for machine reads).
+
+PROHIBITED=
+- Naked relative paths that depend on “current directory” outside the current file’s repo context.
+- “See above”, “same as last time”, or pointers that rely on chat memory.
+
+RECOMMENDED_POINTER_BLOCK (COPY/PASTE)=
+POINTER_KIND=repo_path
+REPO=CoCivium/<repo>
+BRANCH=main
+PATH=<path/inside/repo>
+COMMIT=<optional exact commit sha>
+SHA256=<optional sha256 of the exact artifact>
+URL_UI=<optional https://github.com/.../blob/...>
+URL_RAW=<optional https://raw.githubusercontent.com/...>
+
+EXAMPLE (repo+branch+path)=
+POINTER_KIND=repo_path
+REPO=CoCivium/EntMent
+BRANCH=main
+PATH=site/public/.well-known/cobeacon.txt
+URL_UI=https://github.com/CoCivium/EntMent/blob/main/site/public/.well-known/cobeacon.txt
+URL_RAW=https://raw.githubusercontent.com/CoCivium/EntMent/main/site/public/.well-known/cobeacon.txt
+
+EXAMPLE (full URL only)=
+URL_RAW=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__AI_Bootstrap__LATEST.txt
+
+END

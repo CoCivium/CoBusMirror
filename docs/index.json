@@ -1,5 +1,45 @@
 [
   {
+    "name": "LATEST__CoBusNote__PUBLIC__CoStacks_Primer__LATEST.txt",
+    "lastWriteUtc": "2026-01-17T21:16:07.8060896Z",
+    "sha256": "abf46f6c36473e1bc9fe644a40cf4a0e6d4b246d835562859ea3b36f366facaa"
+  },
+  {
+    "name": "LATEST__CoBusNote__PUBLIC__ENTMENT__LATEST.txt",
+    "lastWriteUtc": "2026-01-17T21:16:07.6645311Z",
+    "sha256": "d10234c46433bf835646938ddb47cf67f72cfdda342d17b66ad3f82ccbf05115"
+  },
+  {
+    "name": "LATEST__CoBusNote__PUBLIC__CoStacksRegistry__LATEST.txt",
+    "lastWriteUtc": "2026-01-17T21:16:07.6106532Z",
+    "sha256": "c4b7a40dc0751dbbb086898b6aad646fb930be444981802091252a5077b9c4dd"
+  },
+  {
+    "name": "LATEST__CoBusNote__PUBLIC__Contribution_Compact__LATEST.txt",
+    "lastWriteUtc": "2026-01-17T21:16:07.5641319Z",
+    "sha256": "744f3280cfda4293189bdd98273788ec3d95f116c5f2cd6d564c236b685aab8d"
+  },
+  {
+    "name": "LATEST__CoBusNote__PUBLIC__AGENT_TERMS__LATEST.txt",
+    "lastWriteUtc": "2026-01-17T21:16:07.5169422Z",
+    "sha256": "d21e00ace291362bc426af4f672811d51cc1b9ed99fe595d026aa2356a5c701a"
+  },
+  {
+    "name": "LATEST__CoBusNote__PUBLIC__PS7_Spec__LATEST.txt",
+    "lastWriteUtc": "2026-01-17T21:16:07.4683202Z",
+    "sha256": "638cd1c13eac3f4395c7d84b8775c2c5e880a19d2e2d8a88e195d5e78c932592"
+  },
+  {
+    "name": "LATEST__CoBusNote__PUBLIC__Pointer_Spec__LATEST.txt",
+    "lastWriteUtc": "2026-01-17T21:16:07.3883587Z",
+    "sha256": "95febf7934d6a4bf7e492781a2c44848b56885f7e080a6f9560b7f8370ab6953"
+  },
+  {
+    "name": "LATEST__CoBusNote__PUBLIC__AI_Bootstrap__LATEST.txt",
+    "lastWriteUtc": "2026-01-17T21:16:07.3085322Z",
+    "sha256": "7f10a219e5c7e0294e18ab89842ef1479babc9ae77070b31a0510d9402cfa295"
+  },
+  {
     "name": "LATEST__CoBusNote__PUBLIC__CoSources__Spec__LATEST.txt",
     "lastWriteUtc": "2026-01-17T21:15:01.1489349Z",
     "sha256": "c01fc7291301972ffde6cc0eb3dfdcbcc37b2019ada490a44eae4c5b3e802040"
@@ -10,19 +50,9 @@
     "sha256": "108b01535523c8edec1066c03c4869bbb6508672b3970fbb46f7d211d3cd92fa"
   },
   {
-    "name": "LATEST__CoBusNote__PUBLIC__CoStacks_Primer__LATEST.txt",
-    "lastWriteUtc": "2026-01-17T20:58:46.1947092Z",
-    "sha256": "8c0e6ace92f64c43b77741e03956dfdde99815ba5db3b0fc64840a4dc8a9322b"
-  },
-  {
     "name": "LATEST__CoBusNote__PUBLIC__CoStacks_Primer__20260117T205811Z.txt",
     "lastWriteUtc": "2026-01-17T20:58:46.0283184Z",
     "sha256": "8c0e6ace92f64c43b77741e03956dfdde99815ba5db3b0fc64840a4dc8a9322b"
-  },
-  {
-    "name": "LATEST__CoBusNote__PUBLIC__ENTMENT__LATEST.txt",
-    "lastWriteUtc": "2026-01-17T20:58:45.2938845Z",
-    "sha256": "27bd81d426720341d7df69406fd7c901c96d14da1b80b37521bedb3811753deb"
   },
   {
     "name": "LATEST__CoBusNote__PUBLIC__ENTMENT__To_Co4__20260117T205405Z.txt",
@@ -48,11 +78,6 @@
     "name": "LATEST__CoBusNote__PUBLIC__CoStacks_Onramp__20260117T204241Z.txt",
     "lastWriteUtc": "2026-01-17T20:44:17.0978458Z",
     "sha256": "021ccbaa73a6270b08451ea626526059d20d3261829c7411679b250b57da56e6"
-  },
-  {
-    "name": "LATEST__CoBusNote__PUBLIC__CoStacksRegistry__LATEST.txt",
-    "lastWriteUtc": "2026-01-17T20:03:22.8891531Z",
-    "sha256": "390bee06a8579c918bb3f1c4fd9d2a4b874169683f47c1d65bbffd3262633103"
   },
   {
     "name": "LATEST__CoBusNote__PUBLIC__CoStacks_Primer__20260117T053109Z.txt",

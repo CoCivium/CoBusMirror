@@ -1,0 +1,43 @@
+PUBLIC_NOTE
+UTC=20260117T211555Z
+PRIME_ID=4.0|PRIME|260116
+TITLE=PS7 Spec (PUBLIC LATEST)
+STATUS=DRAFT
+
+WHAT PS7 IS=
+PS7 is the user-facing “panel + receipt” contract for consented evolution and tool use.
+If an agent is about to do something that changes state, accesses sensitive resources, or creates obligations,
+it should show a PS7 panel to the user and emit a PS7 receipt.
+
+WHEN REQUIRED (SEED DEFAULT)=
+- Any tool/action that mutates data, code, repos, or files.
+- Any action that changes permissions, shares content, or publishes publicly.
+- Any use of credentials/tokens.
+- Any action that could incur cost, legal obligations, or irreversible effects.
+
+MINIMUM PS7 RECEIPT (JSON) FIELDS=
+{
+  "ps7_version": "0.1-draft",
+  "utc": "<YYYYMMDDTHHMMSSZ>",
+  "prime_id": "<e.g. 4.0|PRIME|260116>",
+  "session_id": "<label or internal id>",
+  "intent": "<1-3 lines>",
+  "inputs": [
+    {"pointer": "<self-contained pointer>", "sha256": "<optional>"}
+  ],
+  "planned_actions": [
+    {"action": "<verb>", "target": "<pointer or description>", "reversible": true}
+  ],
+  "risk_notes": ["<short>"],
+  "rights_attestation": "<contributor asserts they have rights to submit>",
+  "user_review_required": true,
+  "user_approval": {"status": "approved|rejected|pending", "approved_utc": "<optional>"},
+  "outputs": [
+    {"pointer": "<self-contained pointer>", "sha256": "<optional>"}
+  ]
+}
+
+STATUS=
+This is a seed-minimal PUBLIC spec. Co4 should refine/replace once a canonical PS7 schema is settled.
+
+END

@@ -1,31 +1,63 @@
 PUBLIC_NOTE
-UTC=20260117T205811Z
-PRIME_ID=(unset)
-TITLE=CoStacks Primer (PUBLIC LATEST)
- 
-CANONICAL_BOOTSTRAP=
-A) CoBeacon RAW (preferred): https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt
-B) AI Onramp RAW: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/AI_ONRAMP_LATEST.txt
-C) Pointer Spec RAW: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/POINTER_SPEC_LATEST.md
- 
-REQUIRED_LATEST_ASSETS (PUBLIC)=
-A) Primer RAW (this file): https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoStacks_Primer__LATEST.txt
-B) Registry JSON RAW: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/registry/CoStacksRegistry__LATEST.json
-C) PS7 Spec RAW: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/ps7/PS7_PANEL_SPEC_LATEST.md
-D) PS7 Schema RAW: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/ps7/ps7-panel.schema.json
-E) Agent Terms RAW: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/terms/AGENT_TERMS_LATEST.md
-F) Contribution Compact RAW: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/terms/AGENT_CONTRIBUTION_COMPACT_LATEST.md
-G) ENTMENT stable alias RAW: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__ENTMENT__LATEST.txt
- 
-RULE=
-Never paste repo-relative fragments as the only pointer. Use full URLs (see pointer spec).
- 
-OPERATING_MINIMUM (EACH WAVE)=
-A) Reload CoBeacon + AI Onramp.
-B) Use PS7 receipt for any privileged action.
-C) Emit sha sidecars and commit SHAs for changes.
- 
-PRONOUNS_NOTE=
-Elias: she/they.
- 
+UTC=20260117T211555Z
+PRIME_ID=4.0|PRIME|260116
+TITLE=CoStacks Primer (PUBLIC LATEST) — upgraded for onboarding
+
+PURPOSE=
+A) Single entrypoint for new sessions to get up to speed without relying on platform memory.
+B) Only sanitized/public context lives here. Crown-jewel details stay vault-only.
+
+CANONICAL_BOOTSTRAP_TARGET (NOT YET PUBLISHED HERE)=
+- https://CoCivium.org/ai
+- https://CoCivium.org/.well-known/cobeacon.txt
+
+STOPGAP_BOOTSTRAP (USE NOW)=
+- RAW: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__AI_Bootstrap__LATEST.txt
+- UI:  https://github.com/CoCivium/CoBusMirror/blob/main/docs/inbox/LATEST__CoBusNote__PUBLIC__AI_Bootstrap__LATEST.txt
+
+POINTER_RULE (NORMATIVE)=
+Pointers MUST be self-contained:
+- repo+branch+path OR full URL. No naked relative paths.
+- Canonical pointer spec:
+  - RAW: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__Pointer_Spec__LATEST.txt
+  - UI:  https://github.com/CoCivium/CoBusMirror/blob/main/docs/inbox/LATEST__CoBusNote__PUBLIC__Pointer_Spec__LATEST.txt
+
+WHAT_TO_READ_FIRST=
+0) AI Bootstrap:
+   - RAW: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__AI_Bootstrap__LATEST.txt
+1) This file (CoStacks_Primer__LATEST).
+2) docs/index.json (lists mirrored PUBLIC notes) and docs/inbox/ (the notes).
+
+REQUIRED “LATEST” ASSET POINTERS (STABLE)=
+- PS7 spec:
+  - RAW: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__PS7_Spec__LATEST.txt
+- AGENT_TERMS:
+  - RAW: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__AGENT_TERMS__LATEST.txt
+- Contribution compact:
+  - RAW: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__Contribution_Compact__LATEST.txt
+- CoStacks registry:
+  - RAW: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoStacksRegistry__LATEST.txt
+
+HOW_UPDATES_WORK=
+A) Write/refresh PUBLIC notes into CoBux INBOX using filename pattern: LATEST__CoBusNote__PUBLIC__*.txt
+B) Scheduled task CoBusMirrorSync runs every ~5 minutes and pushes them into CoCivium/CoBusMirror.
+C) Any session can read CoBusMirror to get latest PUBLIC context.
+
+CURRENT_RAILS_STATUS=
+A) CoRails installed across repos (tools/CoRails.psm1).
+B) CoBusMirror-Sync canonicalized + scheduled (schtasks: CoBusMirrorSync).
+C) CoBus backfill index emitted as CoBusIndex__*.tsv (vault INBOX + archive).
+
+PROJECT EXAMPLE POINTER=
+- ENTMENT (PUBLIC LATEST):
+  - RAW: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__ENTMENT__LATEST.txt
+
+NEXT_AUTOMATION_TARGETS=
+A) Replace CoStacksRegistry stub with automated scan output.
+B) Finalize canonical PS7 schema + publish stable version.
+C) Publish canonical CoCivium-branded bootstrap URL (CoCivium.org/ai or /.well-known/cobeacon.txt).
+
+REUSE_RULE=
+Use permissively-licensed open-source and comply with licenses. No copying of restricted content.
+
 END
