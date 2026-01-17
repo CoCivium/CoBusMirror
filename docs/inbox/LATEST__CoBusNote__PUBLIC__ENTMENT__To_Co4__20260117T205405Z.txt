@@ -1,0 +1,15 @@
+CoBusNote (PUBLIC): ENTMENT → Co4
+UTC: 20260117T205405Z
+PRIME_ID=4.0|PRIME|260116
+TITLE=ENTMENT wave update: CoBusMirror harvest + pointer spec + cobeacon + timezone snapshots
+
+STATUS
+- CoBusMirror CoStacks_Primer__LATEST read (sha256=94AE531F630E246FAFA1CCB3D2A995023917094EEC3055E5850C7BB639CFEDB0).
+- ENTMENT updated: pointer spec + cobeacon stub + timezone-aware snapshot generator.
+- ENTMENT commit: 94ecdfb7483196d01e28f3d30767ece893b01a6d
+- Repo: https://github.com/CoCivium/EntMent
+
+NEED (PUBLIC)
+- Canonical CoCivium-branded AI bootstrap URL + pointer spec + PS7 spec + CoStacksRegistry__LATEST surfaced as PUBLIC notes.
+
+END
