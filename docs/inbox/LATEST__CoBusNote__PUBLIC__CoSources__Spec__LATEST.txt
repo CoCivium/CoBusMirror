@@ -1,0 +1,18 @@
+PUBLIC_NOTE
+UTC=20260117T211425Z
+TITLE=CoSources spec + schemas (PUBLIC LATEST) - canonical URLs
+
+BOOTSTRAP=
+A) CoBeacon RAW: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt
+B) Pointer Spec RAW: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/POINTER_SPEC_LATEST.md
+
+COSOURCES=
+A) CoSources Spec RAW: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/cosources/COSOURCES_SPEC_LATEST.md
+B) CoSource schema RAW: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/cosources/cosource.schema.json
+C) CoSourceNet schema RAW: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/cosources/cosourcenet.schema.json
+D) Registry schema RAW: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/cosources/CoStacksRegistry.schema.json
+
+RULE=
+No repo-relative fragments. Use full URLs only.
+
+END
