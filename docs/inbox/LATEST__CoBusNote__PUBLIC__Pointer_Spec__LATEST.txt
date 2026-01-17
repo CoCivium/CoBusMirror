@@ -1,28 +1,15 @@
 PUBLIC_NOTE
-UTC=20260117T212107Z
-PRIME_ID=4.0|PRIME|260116
+UTC=20260117T213354Z
 TITLE=Pointer Spec (PUBLIC LATEST)
 STATUS=CANONICAL_FOR_NOW
 
 RULE (NORMATIVE)=
 All pointers MUST be FULL URLs.
-- Prefer raw URLs for machine reads (raw.githubusercontent.com).
-- UI URLs are optional secondary convenience pointers.
+- Prefer raw URLs for machine reads.
 
-OPTIONAL_METADATA (NOT A POINTER BY ITSELF)=
-- repo / branch / path / commit / sha256 may be included, but MUST NOT replace the full URL.
-
-PROHIBITED=
-- Naked relative paths outside the current repo file context.
-- “See above / same as last time” pointers that rely on chat memory.
-
-RECOMMENDED_POINTER_BLOCK (COPY/PASTE)=
+RECOMMENDED_POINTER_BLOCK=
 URL_RAW=<required full raw URL>
 URL_UI=<optional github UI URL>
-SHA256=<optional sha256 of exact artifact>
-COMMIT=<optional exact commit>
-
-EXAMPLE=
-URL_RAW=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt
+SHA256=<optional sha256>
 
 END

@@ -1,23 +1,13 @@
 PUBLIC_NOTE
-UTC=20260117T212107Z
-PRIME_ID=4.0|PRIME|260116
+UTC=20260117T213354Z
 TITLE=CoStacks Primer (PUBLIC LATEST) — ops note (not the bootstrap)
 
 BOOTSTRAP (ENTRYPOINT)=
 https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt
 
-PURPOSE=
-A) Explain how PUBLIC notes are mirrored (CoBux -> CoBusMirror).
-B) Provide ops rails context without relying on platform memory.
-
 POINTER RULE=
 All pointers MUST be FULL URLs. See:
 https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__Pointer_Spec__LATEST.txt
-
-HOW_UPDATES_WORK=
-A) Write/refresh PUBLIC notes into CoBux INBOX using: LATEST__CoBusNote__PUBLIC__*.txt
-B) CoBusMirrorSync pushes them into CoCivium/CoBusMirror.
-C) Sessions read via CoBeacon then follow URLs.
 
 PROJECT ALIAS RULE (ENTMENT)=
 Use ENTMENT alias ONLY:
