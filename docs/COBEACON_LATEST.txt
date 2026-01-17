@@ -32,3 +32,9 @@ A) Recommended: https://cocivium.org/ai or /.well-known/cobeacon.txt should 308-
 B) Until configured, use the RAW URLs above.
 
 END
+COSOURCES (PUBLIC)=
+A) CoSources Spec: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/cosources/COSOURCES_SPEC_LATEST.md
+A) CoSource schema: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/cosources/cosource.schema.json
+B) CoSourceNet schema: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/cosources/cosourcenet.schema.json
+C) Registry schema: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/cosources/CoStacksRegistry.schema.json
+
