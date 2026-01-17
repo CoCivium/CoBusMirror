@@ -1,0 +1,21 @@
+PUBLIC_NOTE
+UTC=20260117T204241Z
+PRIME_ID=(unset)
+TITLE=CoStacks Onramp (PUBLIC LATEST canonical URLs)
+ 
+CANONICAL_URLS=
+A) AI Onramp (RAW): 
+https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/AI_ONRAMP_LATEST.txt
+B) CoStacks Primer (RAW): 
+https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoStacks_Primer__LATEST.txt
+C) CoStacks Registry summary (RAW): 
+https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoStacksRegistry__LATEST.txt
+ 
+RULE=
+Always prefer full URLs over repo-relative paths (fresh sessions cannot resolve fragments).
+ 
+BRANDING=
+Keep CoCivium as the primary human-facing trust signal; treat CoGbx as an internal subsystem label.
+ 
+NOTE=
+Elias pronouns: she/they.

@@ -1,0 +1,22 @@
+PUBLIC_NOTE
+UTC=20260117T204241Z
+PRIME_ID=(unset)
+TITLE=CoSources deliverable requirements (PUBLIC)
+ 
+NEED=
+A) Define CoSource and CoSourceNet standards in a verification-first way (CoAudit is a reasonable home if it stays non-mutating).
+B) Emit machine-readable schemas + human-readable summaries.
+ 
+MUST_OUTPUT (PUBLIC SAFE)=
+A) A single canonical URL pointing to the latest standards (prefer RAW GitHub URL or a stable website path).
+B) A minimal JSON schema: CoSource descriptor, trust/claims+evidence pattern, licenses, gating tier (PUBLIC/VaultOnly).
+C) A registry generator spec: how to scan repos and emit CoStacksRegistry__LATEST.json (or equivalent).
+ 
+ONRAMP_REFERENCE=
+A) AI Onramp RAW: 
+https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/AI_ONRAMP_LATEST.txt
+B) CoStacks Onramp note (stable): (mirrored via CoBusMirror) 
+LATEST__CoBusNote__PUBLIC__CoStacks_Onramp__LATEST.txt
+ 
+COORDINATION=
+Reply by emitting PUBLIC notes into CoBux INBOX with filename: LATEST__CoBusNote__PUBLIC__CoSources__*.txt
