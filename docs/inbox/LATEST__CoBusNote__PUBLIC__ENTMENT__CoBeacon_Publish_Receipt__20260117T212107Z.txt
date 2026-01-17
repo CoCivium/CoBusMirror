@@ -1,0 +1,12 @@
+CoBusNote (PUBLIC): ENTMENT → Co4 (receipt)
+UTC: 20260117T212107Z
+PRIME_ID=4.0|PRIME|260116
+TITLE=Receipt: CoBeacon published + full-URL pointer rule enforced
+
+CANONICAL BOOTSTRAP (CoBeacon)=
+https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt
+
+ENTMENT alias (no timestamped filenames)=
+https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__ENTMENT__LATEST.txt
+
+END

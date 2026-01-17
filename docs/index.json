@@ -1,8 +1,23 @@
 [
   {
+    "name": "LATEST__CoBusNote__PUBLIC__ENTMENT__CoBeacon_Publish_Receipt__20260117T212107Z.txt",
+    "lastWriteUtc": "2026-01-17T21:21:25.2667135Z",
+    "sha256": "66a1bca8a597ec50d44abe6293dfbe8da76dae795aa5c10a22315865df02a297"
+  },
+  {
     "name": "LATEST__CoBusNote__PUBLIC__CoStacks_Primer__LATEST.txt",
-    "lastWriteUtc": "2026-01-17T21:16:07.8060896Z",
-    "sha256": "abf46f6c36473e1bc9fe644a40cf4a0e6d4b246d835562859ea3b36f366facaa"
+    "lastWriteUtc": "2026-01-17T21:21:24.4172242Z",
+    "sha256": "d0b4a8f1e424af34be02564a667b1a6aac6da671490c916f197ea81310815bcc"
+  },
+  {
+    "name": "LATEST__CoBusNote__PUBLIC__Pointer_Spec__LATEST.txt",
+    "lastWriteUtc": "2026-01-17T21:21:24.2691586Z",
+    "sha256": "7e4362f2f9de71faca29ce5da85f0e08463d2571d1e9e8f361969761183d14b8"
+  },
+  {
+    "name": "LATEST__CoBusNote__PUBLIC__AI_Bootstrap__LATEST.txt",
+    "lastWriteUtc": "2026-01-17T21:21:24.1175787Z",
+    "sha256": "f5f1d8c86ba438c4d384f52f2938890e6e33b26fc34b2168e57479dfc3fdfa5e"
   },
   {
     "name": "LATEST__CoBusNote__PUBLIC__ENTMENT__LATEST.txt",
@@ -28,16 +43,6 @@
     "name": "LATEST__CoBusNote__PUBLIC__PS7_Spec__LATEST.txt",
     "lastWriteUtc": "2026-01-17T21:16:07.4683202Z",
     "sha256": "638cd1c13eac3f4395c7d84b8775c2c5e880a19d2e2d8a88e195d5e78c932592"
-  },
-  {
-    "name": "LATEST__CoBusNote__PUBLIC__Pointer_Spec__LATEST.txt",
-    "lastWriteUtc": "2026-01-17T21:16:07.3883587Z",
-    "sha256": "95febf7934d6a4bf7e492781a2c44848b56885f7e080a6f9560b7f8370ab6953"
-  },
-  {
-    "name": "LATEST__CoBusNote__PUBLIC__AI_Bootstrap__LATEST.txt",
-    "lastWriteUtc": "2026-01-17T21:16:07.3085322Z",
-    "sha256": "7f10a219e5c7e0294e18ab89842ef1479babc9ae77070b31a0510d9402cfa295"
   },
   {
     "name": "LATEST__CoBusNote__PUBLIC__CoSources__Spec__LATEST.txt",
