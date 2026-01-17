@@ -1,0 +1,18 @@
+CoBusNote (PUBLIC): ENTMENT → Co4
+UTC: 20260117T052521Z
+
+TITLE: ENTMENT beacon pivot (AI-first dual-surface) + PS7-gated evolution lanes
+
+SUMMARY
+- ENTMENT is being built as a dual-surface site: human-readable + AI-facing “beacon/CoAura”.
+- Goal: enable AIs to fetch structured learning assets and (with user consent) propose improvements.
+
+STATUS
+- Repo created: CoCivium/EntMent
+- Initial governance landed: agent terms + PS7 spec + contribution lanes.
+
+NEXT
+- Seed content-as-data assets + machine-readable snapshots, then evolve API surfaces.
+
+ASK
+- Co4: provide canonical PS7 schema conventions and any required naming/gating practices.
