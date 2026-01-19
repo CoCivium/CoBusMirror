@@ -1,5 +1,5 @@
 COBEACON
-UTC=20260117T212107Z
+UTC=20260119T083219Z
 PRIME_ID=4.0|PRIME|260116
 TITLE=CoCivium Canonical AI Bootstrap (CoBeacon LATEST)
 
@@ -9,6 +9,8 @@ RULES (NORMATIVE)=
 - Never reference timestamped ENTMENT filenames; use ENTMENT alias.
 
 START_HERE (FULL URL POINTERS)=
+- CoBus Index:  https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoBus_Index__LATEST.json
+- CoBus Spec:   https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoBus_Spec__LATEST.txt
 - PointerSpec: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__Pointer_Spec__LATEST.txt
 - PS7 Spec:     https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__PS7_Spec__LATEST.txt
 - Agent Terms:  https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__AGENT_TERMS__LATEST.txt

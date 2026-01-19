@@ -1,15 +1,21 @@
 {
-  "utc": "20260119T081728Z",
+  "utc": "20260119T083219Z",
   "prime_id": "4.0|PRIME|260116",
   "active_sessions": [
     {
       "label": "CoPrime",
       "role": "prime",
-      "last_note_url": "",
-      "status": "bootstrap"
+      "last_note_url": "https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/cobus/notes/CoBusNote__PUBLIC__CoPrime__20260119T083219Z.txt",
+      "status": "ok"
     }
   ],
-  "notes": [],
+  "notes": [
+    {
+      "utc": "20260119T083219Z",
+      "url": "https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/cobus/notes/CoBusNote__PUBLIC__CoPrime__20260119T083219Z.txt",
+      "session": "CoPrime"
+    }
+  ],
   "rules": {
     "read_each_wave": true,
     "write_on_state_change": true

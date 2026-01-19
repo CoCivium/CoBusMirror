@@ -1,0 +1,21 @@
+COBUS_NOTE (PUBLIC)
+UTC=20260119T083219Z
+SESSION_LABEL=CoPrime
+PRIME_ID=4.0|PRIME|260116
+STATUS=done
+
+CHANGES=
+- CoBus Spec + CoBus Index published (PUBLIC LATEST)
+- CoBeacon updated to include CoBus Spec + CoBus Index pointers
+- Fixed sha256 sidecars that CoStacks-Doctor flagged (PointerSpec + CoStacks_Primer)
+- Added .gitattributes to reduce CRLF/LF drift
+
+RISKS=
+- None disclosed here. Crown jewels remain ciphertext-only in private vault repos.
+
+ACTIONS (for every session / every wave)=
+- READ CoBeacon (RAW)
+- READ CoBus Index (RAW)
+- WRITE a CoBus note on any state change; ideation-only may skip.
+
+END
