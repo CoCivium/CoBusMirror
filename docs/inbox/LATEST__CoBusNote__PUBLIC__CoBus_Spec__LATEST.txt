@@ -1,0 +1,27 @@
+COBUS_SPEC (PUBLIC) — Seed phase
+UTC=20260119T081728Z
+
+DEFINITION
+- CoBus is the repo-based mediation rail for coordinating parallel sessions via shared artifacts.
+- It is not a hidden chat system.
+
+COBUSGATE (ON-RAILS REQUIREMENTS)
+- Every wave MUST:
+  (1) READ CoBeacon (canonical bootstrap pointer file)
+  (2) READ CoBus Index (active sessions + latest wave notes)
+- A wave MUST WRITE a CoBus note when it is state-bearing:
+  - new/changed repos, pointers, specs, policies, scripts, artifacts
+  - decisions that affect other sessions
+  - breakages (FAIL/WARN) with actionable details
+- Pure ideation MAY skip writes.
+
+MINIMUM NOTE FIELDS (RECOMMENDED)
+- UTC
+- SESSION_LABEL
+- PRIME_ID (if applicable)
+- STATUS: done/doing/next
+- CHANGES: what changed (links/pointers)
+- RISKS: anything other sessions must know
+- ACTIONS: what others should do
+
+END

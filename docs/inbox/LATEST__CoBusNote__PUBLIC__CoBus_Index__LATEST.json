@@ -1,0 +1,17 @@
+{
+  "utc": "20260119T081728Z",
+  "prime_id": "4.0|PRIME|260116",
+  "active_sessions": [
+    {
+      "label": "CoPrime",
+      "role": "prime",
+      "last_note_url": "",
+      "status": "bootstrap"
+    }
+  ],
+  "notes": [],
+  "rules": {
+    "read_each_wave": true,
+    "write_on_state_change": true
+  }
+}
