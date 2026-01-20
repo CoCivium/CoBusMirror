@@ -1,32 +1,10 @@
-COBEACON
-UTC=20260120T191706Z
-PRIME_ID=4.0|PRIME|260116
-TITLE=CoCivium Canonical AI Bootstrap (CoBeacon LATEST)
-
-RULES (NORMATIVE)=
-- Bootstrap ONLY via this file: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt
-- Pointers MUST be FULL URLs. (See PointerSpec)
-- Never reference timestamped ENTMENT filenames; use ENTMENT alias.
-
+COBEACON_LATEST (FULL URL POINTERS ONLY)
+UTC=20260120T215143Z
 START_HERE (FULL URL POINTERS)=
-- CoPre WaveHeader:https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoPre_WaveHeader__LATEST.txt
-- CoBus Index:     https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoBus_Index__LATEST.json
-- CoBus Spec:      https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoBus_Spec__LATEST.txt
-- CoPre WaveHeader: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoPre_WaveHeader__LATEST.txt
-- CoBus Index:  https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoBus_Index__LATEST.json
-- CoBus Spec:   https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoBus_Spec__LATEST.txt
 - PointerSpec: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__Pointer_Spec__LATEST.txt
-- PS7 Spec:     https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__PS7_Spec__LATEST.txt
-- Agent Terms:  https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__AGENT_TERMS__LATEST.txt
-- Contribution: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__Contribution_Compact__LATEST.txt
-- CoStacks Reg: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoStacksRegistry__LATEST.txt
-- CoStacks Primer (ops): https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoStacks_Primer__LATEST.txt
-
-PROJECT ALIAS (FULL URL)=
-- ENTMENT (alias): https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__ENTMENT__LATEST.txt
-
-CANONICAL_BRANDED_TARGET (FUTURE)=
-- https://CoCivium.org/ai
-- https://CoCivium.org/.well-known/cobeacon.txt
-
+- CoStacks Registry: 
+- CoStacks Primer: 
+- CoBus Spec: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoBus_Spec__LATEST.txt
+- CoBus Index: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoBus_Index__LATEST.json
+- CoPre WaveHeader: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoPre_WaveHeader__LATEST.txt
 END
