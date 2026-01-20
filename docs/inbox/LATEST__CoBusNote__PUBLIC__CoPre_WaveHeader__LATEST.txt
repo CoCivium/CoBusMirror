@@ -1,0 +1,16 @@
+COPRE_WAVE_HEADER (PUBLIC) — Seed phase
+UTC=20260120T185545Z
+
+REQUIRED READS (THIS WAVE)
+- CoBeacon RAW (FULL URLs only)
+- CoBus Index RAW
+
+ACK SYMBOL
+- ⊂✓  = required reads done (this wave)
+- ⊂✗  = missing required read(s) (drift)
+
+CANONICAL HEADER TEMPLATE (paste at top of each wave)
+CoHealth: ⊂✓  PRIME_ID=<id>  SESSION=<label>  UTC=<utc>  CoDoctor=<PASS|WARN|FAIL>
+CoBloat:  CU=<OK|SOFT|HARD|FATAL> PU=<...> HU=<...> WT=<...>
+
+END
