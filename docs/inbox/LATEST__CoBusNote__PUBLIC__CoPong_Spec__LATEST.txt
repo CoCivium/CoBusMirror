@@ -1,0 +1,12 @@
+PUBLIC_NOTE UTC=20260121T222225Z TITLE=CoPong Spec (PUBLIC LATEST) STATUS=CANONICAL_FOR_NOW
+INTENT=Define the PS7-green one-line SideNote/CoPong format for handoffs + intra-wave transfers.
+RULE (NORMATIVE)=
+- A CoPong MUST be exactly one physical line (no newlines) so it can be pasted into a PS7 panel as a green comment.
+- A CoPong MUST start with: "# " (pound + space).
+- A CoPong MUST include FROM and TO session labels, a STATE, and (if applicable) ActionNow<=5 + PASS receipts + tiny RFA.
+- Pointers inside CoPongs MUST be FULL URLs (prefer URL_RAW), per PointerSpec; never “see above/last time.”
+RECOMMENDED_KEYS (order)= FROM= TO= UTC= STATE= P0= P1= HOLD= ACTIONNOW= PASS= RFA= POINTERS=
+RECOMMENDED_POINTER_BLOCK (COPY/PASTE)= URL_RAW= URL_UI= SHA256= COMMIT= VISIBILITY=public|private
+TEMPLATE (ONE LINE)=
+# CoPong | FROM=<...> -> TO=<...> | UTC=<...> | STATE=<...> | ACTIONNOW=<max 5> | PASS=<what proves done> | RFA=<IDs/URLs/paths only> | POINTERS=URL_RAW=... VISIBILITY=...
+END

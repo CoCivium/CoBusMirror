@@ -1,7 +1,7 @@
 COPRE_WAVE_HEADER (PUBLIC) — Seed phase
 UTC=20260120T185545Z
 
-REQUIRED READS (THIS WAVE)
+REQUIRED READS (THIS WAVE) - CoPong Spec (for handoffs; PS7 one-line # ...)
 - CoBeacon RAW (FULL URLs only)
 - CoBus Index RAW
 

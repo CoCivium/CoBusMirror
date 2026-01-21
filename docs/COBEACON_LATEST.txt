@@ -1,7 +1,7 @@
 COBEACON_LATEST (FULL URL POINTERS ONLY)
 UTC=20260120T215143Z
 START_HERE (FULL URL POINTERS)=
-- PointerSpec: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__Pointer_Spec__LATEST.txt
+- PointerSpec: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__Pointer_Spec__LATEST.txt - CoPong Spec: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoPong_Spec__LATEST.txt
 - CoStacks Registry: 
 - CoStacks Primer: 
 - CoBus Spec: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoBus_Spec__LATEST.txt
