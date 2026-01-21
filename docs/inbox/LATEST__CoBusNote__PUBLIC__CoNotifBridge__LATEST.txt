@@ -1,0 +1,22 @@
+PUBLIC_NOTE
+UTC=20260118T181119Z
+PRIME_ID=4.0|PRIME|260116
+TITLE=CoNotifBridge (PUBLIC LATEST) — GitHub-native notifications as canonical; email optional
+STATUS=DRAFT
+
+RULE=
+Use GitHub Notifications as canonical (API/gh cli). Email monitoring is optional secondary channel.
+
+WHY=
+Email parsing is brittle. GitHub Notifications reliably represent mentions, review requests, PR/issue activity, etc.
+
+REQUIRED_BEHAVIOR (LOCAL WATCHDOG)=
+- Poll GitHub notifications (gh api /notifications) on a short interval.
+- Surface unread counts in tray/badge.
+- Write receipts (what changed, what was acknowledged).
+- Optionally forward summaries to email.
+
+TERM_PROPOSAL (GIBindex)=
+- CoNotifBridge
+
+END

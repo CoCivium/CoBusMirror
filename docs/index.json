@@ -1,5 +1,35 @@
 [
   {
+    "name": "LATEST__CoBusNote__PUBLIC__CoNotifBridge__LATEST.txt",
+    "lastWriteUtc": "2026-01-18T18:11:24.3186137Z",
+    "sha256": "3fd522f9c47c613c5b1c7ad099e07458f269fde6b6a63f2d8be522b0f4f685c6"
+  },
+  {
+    "name": "LATEST__CoBusNote__PUBLIC__CoContractHub__LATEST.txt",
+    "lastWriteUtc": "2026-01-18T18:11:24.2868268Z",
+    "sha256": "a12f2efe9e4bcde02e95a75593a37e10a97cabd0b92aa220789ea161f3f1a853"
+  },
+  {
+    "name": "LATEST__CoBusNote__PUBLIC__CoStacks_AcceptanceSuite__LATEST.txt",
+    "lastWriteUtc": "2026-01-18T16:41:39.4389079Z",
+    "sha256": "1e05ee25f2b81fe9c85eca2af2e082fa83fa47a9db8efebfb138e420f86e8b7c"
+  },
+  {
+    "name": "LATEST__CoBusNote__PUBLIC__CoBeaconMesh__LATEST.txt",
+    "lastWriteUtc": "2026-01-18T15:51:09.3442105Z",
+    "sha256": "91dc99baa46a6e8b0ed53b6af7cd9aad838642a0468d2675c0d417ff7034f6f1"
+  },
+  {
+    "name": "LATEST__CoBusNote__PUBLIC__ENTMENT__Receipt__20260117T223133Z.txt",
+    "lastWriteUtc": "2026-01-17T22:31:38.2920575Z",
+    "sha256": "a5ac6d956a8bc73532f2d06da3750147f903d63902aa354046b140d413cc1757"
+  },
+  {
+    "name": "LATEST__CoBusNote__PUBLIC__CoBus_Protocol__LATEST.txt",
+    "lastWriteUtc": "2026-01-17T22:20:32.4723480Z",
+    "sha256": "de08bd4bbb29372e5c63d932a908cb3ac1644e76495bd8462537ff4376eb0135"
+  },
+  {
     "name": "LATEST__CoBusNote__PUBLIC__ENTMENT__CoBusMirror_PublicLatest_Sync_Receipt__20260117T212926Z.txt",
     "lastWriteUtc": "2026-01-17T21:29:39.6949762Z",
     "sha256": "3ce6e184baa0a4db768d7ef74f2f356a632de607b48e080ca12ee720e8c5483d"

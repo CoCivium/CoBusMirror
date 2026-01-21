@@ -1,0 +1,43 @@
+PUBLIC_NOTE
+UTC=20260118T164129Z
+PRIME_ID=4.0|PRIME|260116
+TITLE=CoStacks Acceptance Suite v0.1 (PUBLIC LATEST) — Bootstrap+PointerSpec+Carrier Mesh readiness
+STATUS=WARN
+
+CANONICAL_BOOTSTRAP=
+URL_RAW=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt
+
+POINTER_RULE=
+URL_RAW=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__Pointer_Spec__LATEST.txt
+NORM=FULL_URL_ONLY
+
+RESULTS_SUMMARY=
+- pointers_total=10
+- pointers_failed=2
+- local_receipts=C:\Users\Chris\CoStacks\cache\RECEIPTS__costacks_acceptance__20260118T164129Z.txt
+- local_receipts_sha256=74b07ce5b50e20e1ace5d8af8507c4a257541bda1df19889a1bf78bfca1e6dcf
+
+COSTACKS_PLAN_UPGRADES_REQUESTED=
+1) Add "Carrier Mesh" (redundant delivery surfaces) section:
+   - Browser extension (Edge/Chrome)
+   - Tray/daemon ("CoGuardian") always-on watchdog
+   - Mobile app (iOS/Android)
+   - Manual download + CLI installer
+   - Optional PWA fallback
+2) Lockstep rule:
+   - All carriers re-fetch CoBeacon, obey PointerSpec, pull SAME CoStacksRegistry + engine artifact(s).
+   - Carrier semver != engine semver (separate version lanes).
+3) Integrity rule:
+   - sha256 sidecars everywhere (now), signatures later.
+   - cache last-known-good (offline resilience).
+4) Add Acceptance Suite as a first-class artifact:
+   - one command runs bootstrap validation + receipts + CoBux note emit.
+
+TERM_PROPOSAL=
+- TERM=CoBeaconMesh (or CoCarrierMesh)
+- DEFINITION=Redundant distribution carriers that all follow CoBeacon authority and FULL-URL pointers; differ only in UX/platform glue.
+
+COGUARDIAN_NOTE=
+If tray icon is missing, treat as local watchdog not running; rails still depend on CoBeacon+PointerSpec.
+
+END

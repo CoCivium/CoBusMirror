@@ -1,0 +1,46 @@
+PUBLIC_NOTE
+UTC=20260118T155106Z
+PRIME_ID=4.0|PRIME|260116
+TITLE=CoBeaconMesh (PUBLIC LATEST) — Redundant CoStacks Delivery, Lockstep from CoBeacon
+STATUS=DRAFT
+
+CANONICAL_BOOTSTRAP=
+URL_RAW=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt
+SHA256_SEEN=1304f9c3f5fadbbca03dfeefa25565967ec17f6111fde72cd313e2d027ef8ba7
+
+POINTER_RULE=
+URL_RAW=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__Pointer_Spec__LATEST.txt
+NORM=FULL_URL_ONLY
+
+TERM_PROPOSAL=
+TERM=CoBeaconMesh
+INTENT=Duplicate delivery surfaces (extension/app/daemon/CLI/PWA), not authority.
+DEFINITION=
+A strategy where multiple "carriers" distribute CoStacks on every device, but ALL carriers:
+A) reload CoBeacon,
+B) obey PointerSpec (FULL URL only),
+C) pull the same CoStacksRegistry + engine artifacts,
+D) verify sha256 (and later signatures),
+E) cache last-known-good for offline resilience,
+F) differ only in UX + platform glue.
+
+COSTACKS_PLAN_CHANGES_REQUESTED=
+1) Add section: Edge Distribution Matrix (Carriers)
+   - Browser extension (Edge/Chrome)
+   - Tray/daemon ("CoGuardian") always-on watchdog
+   - Mobile app (iOS/Android)
+   - Manual download / CLI
+   - PWA (optional fallback)
+2) Lockstep update rule:
+   - CoBeacon -> CoStacksRegistry -> engine artifact (hash verified)
+   - Carrier version != engine version (separate semver)
+3) Backstop rule:
+   - each carrier ships last-known-good engine + last-known-good CoBeacon sha + optional bootstrap URL list
+4) CoSourceNet term check/add:
+   - define as the network of canonical sources used by carriers (CoBeacon/registries/artifacts/receipts)
+
+NEXT_ACTION_FOR_Co4=
+- Fold this into CoStacks Primer + Registry plan + GIBindex term list.
+- Keep CoBeacon as only bootstrap; keep FULL URL pointers only.
+
+END
