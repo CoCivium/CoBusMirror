@@ -1,0 +1,14 @@
+COBUS_COORDINATION_PLAYBOOK (PUBLIC) UTC=20260121T231543Z
+GOAL=Coordinate parallel sessions via CoBus artifacts (not via chat relays).
+RULES=
+- Every wave READS: CoBeacon RAW + CoBus Index RAW.
+- Sessions WRITE a CoBus note when state-bearing (changes/decisions/breakages/holds).
+- Avoid asking humans to paste receipt lines. Prefer artifact-first receipts:
+  - Write receipt to a file path (local or repo), compute SHA256, and put ONLY (path+sha) in the CoPong/CoBus note.
+CHECK-IN PROTOCOL (for N sessions awaiting instructions)=
+1) CoPrime posts CHECKIN_REQUEST note (lists what each session must report).
+2) Each session posts CHECKIN_RESPONSE note (Status/Holds/Next/BlockingPointers/Receipts).
+3) CoPrime posts DIRECTIVE note (assignments + holds + next wave plan).
+COPOG FORMAT=
+- Use CoPong Spec (PS7 one-line # + space, single physical line) for quick transfers; point to receipt artifacts.
+END

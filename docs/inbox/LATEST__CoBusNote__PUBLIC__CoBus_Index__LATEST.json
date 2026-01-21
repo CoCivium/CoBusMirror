@@ -1,18 +1,21 @@
 {
-  "utc": "20260119T083219Z",
-  "prime_id": "4.0|PRIME|260116",
-  "active_sessions": [
-    {
-      "label": "CoPrime",
-      "role": "prime",
-      "last_note_url": "https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/cobus/notes/CoBusNote__PUBLIC__CoPrime__20260119T083219Z.txt",
-      "status": "ok"
-    }
-  ],
+  "utc": "20260121T231543Z",
+  "prime_id": "4.0|PRIME|260121",
+  "active_sessions": {
+    "label": "CoPrime",
+    "role": "prime",
+    "last_note_url": "https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/cobus/notes/CoBusNote__PUBLIC__CoPrime__20260121T231543Z.txt",
+    "status": "doing"
+  },
   "notes": [
     {
       "utc": "20260119T083219Z",
       "url": "https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/cobus/notes/CoBusNote__PUBLIC__CoPrime__20260119T083219Z.txt",
+      "session": "CoPrime"
+    },
+    {
+      "utc": "20260121T231543Z",
+      "url": "https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/cobus/notes/CoBusNote__PUBLIC__CoPrime__20260121T231543Z.txt",
       "session": "CoPrime"
     }
   ],
