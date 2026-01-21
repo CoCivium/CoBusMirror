@@ -17,7 +17,3 @@ NEXT=
 - Implement registry generator (scan repos -> emit registry -> publish as PUBLIC note + in repo).
 
 END
-# --- Added: CoAudit canonical repo pointer (FULL URL; for CoBeacon bootstrap discovery) ---
-https://github.com/CoCivium/CoAudit
-
-

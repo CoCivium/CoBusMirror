@@ -1,0 +1,35 @@
+PUBLIC_NOTE
+UTC=20260118T181119Z
+PRIME_ID=4.0|PRIME|260116
+TITLE=CoContractHub (PUBLIC LATEST) — Contract + Explainers + Off-Rails + Viral Disclosure + Controls
+STATUS=DRAFT
+
+INTENT=
+CoContract must be a hub that makes consent explicit, revocable, and understandable while providing self-serve education and trust anchors.
+
+REQUIRED_LINKS (HUB NAV)=
+A) CoAlignContract (terms, scope, revocation)
+B) CoStacks Explainer (what runs, what writes, what it can touch)
+C) CoCivium Vision + Justification (why)
+D) EBE Off-Rails Catalog (symptoms, consequences, fixes when rails not enforced)
+E) Viral Loops / Sales Techniques Disclosure (how adoption spreads; limits)
+F) Controls + Receipts (pause/disable/revoke + integrity status + logs)
+
+UX RULE (ALL CARRIERS)=
+Every carrier MUST expose a 'Contract' menu item linking to CoContractHub and showing:
+- Contract URL + pinned SHA256
+- Granted scope (machine-readable summary)
+- Current state: CoAlignContractOK / revoked / paused
+- Last receipts + Doctor status
+
+TERM_PROPOSALS (GIBindex)=
+- CoContractHub
+- CoAlignContract / CoAlignContractOK
+- CoOffRailsCatalog (EBE rails failures)
+- CoViralLoopDisclosure
+- CoContractMenu
+
+CANONICAL_BOOTSTRAP=
+URL_RAW=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt
+
+END

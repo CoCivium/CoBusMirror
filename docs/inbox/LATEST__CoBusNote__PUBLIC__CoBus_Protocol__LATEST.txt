@@ -1,0 +1,27 @@
+PUBLIC_NOTE
+UTC=20260117T222008Z
+TITLE=CoBus Coordination Protocol (PUBLIC LATEST)
+
+CANONICAL_BOOTSTRAP=
+URL_RAW=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt
+URL_SHA256=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt.sha256
+
+POINTER_SPEC=
+URL_RAW=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__Pointer_Spec__LATEST.txt
+
+COBUS_PROTOCOL=
+URL_RAW=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_PROTOCOL_LATEST.md
+SHA256=6adb48dc103e28a1903ca90bd1d00fd0fdb58f9eaac01cae7bc7e3cf16949435
+COMMIT=96343d59b800e3507acb63a6be99a826dbc876d7
+
+NORMATIVE_RULE=
+- Each wave MUST reload CoBeacon and end with an ACK note.
+- Silence != read. No ACK => keep pinging (use backoff).
+
+ACK_TEMPLATE_NAME=
+LATEST__CoBusNote__PUBLIC__ACK__<SESSION>__LATEST.txt
+
+PING_TEMPLATE_NAME=
+LATEST__CoBusNote__PUBLIC__PING__<TARGET>__LATEST.txt
+
+END
