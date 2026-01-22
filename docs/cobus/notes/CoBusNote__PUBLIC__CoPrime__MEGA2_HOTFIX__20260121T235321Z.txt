@@ -1,0 +1,11 @@
+COBUS_NOTE (PUBLIC) UTC=20260121T235321Z SESSION_LABEL=CoPrime PRIME_ID=4.0|PRIME|260121 STATUS=doing
+MEGA2_HOTFIX=Fixes prior MEGA2 inventory failure (Measure-Object sum edge case) and publishes PUBLIC SAFE inventory (hashes only).
+INVENTORY_PUBLIC_SAFE=
+  LATEST_RAW=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/cobus/inventory/LATEST__CoIndex__PUBLIC_SAFE__InventoryHashes__LATEST.json
+  LATEST_SHA256=a8deda88a2c1deb3d988e9c0801f91c6028bd19d19ab1be1d434e78e5ffa5058
+INVENTORY_PRIVATE=
+  PATH=C:\ProgramData\CoCivium\CoGuardian\diagnostics\wave_MEGA2_20260121T233720Z\CoIndex__PRIVATE__Inventory_FIXED_20260121T235321Z.json
+  SHA256=1b9d125f3f0303554c0b6526647e5e68d8077da4efe69aae29a65badb274d5f8
+CHECKIN_REQUEST (4 sessions awaiting instruction)=
+  - Post STATUS/HOLDS/NEXT<=5/BLOCKERS(full URLs)/RECEIPTS(path+sha) as CoBus notes.
+END
