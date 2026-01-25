@@ -1,0 +1,12 @@
+{
+  "version":"0.1",
+  "badges":[
+    {"key":"critique_mode","values":["SoftBall","HardBall"],"icon":"BadgeCritique"},
+    {"key":"directness","range":[0,5],"icon":"BadgeDirect"},
+    {"key":"pace","range":[0,5],"icon":"BadgePace"},
+    {"key":"pushback","range":[0,5],"icon":"BadgePushback"},
+    {"key":"uncertainty_display","values":["minimal","explicit"],"icon":"BadgeUncertainty"},
+    {"key":"affect","values":["neutral","warm"],"icon":"BadgeAffect"},
+    {"key":"risk_posture","values":["conservative","exploratory"],"icon":"BadgeRisk"}
+  ]
+}

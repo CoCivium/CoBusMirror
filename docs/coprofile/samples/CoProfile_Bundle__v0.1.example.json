@@ -1,0 +1,33 @@
+{
+  "coprofile_id": "cp_9b3a1f8e2d4c7a11d0f5b6a9c1e2f3a4",
+  "version": "0.1",
+  "style_prefs": {
+    "critique_mode": "HardBall",
+    "directness": 5,
+    "pace": 2,
+    "pushback": 5,
+    "uncertainty_display": "explicit",
+    "affect": "neutral",
+    "risk_posture": "exploratory"
+  },
+  "consent_scope": {
+    "default": "prefs_only",
+    "contexts": [
+      {"ctx":"chat","allow":["style_prefs"]},
+      {"ctx":"xr_overlay","allow":["style_prefs","pet_owner_type_key"]}
+    ]
+  },
+  "disclosure_min": "prefs_only",
+  "pet_owner_type_key": "B32:DEMOONLY",
+  "receipts": {
+    "consent_receipt_ref": "URL_RAW=https://example.invalid/receipt/demo",
+    "created_at": "2026-01-25T07:41:00Z",
+    "updated_at": "2026-01-25T07:41:00Z",
+    "expires_at": null,
+    "revocation_ref": null
+  },
+  "pointers": [
+    "https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt"
+  ],
+  "signature": null
+}
