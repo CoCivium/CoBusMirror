@@ -1,0 +1,26 @@
+{
+  "items": [
+    {
+      "state": "doing",
+      "repo": "https://github.com/CoCivium/GIBindex",
+      "approval_gate": "merge_to_main",
+      "branch": "we/gibindex_docs_only_20260125T045158Z",
+      "next_action": "CoPrime: review/merge docs-only PR",
+      "notes": "Adds CoGo/CoGoAll + CoS|/CoH| + CoUX docs.",
+      "id": "GIBindex_docs_only_PR",
+      "pr_url": "https://github.com/CoCivium/GIBindex/pull/new/we/gibindex_docs_only_20260125T045158Z"
+    },
+    {
+      "state": "doing",
+      "repo": "https://github.com/CoCivium/CoBusMirror",
+      "approval_gate": "merge_to_main",
+      "branch": "we/costacks_registry_20260125T054828Z",
+      "next_action": "CoPrime: review/merge CoStacks Registry+Primer PR",
+      "notes": "Fills CoBeacon CoStacks pointers post-merge.",
+      "id": "CoBusMirror_CoStacks_PR",
+      "pr_url": "https://github.com/CoCivium/CoBusMirror/pull/new/we/costacks_registry_20260125T054828Z"
+    }
+  ],
+  "version": "0.1",
+  "utc": "20260125T060943Z"
+}
