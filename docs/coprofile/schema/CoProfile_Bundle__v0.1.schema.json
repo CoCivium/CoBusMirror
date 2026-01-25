@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CoProfile Bundle v0.1",
+  "type": "object",
+  "required": ["coprofile_id","version","style_prefs","consent_scope","disclosure_min","pet_owner_type_key","receipts"],
+  "properties": {
+    "coprofile_id": { "type":"string", "minLength": 16 },
+    "version": { "type":"string", "const":"0.1" },
+    "style_prefs": {
+      "type":"object",
+      "required":["critique_mode","directness","pace","pushback","uncertainty_display","affect","risk_posture"],
+      "properties":{
+        "critique_mode":{"type":"string","enum":["SoftBall","HardBall"]},
+        "directness":{"type":"integer","minimum":0,"maximum":5},
+        "pace":{"type":"integer","minimum":0,"maximum":5},
+        "pushback":{"type":"integer","minimum":0,"maximum":5},
+        "uncertainty_display":{"type":"string","enum":["minimal","explicit"]},
+        "affect":{"type":"string","enum":["neutral","warm"]},
+        "risk_posture":{"type":"string","enum":["conservative","exploratory"]}
+      },
+      "additionalProperties": false
+    },
+    "consent_scope": { "type":"object" },
+    "disclosure_min": { "type":"string", "enum":["prefs_only","prefs_plus_receipts"] },
+    "pet_owner_type_key": { "type":"string", "minLength": 10 },
+    "receipts": {
+      "type":"object",
+      "required":["consent_receipt_ref","created_at","updated_at"],
+      "properties":{
+        "consent_receipt_ref":{"type":"string"},
+        "created_at":{"type":"string"},
+        "updated_at":{"type":"string"},
+        "expires_at":{"type":["string","null"]},
+        "revocation_ref":{"type":["string","null"]}
+      },
+      "additionalProperties": true
+    },
+    "pointers": { "type":"array", "items":{"type":"string"} },
+    "signature": { "type":["object","null"] }
+  },
+  "additionalProperties": true
+}
