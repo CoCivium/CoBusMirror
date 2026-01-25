@@ -1,0 +1,11 @@
+{
+  "version":"0.1",
+  "rule":"deny_by_default_then_allow_prefs",
+  "allow":[
+    {"ctx":"chat","fields":["style_prefs","pet_owner_type_key"]},
+    {"ctx":"xr_overlay","fields":["style_prefs","pet_owner_type_key"]}
+  ],
+  "deny":[
+    {"fields":["rep","proofs","trust_score"]}
+  ]
+}

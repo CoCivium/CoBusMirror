@@ -1,0 +1,72 @@
+{
+  "utc": "20260125T080320Z",
+  "version": "0.1",
+  "branch": "we/coprofile_mvp_pack_20260125T080320Z",
+  "items": [
+    {
+      "rel": "docs/coprofile/README.md",
+      "sha256": "b65afad4d8b1ef2469c7b4450b9adf7c169af12173ad7561ae510e676878daa6",
+      "type": "text"
+    },
+    {
+      "rel": "docs/inbox/CoBusNote__PUBLIC__CoProfile_MVP_Pack__v0.1__20260125T080320Z.md",
+      "sha256": "973aa6b162ae022aac8a5ea23995cd7d5177248f9a7f903cf4a0f1796d063ffc",
+      "type": "text"
+    },
+    {
+      "rel": "docs/inbox/CoBusNote__PUBLIC__CoProfile_Bundle_Schema__v0.1__20260125T080320Z.md",
+      "sha256": "458078ff3d5b16580903e392fba6dfd64e760f747bd45134e877388eea6d514f",
+      "type": "text"
+    },
+    {
+      "rel": "docs/inbox/CoBusNote__PUBLIC__PetOwnerType_CardKey_Derivation__v0.1__20260125T080320Z.md",
+      "sha256": "842e447777a81753b886245180ac714a3ebdd4d61659c1c9f6ccc714813507fb",
+      "type": "text"
+    },
+    {
+      "rel": "docs/inbox/CoBusNote__PUBLIC__CoWaveRitual_Wave1_UX_Legend__v0.1__20260125T080320Z.md",
+      "sha256": "ef476091a1a22d1f66ccd5419d8570a3a32d4369d625c4135d3c986052735033",
+      "type": "text"
+    },
+    {
+      "rel": "docs/inbox/CoBusNote__PUBLIC__CoProfile_ThreatModel_AbuseCases__v0.1__20260125T080320Z.md",
+      "sha256": "ca00424bbfb0fd5a1ca23b7878dd995d85b6bfe88417e27153a41392ab7db49f",
+      "type": "text"
+    },
+    {
+      "rel": "docs/inbox/CoBusNote__PUBLIC__CoProfile_BorrowMap__Standards_OSS__v0.1__20260125T080320Z.md",
+      "sha256": "48cb17fa76774b369007afdff73c81b00351ee182dcd4e2daeae8733e4aaf719",
+      "type": "text"
+    },
+    {
+      "rel": "docs/inbox/CoBusNote__PUBLIC__CoProfile_XR_Vendor_MVP__v0.1__20260125T080320Z.md",
+      "sha256": "eddcc9dea9af12ad97587e555a8c47b379d0edf45d382c1f514f7bb8941d8e72",
+      "type": "text"
+    },
+    {
+      "rel": "docs/coprofile/registries/Archetype_Index__v0.1.json",
+      "sha256": "a4839f772a97cd1f5ff0dbf4538b65c8ee314c002109b07ee2b0d1d7cc5f9180",
+      "type": "registry"
+    },
+    {
+      "rel": "docs/coprofile/registries/Badge_Index__v0.1.json",
+      "sha256": "ec0114f85f2ea2aae5c135190a9978818edf8c4b4922844f4682b703d2d5651f",
+      "type": "registry"
+    },
+    {
+      "rel": "docs/coprofile/samples/CoProfile_Bundle__v0.1.example.json",
+      "sha256": "7cd4fb92a3ed9bc58ed6fafce0d6eec013b582cb92fa00a32d74d95ad765a76d",
+      "type": "sample"
+    },
+    {
+      "rel": "docs/coprofile/samples/ConsentPolicy__seed.example.json",
+      "sha256": "5d7d9f2d1984f1b9ca37448cc58df069d0adba1b44358e3fc5f6fc43337d3950",
+      "type": "sample"
+    },
+    {
+      "rel": "tools/coprofile/README.md",
+      "sha256": "5d27c955c0518592f626cbdcde97d04b537b3fd6453ea936c76da06777e3ee71",
+      "type": "text"
+    }
+  ]
+}
