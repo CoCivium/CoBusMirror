@@ -16,3 +16,8 @@ END
 # REQUIRE: If assistant cannot provide at least one DO block, it must output only:
 #   ## 0[WaveHeader] (STATE=blocked + why) and ## 1[Footer]
 # END_RAILS_ADDENDUM
+# RAILS_ADDENDUM_COPONG_ADDRESSING UTC=20260126T041357Z
+# REQUIRE: CoPong TO= MUST be a receiver label visible to the user (examples: a specific session label like 4.0|PRIME|260125; or 4.0|PRIME|AllSessions; or a repo label like CoBusMirror).
+# REQUIRE: CoPong FROM= MUST describe the sender (session/repo); DO NOT use FROM=you-to-you semantics.
+# REQUIRE: FROM and TO MUST NOT be identical strings.
+# END_RAILS_ADDENDUM
