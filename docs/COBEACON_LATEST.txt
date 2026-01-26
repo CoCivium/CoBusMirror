@@ -1,10 +1,13 @@
-COBEACON_LATEST (FULL URL POINTERS ONLY)
-UTC=20260120T215143Z
+COBEACON_LATEST (FULL URL POINTERS ONLY) UTC=20260126T040146Z
 START_HERE (FULL URL POINTERS)=
 - CoRepoPreflight Rail: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoRepoPreflight_Rail__LATEST.ps1
-- PointerSpec: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__Pointer_Spec__LATEST.txt - CoPong Spec: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoPong_Spec__LATEST.txt
-- CoStacks Registry: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/CoStacks/CoStacks_Registry_LATEST.md CoStacks Primer: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/CoStacks/CoStacks_Primer_LATEST.md CoBus Spec: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoBus_Spec__LATEST.txt
+- TypedSectionRails: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__TypedSectionRails__LATEST.txt
+- PointerSpec: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__Pointer_Spec__LATEST.txt
+- CoPong Spec: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoPong_Spec__LATEST.txt
+- CoStacks Registry: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/CoStacks/CoStacks_Registry_LATEST.md
+- CoStacks Primer: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/CoStacks/CoStacks_Primer_LATEST.md
+- CoBus Spec: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoBus_Spec__LATEST.txt
 - CoBus Index: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoBus_Index__LATEST.json
 - CoPre WaveHeader: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoPre_WaveHeader__LATEST.txt
 END
-MasterPlan Pointer Status: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/MasterPlan/MasterPlan_Pointer_Status_LATEST.md
+- MasterPlan Pointer Status: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/MasterPlan/MasterPlan_Pointer_Status_LATEST.md
