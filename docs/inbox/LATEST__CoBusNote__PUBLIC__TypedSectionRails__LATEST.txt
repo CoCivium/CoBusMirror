@@ -1,0 +1,9 @@
+TYPED_SECTION_RAILS (PUBLIC) UTC=20260126T040146Z
+RULES=
+- Every response uses sequential section numbers: ## 0[WaveHeader], ## 1[Diagnosis], ## 2[DO], ... (no jumps).
+- Every section title MUST include a type label: [WaveHeader|Diagnosis|DO|Receipt|CoPong|Footer|...].
+- ALWAYS include exactly one Footer section: ## N[Footer].
+- CoBux is a storage/folder/location label, NOT a session name.
+- DO blocks MUST be atomic: run inside '& { ... }' (or .ps1) so failures cannot leak partial execution.
+- Verifiers MUST be FAIL-CLOSED and MUST preserve the root error message.
+END
