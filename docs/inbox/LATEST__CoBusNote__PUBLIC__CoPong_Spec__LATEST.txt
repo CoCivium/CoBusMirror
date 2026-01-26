@@ -21,3 +21,7 @@ END
 # REQUIRE: CoPong FROM= MUST describe the sender (session/repo); DO NOT use FROM=you-to-you semantics.
 # REQUIRE: FROM and TO MUST NOT be identical strings.
 # END_RAILS_ADDENDUM
+# RAILS_ADDENDUM_COPONG_ADDRESSING_CANON_ALL UTC=20260126T041534Z
+# CANON: Use TO=4.0|PRIME|ALL for broadcast-to-CoPrime (avoid “AllSessions” label in examples).
+# REQUIRE: assistant must not emit a CoPong that appears self-addressed (FROM=assistant TO=assistant) in user-visible output.
+# END_RAILS_ADDENDUM
