@@ -1,12 +1,4 @@
-# CoCivium standard text normalization
-* text=auto eol=lf
-
-# Explicit common types
-*.md  text eol=lf
-*.txt text eol=lf
-*.json text eol=lf
-*.html text eol=lf
-*.ps1 text eol=lf
-*.psm1 text eol=lf
-*.yml text eol=lf
-*.yaml text eol=lf
+# CoBusMirror: lock CoStacks scope to LF to keep sha256 stable across platforms
+docs/inbox/** text eol=lf
+tools/**     text eol=lf
+*.sha256     text eol=lf
