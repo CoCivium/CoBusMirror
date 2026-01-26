@@ -21,3 +21,15 @@ An item counts DONE only when ALL are true:
 ## Emission
 - Show ALR_v1 only at milestones (every ~5–15 waves or when an ALR rung flips).
 - Keep ALR_v1 visually distinct from ML1 (session ladders).
+
+## ADDENDUM_ALR_LOCAL_VS_CANONICAL_TIERS UTC=20260126T061541Z
+ALR's 'local' is NOT geography. It is about reconstructibility + receipts.
+
+### Tiers
+- Ephemeral local: chat/session memory, platform UI state, clipboard. NEVER counts as DONE.
+- Device local: a laptop folder without receipts/hashes. Does NOT count as DONE.
+- Canonical local (Vault/server): CAN count as DONE if it has stable paths + receipts/hashes + backup discipline.
+- Public canonical (GitHub): CAN count as DONE when content+sha are in origin/main and RAW-verified.
+
+### Rule
+'DONE' means reconstructible from canonical sources with verifiable receipts/hashes.
