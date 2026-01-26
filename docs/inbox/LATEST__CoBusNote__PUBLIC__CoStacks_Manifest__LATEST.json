@@ -1,0 +1,72 @@
+{
+  "schema": "CoStacksManifest.v1",
+  "utc": "20260126T194859Z",
+  "total_rungs": 8,
+  "rungs": [
+    {
+      "name": "ML1",
+      "done": true,
+      "n": 1,
+      "evidence": [
+        "docs/inbox/LATEST__CoBusNote__PUBLIC__CoMilestoneLadder_Spec__LATEST.md"
+      ]
+    },
+    {
+      "name": "CoPong",
+      "done": true,
+      "n": 2,
+      "evidence": [
+        "docs/inbox/LATEST__CoBusNote__PUBLIC__CoPong_Spec__LATEST.md"
+      ]
+    },
+    {
+      "name": "ALR",
+      "done": true,
+      "n": 3,
+      "evidence": [
+        "docs/inbox/LATEST__CoBusNote__PUBLIC__ALR_v1_Spec__LATEST.md"
+      ]
+    },
+    {
+      "name": "SessionEnv",
+      "done": true,
+      "n": 4,
+      "evidence": [
+        "docs/inbox/LATEST__CoBusTool__PUBLIC__Set-CoSessionEnv__LATEST.ps1"
+      ]
+    },
+    {
+      "name": "RepoIdentityGuard",
+      "done": true,
+      "n": 5,
+      "evidence": [
+        "docs/inbox/LATEST__CoBusTool__PUBLIC__Assert-CoRepoIdentity__LATEST.ps1"
+      ]
+    },
+    {
+      "name": "BootstrapOneLiner",
+      "done": true,
+      "n": 6,
+      "evidence": [
+        "docs/inbox/LATEST__CoBusTool__PUBLIC__Invoke-CoStacksBootstrap__LATEST.ps1"
+      ]
+    },
+    {
+      "name": "Manifest",
+      "done": true,
+      "n": 7,
+      "evidence": [
+        "docs/inbox/LATEST__CoBusNote__PUBLIC__CoStacks_Manifest__LATEST.json"
+      ]
+    },
+    {
+      "name": "Enforcement",
+      "done": false,
+      "n": 8,
+      "evidence": [
+        "tools/verify-sha-sidecars.ps1",
+        ".github/workflows/sha-sidecars.yml"
+      ]
+    }
+  ]
+}
