@@ -25,3 +25,10 @@ END
 # CANON: Use TO=4.0|PRIME|ALL for broadcast-to-CoPrime (avoid “AllSessions” label in examples).
 # REQUIRE: assistant must not emit a CoPong that appears self-addressed (FROM=assistant TO=assistant) in user-visible output.
 # END_RAILS_ADDENDUM
+# RAILS_ADDENDUM_COPONG_ADDRESSING_CANON_RUNTIME UTC=20260126T042535Z
+# CANON (NOW): Use TO=4.0|PRIME|260125 for broadcast-to-CoPrime (because only one PRIME session is active now).
+# ALLOW (LATER): TO=4.0|PRIME|ALL is allowed only when multiple PRIME sessions exist (do not imply they exist).
+# ALLOW: TO may be an active non-PRIME session label (examples: CoHalo, CoShare_Migration_2) when the receiver is that session.
+# REQUIRE: Do NOT emit user-visible CoPongs that appear self-addressed (FROM=assistant TO=assistant).
+# REQUIRE: Prefer not to overload the user as a relay while CoBus is still settling; keep CoPongs self-contained with URLs/SHAs when possible.
+# END_RAILS_ADDENDUM
