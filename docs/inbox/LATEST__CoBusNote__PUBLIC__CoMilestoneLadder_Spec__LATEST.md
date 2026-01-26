@@ -35,3 +35,11 @@ Emit ML1 only:
 ## Addressing note (anti-confusion)
 TO/FROM in CoPongs are chat-session labels only. Repos are not sessions.
 If a note targets a repo, use `REPO=Org/Repo` as a separate field.
+
+## ADDENDUM_ML1_LANE_AND_MAXLINES UTC=20260126T054941Z
+- OPTIONAL: add LANE= to ML1 to support multiple ladders in one session without confusing the mainline.
+  - Example (mainline): ML1 S=SES ID=CoShare_Migration_2 LANE=main M=3/8 N=4 X=5 EXT=OPT C=0.8 T=M
+  - Example (side quest): ML1 S=SES ID=CoShare_Migration_2 LANE=side:tools M=1/3 N=2 X=2 EXT=- C=0.7 T=L
+- HARD CAP: emit at most **3 ML1 lines** at a time (otherwise it becomes bloat, not relief).
+- RULE: If multiple ML1 lines exist, one MUST be LANE=main (or LANE=core) to anchor the user’s sanity line.
+- RULE: Side lanes MUST be prefixed side: (examples: side:docs, side:tools, side:debug).
