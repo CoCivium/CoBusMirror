@@ -2,13 +2,65 @@
   "version": "0.1",
   "updated_utc": "20260127T__AUTO__Z",
   "milestones": [
-    { "id": "M01-CoBeacon",         "state": "PASS",  "owner": "CoPrime", "note": "Canonical pointer set uses RAW URLs + sha sidecars." },
-    { "id": "M02-CoNotesV7",        "state": "PASS",  "owner": "CoPrime", "note": "Emit-CoNotes v7 is default PS7 copy-safe emission." },
-    { "id": "M03-CoStacksManifest", "state": "PASS",  "owner": "CoPrime", "note": "This PUBLIC manifest exists + sha sidecar exists." },
-    { "id": "M04-ChatPackSchema",   "state": "HOLD",  "owner": "CoPrime", "note": "Need one canonical path + RAW URL + sha/receipt, in CoBeacon." },
-    { "id": "M05-CoBusRoutingIds",  "state": "DOING", "owner": "CoPrime", "note": "Stabilize TO/FROM identifiers and fail-closed routing." },
-    { "id": "M06-TelemetryBin",     "state": "DOING", "owner": "CoFutures","note": "Telemetry Bin exists; needs BatchId policy to proceed." },
-    { "id": "M07-CoCarryLanding",   "state": "HOLD",  "owner": "CoSources","note": "Blocked on canonical CoSources repo FULL URL in CoBeacon." },
-    { "id": "M08-CoStacksMVP",      "state": "TODO",  "owner": "CoPrime", "note": "Define MVP stack set + gates + receipts; sprint to PASS." }
+    {
+      "id": "M01-CoBeacon",
+      "state": "PASS",
+      "owner": "CoPrime",
+      "note": "Canonical pointer set uses RAW URLs + sha sidecars."
+    },
+    {
+      "id": "M02-CoNotesV7",
+      "state": "PASS",
+      "owner": "CoPrime",
+      "note": "Emit-CoNotes v7 is default PS7 copy-safe emission."
+    },
+    {
+      "id": "M03-CoStacksManifest",
+      "state": "PASS",
+      "owner": "CoPrime",
+      "note": "This PUBLIC manifest exists + sha sidecar exists."
+    },
+    {
+      "id": "M04-ChatPackSchema",
+      "state": "HOLD",
+      "owner": "CoPrime",
+      "note": "Need one canonical path + RAW URL + sha/receipt, in CoBeacon."
+    },
+    {
+      "id": "M05-CoBusRoutingIds",
+      "state": "DOING",
+      "owner": "CoPrime",
+      "note": "Stabilize TO/FROM identifiers and fail-closed routing."
+    },
+    {
+      "id": "M06-TelemetryBin",
+      "state": "DOING",
+      "owner": "CoFutures",
+      "note": "Telemetry Bin exists; needs BatchId policy to proceed."
+    },
+    {
+      "id": "M07-CoCarryLanding",
+      "state": "HOLD",
+      "owner": "CoSources",
+      "note": "Blocked on canonical CoSources repo FULL URL in CoBeacon."
+    },
+    {
+      "id": "M08-CoStacksMVP",
+      "state": "TODO",
+      "owner": "CoPrime",
+      "note": "Define MVP stack set + gates + receipts; sprint to PASS."
+    },
+    {
+      "id": "M09-CoSessionsProtocol",
+      "state": "PASS",
+      "owner": "CoPrime",
+      "note": "CoSessions protocol landed (sessions-as-agents + header rule + routing rule)."
+    },
+    {
+      "id": "M10-CoSidRegistry",
+      "state": "DOING",
+      "owner": "CoPrime",
+      "note": "Canonical session routing directory exists; needs adoption by all bus tools."
+    }
   ]
 }
