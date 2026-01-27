@@ -1,60 +1,68 @@
-<# Emit-CoNotes (PUBLIC, LATEST) FAIL-CLOSED.
-   Prints PS7-friendly copy blocks for SideNote/CoPong. One-line output; TO-first fields.
-   Highlights literal word SideNote (black-on-amber) and CoPong (black-on-magenta) in console ONLY.
-   Example:
-     & .\docs\inbox\LATEST__CoBusTool__PUBLIC__Emit-CoNotes__LATEST.ps1 -Kind SideNote -From 'X' -To @('Y') -Intent @('...') -State doing -Utc '20260126T__AUTO__Z'
-#>
+<# Emit-CoNotes (PUBLIC, LATEST) FAIL-CLOSED. #>
 param(
   [Parameter(Mandatory=$true)][ValidateSet('SideNote','CoPong')] [string]$Kind,
-  [Parameter(Mandatory=$true)][string]$From,
+  [Parameter(Mandatory=$false)][string]$From,
   [Parameter(Mandatory=$true)][string[]]$To,
   [Parameter(Mandatory=$true)][string[]]$Intent,
   [Parameter(Mandatory=$true)][ValidateSet('doing','hold','done')] [string]$State,
-  [Parameter(Mandatory=$true)][string]$Utc
+  [Parameter(Mandatory=$true)][string]$Utc,
+  [switch]$FromEnv,
+  [string]$CoSidRegistryPath = '.\docs\protocols\CoBus\CoSidRegistry__LATEST.json',
+  [switch]$AllowUnknownIds
 )
-
 Set-StrictMode -Version Latest
 $ErrorActionPreference='Stop'
-
 function Fail([string]$m){ throw "FAIL-CLOSED: $m" }
 function OneLine([string]$s){ ($s -replace "(\r?\n)+"," " -replace "\s{2,}"," ").Trim() }
 
-$from = $From.Trim()
-if([string]::IsNullOrWhiteSpace($from)){ Fail "Empty -From" }
 if($To.Count -ne $Intent.Count){ Fail "Count mismatch: -To must equal -Intent" }
+if(-not (Test-Path -LiteralPath $CoSidRegistryPath)){ Fail ("Missing CoSid registry: {0}" -f $CoSidRegistryPath) }
 
-$dimMsg = "<<< COPY $Kind (TRIPLE-CLICK NEXT LINE) >>>"
-$endMsg = "<<< END $Kind >>>"
-
-function Write-HighlightedKindLine([string]$line,[string]$kind){
-  $line = OneLine $line
-  $i = $line.IndexOf($kind,[System.StringComparison]::Ordinal)
-  if($i -lt 0){ Write-Host $line -ForegroundColor DarkYellow; return }
-
-  $pre  = $line.Substring(0,$i)
-  $post = $line.Substring($i + $kind.Length)
-
-  Write-Host $pre -NoNewline -ForegroundColor DarkYellow
-  if($kind -eq 'SideNote'){
-    Write-Host $kind -NoNewline -ForegroundColor Black -BackgroundColor DarkYellow
-  } else {
-    Write-Host $kind -NoNewline -ForegroundColor Black -BackgroundColor Magenta
+$reg = Get-Content -LiteralPath $CoSidRegistryPath -Raw | ConvertFrom-Json
+$map=@{}
+foreach($s in @($reg.sessions)){
+  $label=($s.label|ForEach-Object{$_.ToString()}).Trim()
+  if(-not [string]::IsNullOrWhiteSpace($label)){ $map[$label.ToUpperInvariant()]=$label }
+  foreach($a in @($s.aliases)){
+    $aa=($a|ForEach-Object{$_.ToString()}).Trim()
+    if(-not [string]::IsNullOrWhiteSpace($aa)){ $map[$aa.ToUpperInvariant()]=$label }
   }
-  Write-Host $post -ForegroundColor DarkYellow
+}
+function ResolveId([string]$x,[string]$field){
+  $t=($x|ForEach-Object{$_.ToString()}).Trim()
+  if([string]::IsNullOrWhiteSpace($t)){ Fail ("Empty {0}" -f $field) }
+  $k=$t.ToUpperInvariant()
+  if($map.ContainsKey($k)){ return $map[$k] }
+  if($AllowUnknownIds){ return $t }
+  Fail ("Unknown {0} '{1}' (not in CoSidRegistry)." -f $field,$t)
 }
 
-function Show([string]$line){
-  Write-Host ""
-  Write-Host $dimMsg -ForegroundColor DarkGray
-  Write-HighlightedKindLine $line $Kind
-  Write-Host $endMsg -ForegroundColor DarkGray
-  Write-Host ""
+$envFrom=($env:CO_SESSION_LABEL|ForEach-Object{$_.ToString()}).Trim()
+$rawFrom=$null
+if($FromEnv -or [string]::IsNullOrWhiteSpace($From)){
+  if([string]::IsNullOrWhiteSpace($envFrom)){ Fail "FROM missing and CO_SESSION_LABEL empty." }
+  $rawFrom=$envFrom
+}else{
+  $rawFrom=$From.Trim()
+  if(-not [string]::IsNullOrWhiteSpace($envFrom)){
+    $canonEnv=ResolveId $envFrom 'FROM(env)'
+    $canonArg=ResolveId $rawFrom 'FROM(arg)'
+    if($canonEnv -ne $canonArg){ Fail ("FROM mismatch arg='{0}' env='{1}' (use -FromEnv)." -f $canonArg,$canonEnv) }
+  }
+}
+$fromCanon=ResolveId $rawFrom 'FROM'
+
+function ValidateLine([string]$line){
+  if($line -match "(\r|\n)"){ Fail "Emitter newline" }
+  if($line -match '#><#'){ Fail "Emitter glued blocks '#><#'" }
+  if(-not ($line.Trim().StartsWith('# <# # '))){ Fail "Bad prefix" }
+  if(-not ($line.Trim().EndsWith(' END #>'))){ Fail "Bad suffix" }
 }
 
 for($k=0; $k -lt $To.Count; $k++){
-  $to = $To[$k].Trim()
-  if([string]::IsNullOrWhiteSpace($to)){ Fail "Empty TO at index $k" }
-  if($to -eq $from){ Fail "Refusing FROM==TO ($from)" }
-  $line = "# <# # $Kind | TO=$to | FROM=$from | UTC=$Utc | STATE=$State | INTENT=$($Intent[$k]) END #>"
-  Show $line
+  $toCanon=ResolveId $To[$k] ("TO[{0}]" -f $k)
+  if($toCanon -eq $fromCanon){ Fail ("Refusing FROM==TO ({0})" -f $fromCanon) }
+  $line=OneLine( ("# <# # {0} | TO={1} | FROM={2} | UTC={3} | STATE={4} | INTENT={5} END #>" -f $Kind,$toCanon,$fromCanon,$Utc,$State,$Intent[$k]) )
+  ValidateLine $line
+  Write-Output $line
 }
