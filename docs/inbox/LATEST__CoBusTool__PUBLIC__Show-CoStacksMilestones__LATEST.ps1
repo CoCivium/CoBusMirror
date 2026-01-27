@@ -59,7 +59,7 @@ for($i=0; $i -lt $r.Count; $i++){
   $st = NormState $stRaw
   if(-not $counts.ContainsKey($st)){ $st='UNKNOWN' }
   $counts[$st]++
-  $tags.Add("[$name:$st]") | Out-Null
+  $tags.Add( ("[{0}:{1}]" -f $name,$st) ) | Out-Null
 }
 
 $bar = ($tags -join '')
