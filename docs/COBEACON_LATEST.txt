@@ -11,3 +11,11 @@ START_HERE (FULL URL POINTERS)=
 - CoPre WaveHeader: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoPre_WaveHeader__LATEST.txt
 END
 - MasterPlan Pointer Status: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/MasterPlan/MasterPlan_Pointer_Status_LATEST.md
+
+# CoNotes v7: PS7 copy-safe SideNote/CoPong emitter (TO-first; highlights Kind word)
+https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusTool__PUBLIC__Emit-CoNotes__LATEST.ps1
+https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusTool__PUBLIC__Emit-CoNotes__LATEST.ps1.sha256
+
+# CoStacks: milestones bar-line renderer (reads manifest; schema-tolerant)
+https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusTool__PUBLIC__Show-CoStacksMilestones__LATEST.ps1
+https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusTool__PUBLIC__Show-CoStacksMilestones__LATEST.ps1.sha256
