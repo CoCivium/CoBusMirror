@@ -22,15 +22,15 @@
     },
     {
       "id": "M04-ChatPackSchema",
-      "state": "HOLD",
+      "state": "PASS",
       "owner": "CoPrime",
-      "note": "Need one canonical path + RAW URL + sha/receipt, in CoBeacon."
+      "note": "ChatPack schema landed in CoBusMirror + CoBeacon pointer + sha sidecar."
     },
     {
       "id": "M05-CoBusRoutingIds",
-      "state": "DOING",
+      "state": "PASS",
       "owner": "CoPrime",
-      "note": "Stabilize TO/FROM identifiers and fail-closed routing."
+      "note": "MVP PASS: Emit-CoNotes validates FROM/TO via CoSidRegistry and supports -FromEnv hard-pin to prevent label drift."
     },
     {
       "id": "M06-TelemetryBin",
@@ -58,9 +58,9 @@
     },
     {
       "id": "M10-CoSidRegistry",
-      "state": "DOING",
+      "state": "PASS",
       "owner": "CoPrime",
-      "note": "Canonical session routing directory exists; needs adoption by all bus tools."
+      "note": "MVP PASS: CoSidRegistry exists + referenced; used by Emit-CoNotes validation. Further adoption can be tracked by a later milestone."
     }
   ]
 }
