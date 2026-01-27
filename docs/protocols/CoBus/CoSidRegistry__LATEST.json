@@ -1,0 +1,12 @@
+{
+  "version": "0.1",
+  "updated_utc": "20260127T__AUTO__Z",
+  "note": "Authoritative session routing directory. Unknown => HOLD. CoPrime is the only writer; others request updates via SideNote/CoPong.",
+  "sessions": [
+    { "sid": "SID-PRIME", "label": "4.0|PRIME|260125", "type": "ORCH",  "aliases": ["CoPrime","PRIME"], "state": "ACTIVE" },
+    { "sid": "SID-HALO",  "label": "CoHalo",          "type": "JUDGE", "aliases": [],               "state": "ACTIVE" },
+    { "sid": "SID-FUT",   "label": "CoFutures",       "type": "RESEARCH", "aliases": [],            "state": "ACTIVE" },
+    { "sid": "SID-SRC",   "label": "CoSources",       "type": "KNOWLEDGE", "aliases": [],           "state": "ACTIVE" },
+    { "sid": "SID-SHARE", "label": "CoShare_Migration_3", "type": "MIGRATION", "aliases": ["CoShare_Migration_2"], "state": "ACTIVE" }
+  ]
+}
