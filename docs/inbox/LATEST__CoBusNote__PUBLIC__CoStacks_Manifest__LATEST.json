@@ -1,72 +1,14 @@
 {
-  "schema": "CoStacksManifest.v1",
-  "utc": "20260126T194859Z",
-  "total_rungs": 8,
-  "rungs": [
-    {
-      "name": "ML1",
-      "done": true,
-      "n": 1,
-      "evidence": [
-        "docs/inbox/LATEST__CoBusNote__PUBLIC__CoMilestoneLadder_Spec__LATEST.md"
-      ]
-    },
-    {
-      "name": "CoPong",
-      "done": true,
-      "n": 2,
-      "evidence": [
-        "docs/inbox/LATEST__CoBusNote__PUBLIC__CoPong_Spec__LATEST.md"
-      ]
-    },
-    {
-      "name": "ALR",
-      "done": true,
-      "n": 3,
-      "evidence": [
-        "docs/inbox/LATEST__CoBusNote__PUBLIC__ALR_v1_Spec__LATEST.md"
-      ]
-    },
-    {
-      "name": "SessionEnv",
-      "done": true,
-      "n": 4,
-      "evidence": [
-        "docs/inbox/LATEST__CoBusTool__PUBLIC__Set-CoSessionEnv__LATEST.ps1"
-      ]
-    },
-    {
-      "name": "RepoIdentityGuard",
-      "done": true,
-      "n": 5,
-      "evidence": [
-        "docs/inbox/LATEST__CoBusTool__PUBLIC__Assert-CoRepoIdentity__LATEST.ps1"
-      ]
-    },
-    {
-      "name": "BootstrapOneLiner",
-      "done": true,
-      "n": 6,
-      "evidence": [
-        "docs/inbox/LATEST__CoBusTool__PUBLIC__Invoke-CoStacksBootstrap__LATEST.ps1"
-      ]
-    },
-    {
-      "name": "Manifest",
-      "done": true,
-      "n": 7,
-      "evidence": [
-        "docs/inbox/LATEST__CoBusNote__PUBLIC__CoStacks_Manifest__LATEST.json"
-      ]
-    },
-    {
-      "name": "Enforcement",
-      "done": false,
-      "n": 8,
-      "evidence": [
-        "tools/verify-sha-sidecars.ps1",
-        ".github/workflows/sha-sidecars.yml"
-      ]
-    }
+  "version": "0.1",
+  "updated_utc": "20260127T__AUTO__Z",
+  "milestones": [
+    { "id": "M01-CoBeacon",         "state": "PASS",  "owner": "CoPrime", "note": "Canonical pointer set uses RAW URLs + sha sidecars." },
+    { "id": "M02-CoNotesV7",        "state": "PASS",  "owner": "CoPrime", "note": "Emit-CoNotes v7 is default PS7 copy-safe emission." },
+    { "id": "M03-CoStacksManifest", "state": "PASS",  "owner": "CoPrime", "note": "This PUBLIC manifest exists + sha sidecar exists." },
+    { "id": "M04-ChatPackSchema",   "state": "HOLD",  "owner": "CoPrime", "note": "Need one canonical path + RAW URL + sha/receipt, in CoBeacon." },
+    { "id": "M05-CoBusRoutingIds",  "state": "DOING", "owner": "CoPrime", "note": "Stabilize TO/FROM identifiers and fail-closed routing." },
+    { "id": "M06-TelemetryBin",     "state": "DOING", "owner": "CoFutures","note": "Telemetry Bin exists; needs BatchId policy to proceed." },
+    { "id": "M07-CoCarryLanding",   "state": "HOLD",  "owner": "CoSources","note": "Blocked on canonical CoSources repo FULL URL in CoBeacon." },
+    { "id": "M08-CoStacksMVP",      "state": "TODO",  "owner": "CoPrime", "note": "Define MVP stack set + gates + receipts; sprint to PASS." }
   ]
 }

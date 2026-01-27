@@ -19,3 +19,7 @@ https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__C
 # CoStacks: milestones bar-line renderer (reads manifest; schema-tolerant)
 https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusTool__PUBLIC__Show-CoStacksMilestones__LATEST.ps1
 https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusTool__PUBLIC__Show-CoStacksMilestones__LATEST.ps1.sha256
+
+# CoStacks: PUBLIC manifest (milestones bar-line input)
+https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoStacks_Manifest__LATEST.json
+https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoStacks_Manifest__LATEST.json.sha256
