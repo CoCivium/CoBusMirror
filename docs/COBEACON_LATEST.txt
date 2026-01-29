@@ -42,5 +42,6 @@ CoSourceID.RECEIPT.sha256: https://raw.githubusercontent.com/CoCivium/CoBusMirro
 CoSourceID Pack ZIP (pickup): https://raw.githubusercontent.com/CoCivium/CoSources/0c00fa6fe4adea2d027c783bdc33aacccb4c3c72/docs/hold/CoCarry/packs/PACK__CoSourceID__v0__20260129T200324Z/PACK__CoSourceID__v0__20260129T200324Z.zip
 CoSourceID Pack ZIP sha256: https://raw.githubusercontent.com/CoCivium/CoSources/0c00fa6fe4adea2d027c783bdc33aacccb4c3c72/docs/hold/CoCarry/packs/PACK__CoSourceID__v0__20260129T200324Z/PACK__CoSourceID__v0__20260129T200324Z.zip.sha256
 
+
 # CoSideNote (PowerShell) — reverse-video SIDENOTE banner + green one-line printer
-CoSideNote.ps1: https://raw.githubusercontent.com/CoCivium/CoBusMirror/6e199b6a71c96bbbc6db050a6f4bb31a08c71eb4/docs/standards/CoStatus/tools/CoSideNote.ps1
+CoSideNote.ps1: https://raw.githubusercontent.com/CoCivium/CoBusMirror/05b0414234bd6b7a264cfb666f3aaab255302784/docs/standards/CoStatus/tools/CoSideNote.ps1
