@@ -27,3 +27,10 @@ https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__C
 # CoBus: Test-CoBusLine (detect glued blocks + newline violations; FAIL-CLOSED)
 https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusTool__PUBLIC__Test-CoBusLine__LATEST.ps1
 https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusTool__PUBLIC__Test-CoBusLine__LATEST.ps1.sha256
+
+# CoStatus vNext (commit-SHA RAW pointers)
+CoStatusCard.vNext: https://raw.githubusercontent.com/CoCivium/CoBusMirror/f1d51d5d9bf0b801c9667afed0c5ce252dd6717c/docs/standards/CoStatus/CoStatusCard/CoStatusCard.vNext.md
+CoFooterSchema.vNext: https://raw.githubusercontent.com/CoCivium/CoBusMirror/f1d51d5d9bf0b801c9667afed0c5ce252dd6717c/docs/standards/CoStatus/CoFooterSchema/CoFooterSchema.vNext.md
+Template CoStatusCard: https://raw.githubusercontent.com/CoCivium/CoBusMirror/f1d51d5d9bf0b801c9667afed0c5ce252dd6717c/docs/standards/CoStatus/templates/CoStatusCard_TEMPLATE.md
+Template CoFooter: https://raw.githubusercontent.com/CoCivium/CoBusMirror/f1d51d5d9bf0b801c9667afed0c5ce252dd6717c/docs/standards/CoStatus/templates/CoFooter_TEMPLATE.md
+Example: https://raw.githubusercontent.com/CoCivium/CoBusMirror/f1d51d5d9bf0b801c9667afed0c5ce252dd6717c/docs/standards/CoStatus/examples/Example_CoStatusCard__vNext.md
