@@ -1,0 +1,16 @@
+{
+  "term": "CoSourceID",
+  "version": "v0",
+  "policy": {
+    "alias_mode": "alias-as-copy-sync",
+    "sha256_format": "sha256sum '<hash> <filename>' compare first token only",
+    "resolution": "fail-closed",
+    "from_to": "explicit or registry resolution only"
+  },
+  "pickup": {
+    "pack_commit": "0c00fa6fe4adea2d027c783bdc33aacccb4c3c72",
+    "pickup_url_raw": "https://raw.githubusercontent.com/CoCivium/CoSources/0c00fa6fe4adea2d027c783bdc33aacccb4c3c72/docs/hold/CoCarry/packs/PACK__CoSourceID__v0__20260129T200324Z/PACK__CoSourceID__v0__20260129T200324Z.zip",
+    "zip_sha256_file": "https://raw.githubusercontent.com/CoCivium/CoSources/0c00fa6fe4adea2d027c783bdc33aacccb4c3c72/docs/hold/CoCarry/packs/PACK__CoSourceID__v0__20260129T200324Z/PACK__CoSourceID__v0__20260129T200324Z.zip.sha256"
+  },
+  "landing_dest": "CoCivium/CoBusMirror:docs/MasterPlan/Appendix/CoSourceID/"
+}
