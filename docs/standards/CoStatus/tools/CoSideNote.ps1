@@ -32,4 +32,4 @@ function Out-CoSideNote {
   Write-Host (ConvertTo-CoOneLine $SideNoteLine) -ForegroundColor DarkGreen
 }
 
-Export-ModuleMember -Function ConvertTo-CoOneLine, New-CoSideNoteLine, Out-CoSideNote -ErrorAction SilentlyContinue
+
