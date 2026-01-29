@@ -34,3 +34,10 @@ CoFooterSchema.vNext: https://raw.githubusercontent.com/CoCivium/CoBusMirror/f1d
 Template CoStatusCard: https://raw.githubusercontent.com/CoCivium/CoBusMirror/f1d51d5d9bf0b801c9667afed0c5ce252dd6717c/docs/standards/CoStatus/templates/CoStatusCard_TEMPLATE.md
 Template CoFooter: https://raw.githubusercontent.com/CoCivium/CoBusMirror/f1d51d5d9bf0b801c9667afed0c5ce252dd6717c/docs/standards/CoStatus/templates/CoFooter_TEMPLATE.md
 Example: https://raw.githubusercontent.com/CoCivium/CoBusMirror/f1d51d5d9bf0b801c9667afed0c5ce252dd6717c/docs/standards/CoStatus/examples/Example_CoStatusCard__vNext.md
+
+# CoSourceID v0 (commit-SHA RAW pointers)
+CoSourceID__LATEST.md: https://raw.githubusercontent.com/CoCivium/CoBusMirror/e0279986b1bbe545c2f8a503dcae738916418e96/docs/MasterPlan/Appendix/CoSourceID/CoSourceID__LATEST.md
+CoSourceID.machine.json: https://raw.githubusercontent.com/CoCivium/CoBusMirror/e0279986b1bbe545c2f8a503dcae738916418e96/docs/MasterPlan/Appendix/CoSourceID/CoSourceID.machine.json
+CoSourceID.RECEIPT.sha256: https://raw.githubusercontent.com/CoCivium/CoBusMirror/e0279986b1bbe545c2f8a503dcae738916418e96/docs/MasterPlan/Appendix/CoSourceID/RECEIPT.sha256
+CoSourceID Pack ZIP (pickup): https://raw.githubusercontent.com/CoCivium/CoSources/0c00fa6fe4adea2d027c783bdc33aacccb4c3c72/docs/hold/CoCarry/packs/PACK__CoSourceID__v0__20260129T200324Z/PACK__CoSourceID__v0__20260129T200324Z.zip
+CoSourceID Pack ZIP sha256: https://raw.githubusercontent.com/CoCivium/CoSources/0c00fa6fe4adea2d027c783bdc33aacccb4c3c72/docs/hold/CoCarry/packs/PACK__CoSourceID__v0__20260129T200324Z/PACK__CoSourceID__v0__20260129T200324Z.zip.sha256
