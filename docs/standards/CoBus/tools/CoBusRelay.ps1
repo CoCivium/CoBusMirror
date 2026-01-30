@@ -60,6 +60,10 @@ $LogMd    = Join-Path $LogDir 'SideNotes__LATEST.md'
 $LogJsonl = Join-Path $LogDir 'SideNotes.machine.jsonl'
 $LogRcp   = Join-Path $LogDir 'RECEIPT.sha256'
 
+# AUTO-UNSTICK: clear index flags (assume-unchanged / skip-worktree) on SideNotes log files
+try {
+  & git -C $RepoPath update-index --no-assume-unchanged --no-skip-worktree -- $LogMd $LogJsonl $LogRcp 2>$null | Out-Null
+} catch {}
 New-Item -ItemType Directory -Force -Path $LogDir | Out-Null
 if(!(Test-Path $LogMd)){ @("# SideNotes Log — LATEST","","# COPY_SAFE:TRUE | END_OF_BLOCK") | Set-Content -Encoding UTF8 $LogMd }
 if(!(Test-Path $LogJsonl)){ New-Item -ItemType File -Force -Path $LogJsonl | Out-Null }
@@ -100,3 +104,4 @@ if(-not $NoPush){
   Write-Host ("# RAW_LOG_JSONL=https://raw.githubusercontent.com/CoCivium/CoBusMirror/{0}/{1}/SideNotes.machine.jsonl" -f $oid,$LogRel)
   Write-Host ("# RAW_RECEIPT=https://raw.githubusercontent.com/CoCivium/CoBusMirror/{0}/{1}/RECEIPT.sha256" -f $oid,$LogRel)
 }
+
