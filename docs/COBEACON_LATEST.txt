@@ -16,14 +16,6 @@ END
 https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusTool__PUBLIC__Emit-CoNotes__LATEST.ps1
 https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusTool__PUBLIC__Emit-CoNotes__LATEST.ps1.sha256
 
-# CoStacks: milestones bar-line renderer (reads manifest; schema-tolerant)
-https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusTool__PUBLIC__Show-CoStacksMilestones__LATEST.ps1
-https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusTool__PUBLIC__Show-CoStacksMilestones__LATEST.ps1.sha256
-
-# CoStacks: PUBLIC manifest (milestones bar-line input)
-https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoStacks_Manifest__LATEST.json
-https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__CoStacks_Manifest__LATEST.json.sha256
-
 # CoBus: Test-CoBusLine (detect glued blocks + newline violations; FAIL-CLOSED)
 https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusTool__PUBLIC__Test-CoBusLine__LATEST.ps1
 https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusTool__PUBLIC__Test-CoBusLine__LATEST.ps1.sha256
@@ -46,3 +38,8 @@ CoSourceID Pack ZIP sha256: https://raw.githubusercontent.com/CoCivium/CoSources
 
 # CoSideNote (PowerShell) — reverse-video SIDENOTE banner + green one-line printer (snapshot-coherent)
 CoSideNote.ps1: https://raw.githubusercontent.com/CoCivium/CoBusMirror/c9a05040f6677e84eafad9e22606fa28809c88a0/docs/standards/CoStatus/tools/CoSideNote.ps1
+
+# CoStacks v0 (manifest + receipts)
+CoStacks__LATEST.md: https://raw.githubusercontent.com/CoCivium/CoBusMirror/c646d510514f9cfcfb24bd34e7340b1124c64374/docs/MasterPlan/Appendix/CoStacks/CoStacks__LATEST.md
+CoStacks.machine.json: https://raw.githubusercontent.com/CoCivium/CoBusMirror/c646d510514f9cfcfb24bd34e7340b1124c64374/docs/MasterPlan/Appendix/CoStacks/CoStacks.machine.json
+CoStacks.RECEIPT.sha256: https://raw.githubusercontent.com/CoCivium/CoBusMirror/c646d510514f9cfcfb24bd34e7340b1124c64374/docs/MasterPlan/Appendix/CoStacks/RECEIPT.sha256
