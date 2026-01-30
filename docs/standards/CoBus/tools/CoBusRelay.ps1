@@ -70,7 +70,7 @@ if(!(Test-Path $LogJsonl)){ New-Item -ItemType File -Force -Path $LogJsonl | Out
 
 $sn = New-CoSideNoteLine -From $From -To $To -Utc $Utc -State $State -Intent $Intent
 Out-CoSideNote $sn $Label
-try { Set-Clipboard -Value $sn } catch {}
+try { Set-Clipboard -Value ($sn + "`r`n") } catch {}
 
 Add-Content -Encoding UTF8 $LogMd -Value $sn
 $rec = @{ utc=$Utc; from=$From; to=$To; state=$State; intent=$Intent; line=$sn } | ConvertTo-Json -Compress
@@ -82,12 +82,12 @@ $h2 = (Get-FileHash -Algorithm SHA256 $LogJsonl).Hash.ToLower()
 
 if(-not $NoPush){
   # Preflight: prove git sees changes
-  $st = & git -C $RepoPath status --porcelain -- $LogRel 2>&1
+  $st = & git -C $RepoPath status --porcelain --untracked-files=all -- $LogRel 2>&1
   if(-not $st -or ($st | Out-String).Trim().Length -eq 0){
     Fail ("No git changes detected under " + $LogRel + " after append. Possible skip-worktree/assume-unchanged/hook side-effect. Run: git status --porcelain -- " + $LogRel)
   }
 
-  $null = RunGit $RepoPath @('add', $LogRel)
+  $null = RunGit $RepoPath @('add','-f','--',$LogRel)
 
   # Show git’s reason if commit fails
   $out = & git -C $RepoPath commit -m ("CoBusRelay: append SideNote " + $Utc) 2>&1
@@ -104,4 +104,5 @@ if(-not $NoPush){
   Write-Host ("# RAW_LOG_JSONL=https://raw.githubusercontent.com/CoCivium/CoBusMirror/{0}/{1}/SideNotes.machine.jsonl" -f $oid,$LogRel)
   Write-Host ("# RAW_RECEIPT=https://raw.githubusercontent.com/CoCivium/CoBusMirror/{0}/{1}/RECEIPT.sha256" -f $oid,$LogRel)
 }
+
 
