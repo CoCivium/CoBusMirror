@@ -1,0 +1,3 @@
+# SideNotes Log — LATEST
+
+# COPY_SAFE:TRUE | END_OF_BLOCK
