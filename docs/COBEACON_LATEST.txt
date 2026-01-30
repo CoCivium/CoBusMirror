@@ -49,8 +49,6 @@ ProductSuite.INDEX__LATEST.md: https://raw.githubusercontent.com/CoCivium/CoBusM
 ProductSuite.machine.json: https://raw.githubusercontent.com/CoCivium/CoBusMirror/09f8662a954f4e7a27a33932090842e6d24a9b6d/docs/MasterPlan/ProductSuite/ProductSuite.machine.json
 ProductSuite.RECEIPT.sha256: https://raw.githubusercontent.com/CoCivium/CoBusMirror/09f8662a954f4e7a27a33932090842e6d24a9b6d/docs/MasterPlan/ProductSuite/RECEIPT.sha256
 
-# CoBusRelay (SideNotes Bus) — eliminate manual ferry
-CoBusRelay.ps1: https://raw.githubusercontent.com/CoCivium/CoBusMirror/5d32af5ac8bf3ba0111bfcc443527f158c7701b9/docs/standards/CoBus/tools/CoBusRelay.ps1
-SideNotes__LATEST.md: https://raw.githubusercontent.com/CoCivium/CoBusMirror/5d32af5ac8bf3ba0111bfcc443527f158c7701b9/docs/CoBus/SideNotes/SideNotes__LATEST.md
-SideNotes.machine.jsonl: https://raw.githubusercontent.com/CoCivium/CoBusMirror/5d32af5ac8bf3ba0111bfcc443527f158c7701b9/docs/CoBus/SideNotes/SideNotes.machine.jsonl
-SideNotes.RECEIPT.sha256: https://raw.githubusercontent.com/CoCivium/CoBusMirror/5d32af5ac8bf3ba0111bfcc443527f158c7701b9/docs/CoBus/SideNotes/RECEIPT.sha256
+
+# CoBusRelay (SideNotes Bus) — eliminate manual ferry (remote-safe)
+CoBusRelay.ps1: https://raw.githubusercontent.com/CoCivium/CoBusMirror/4316467778a2cdb6724d10d99896264ba2790149/docs/standards/CoBus/tools/CoBusRelay.ps1
