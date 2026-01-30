@@ -1,0 +1,28 @@
+{
+  "term": "CoStacks",
+  "version": "v0",
+  "utc": "20260130T002030Z",
+  "definition": "Umbrella for versioned, shareable operational stacks (rails + templates + tools + packs) used across CoCivium.",
+  "included_stacks": [
+    "CoGuardian/CoGuard",
+    "CoAgent",
+    "CoPreFrame",
+    "CoPreAttach",
+    "CoAnchor",
+    "CoHalo",
+    "CoCrux",
+    "BPOE",
+    "CoVows",
+    "MasterPlanRails",
+    "CoStatus",
+    "CoSideNote",
+    "CoSourceID",
+    "CoCarryPacks"
+  ],
+  "partition_policy": {
+    "public_ok": ["templates", "ux_tools", "format_standards", "non_sensitive_rails"],
+    "private_only": ["GLUKEY", "crown_jewels", "patent_adjacent_internals"],
+    "default_if_uncertain": "private_until_reviewed"
+  },
+  "gates": ["fail_closed", "quarantine_first", "prefer_commit_sha_raw"]
+}
