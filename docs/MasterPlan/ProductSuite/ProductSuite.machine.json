@@ -1,0 +1,8 @@
+{
+  "term": "ProductSuiteIndex",
+  "version": "v0",
+  "utc": "20260130T005228Z",
+  "stage_ladder": ["S0","S1","S2","S3","S4","S5","S6"],
+  "partition_rule": "if_uncertain_private",
+  "focus": ["eliminate_sidenote_ferry","persistent_visible_ux","bootstrap_selftest_rollback"]
+}
