@@ -43,3 +43,8 @@ CoSideNote.ps1: https://raw.githubusercontent.com/CoCivium/CoBusMirror/c9a05040f
 CoStacks__LATEST.md: https://raw.githubusercontent.com/CoCivium/CoBusMirror/c646d510514f9cfcfb24bd34e7340b1124c64374/docs/MasterPlan/Appendix/CoStacks/CoStacks__LATEST.md
 CoStacks.machine.json: https://raw.githubusercontent.com/CoCivium/CoBusMirror/c646d510514f9cfcfb24bd34e7340b1124c64374/docs/MasterPlan/Appendix/CoStacks/CoStacks.machine.json
 CoStacks.RECEIPT.sha256: https://raw.githubusercontent.com/CoCivium/CoBusMirror/c646d510514f9cfcfb24bd34e7340b1124c64374/docs/MasterPlan/Appendix/CoStacks/RECEIPT.sha256
+
+# ProductSuite Roadmaps (v0)
+ProductSuite.INDEX__LATEST.md: https://raw.githubusercontent.com/CoCivium/CoBusMirror/09f8662a954f4e7a27a33932090842e6d24a9b6d/docs/MasterPlan/ProductSuite/INDEX__LATEST.md
+ProductSuite.machine.json: https://raw.githubusercontent.com/CoCivium/CoBusMirror/09f8662a954f4e7a27a33932090842e6d24a9b6d/docs/MasterPlan/ProductSuite/ProductSuite.machine.json
+ProductSuite.RECEIPT.sha256: https://raw.githubusercontent.com/CoCivium/CoBusMirror/09f8662a954f4e7a27a33932090842e6d24a9b6d/docs/MasterPlan/ProductSuite/RECEIPT.sha256
