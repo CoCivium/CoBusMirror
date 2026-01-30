@@ -52,5 +52,9 @@ ProductSuite.RECEIPT.sha256: https://raw.githubusercontent.com/CoCivium/CoBusMir
 
 
 
-# CoBusRelay (SideNotes Bus) — eliminate manual ferry (commit diagnostics)
-CoBusRelay.ps1: https://raw.githubusercontent.com/CoCivium/CoBusMirror/9a97a98e6b20123d5a05bd477a9398b6cf1ce83b/docs/standards/CoBus/tools/CoBusRelay.ps1
+
+# CoBusRelay (SideNotes Bus) — tool immutable; logs always-latest; clipboard includes trailing Enter (CRLF)
+CoBusRelay.ps1: https://raw.githubusercontent.com/CoCivium/CoBusMirror/fbb90f368af3b05f5b813a0fc4ab16bbe640311e/docs/standards/CoBus/tools/CoBusRelay.ps1
+SideNotes__LATEST.md (main): https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/CoBus/SideNotes/SideNotes__LATEST.md
+SideNotes.machine.jsonl (main): https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/CoBus/SideNotes/SideNotes.machine.jsonl
+SideNotes.RECEIPT.sha256 (main): https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/CoBus/SideNotes/RECEIPT.sha256
