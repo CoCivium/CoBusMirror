@@ -29,25 +29,25 @@ function Pick-Remote([string]$RepoPath){
 
 function RunGit([string]$RepoPath, [string[]]$GitArgs, [int[]]$OkCodes=@(0)){
   if(-not $GitArgs -or $GitArgs.Count -lt 1){ Fail "RunGit called with empty GitArgs" }
-  & git -C $RepoPath @GitArgs | Out-Null
+  $out = & git -C $RepoPath @GitArgs 2>&1
   $c = $LASTEXITCODE
-  if($OkCodes -notcontains $c){ Fail ("git " + ($GitArgs -join ' ') + " exit=$c") }
-  return $c
+  if($OkCodes -notcontains $c){
+    Fail ("git " + ($GitArgs -join ' ') + " exit=$c ; out=" + (($out | Out-String).Trim()))
+  }
+  return $out
 }
 
 if(-not $Utc){ $Utc = UTS }
-
 if(-not $RepoPath){
   $RepoPath = (Resolve-Path (Join-Path $PSScriptRoot '..\..\..\..')).Path
 }
 if(!(Test-Path (Join-Path $RepoPath '.git'))){ Fail "Not a git repo: $RepoPath" }
-
 if(-not $RemoteName){ $RemoteName = Pick-Remote $RepoPath }
 
-# Keep local in sync before we mutate logs (fail-closed on divergence)
+# Sync first (fail-closed)
 if(-not $NoPush){
-  RunGit $RepoPath @('fetch','--all','--prune')
-  RunGit $RepoPath @('pull','--ff-only',$RemoteName,'main')
+  $null = RunGit $RepoPath @('fetch','--all','--prune')
+  $null = RunGit $RepoPath @('pull','--ff-only',$RemoteName,'main')
 }
 
 $SideNoteTool = Join-Path $RepoPath 'docs/standards/CoStatus/tools/CoSideNote.ps1'
@@ -77,10 +77,22 @@ $h2 = (Get-FileHash -Algorithm SHA256 $LogJsonl).Hash.ToLower()
 ("{0}  {1}`n{2}  {3}`n" -f $h1,(Split-Path $LogMd -Leaf),$h2,(Split-Path $LogJsonl -Leaf)) | Set-Content -Encoding ASCII $LogRcp
 
 if(-not $NoPush){
-  RunGit $RepoPath @('add', $LogRel)
-  RunGit $RepoPath @('commit','-m',("CoBusRelay: append SideNote " + $Utc))
-  RunGit $RepoPath @('push',$RemoteName,'main')
+  # Preflight: prove git sees changes
+  $st = & git -C $RepoPath status --porcelain -- $LogRel 2>&1
+  if(-not $st -or ($st | Out-String).Trim().Length -eq 0){
+    Fail ("No git changes detected under " + $LogRel + " after append. Possible skip-worktree/assume-unchanged/hook side-effect. Run: git status --porcelain -- " + $LogRel)
+  }
 
+  $null = RunGit $RepoPath @('add', $LogRel)
+
+  # Show git’s reason if commit fails
+  $out = & git -C $RepoPath commit -m ("CoBusRelay: append SideNote " + $Utc) 2>&1
+  $c = $LASTEXITCODE
+  if($c -ne 0){
+    Fail ("git commit exit=$c ; out=" + (($out | Out-String).Trim()))
+  }
+
+  $null = RunGit $RepoPath @('push',$RemoteName,'main')
   $oid = (& git -C $RepoPath rev-parse HEAD).Trim()
   Write-Host "# REMOTE_USED=$RemoteName"
   Write-Host "# PUSHED_COMMIT_OID=$oid"
