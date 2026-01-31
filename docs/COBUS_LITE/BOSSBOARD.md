@@ -1,5 +1,5 @@
 # BOSSBOARD
-UTC: 20260131T131703Z
+UTC: 20260131T134804Z
 
 ## TOP PRIORITY: CoStacks MVP (end-to-end)
 Definition of done (v0):
@@ -17,6 +17,6 @@ Definition of done (v0):
 - CoHalo_2: preflight + receipt verification rails; focus on “verify + package”
 - CoIP_Patents_v0: distill IP bundle into ONE enforcement rule for v0 (public-safe policy)
 - CoTask: reduce governance proposal into actionable v0 checklists (no essays)
-- CoSources_2 / OE work: keep “operating environment interference” checks minimal + automated (esp. Malwarebytes false positives)
+- CoSources_2 / OE: keep operating environment interference checks minimal + automated (esp. Malwarebytes false positives)
 
 (Everything else = HOLD until CoStacks MVP runs.)
