@@ -1,0 +1,7 @@
+BROADCAST_LATEST pointer
+UTC: 20260204T160027Z
+HTML: https://github.com/CoCivium/CoBusMirror/blob/main/docs/COBUS_LITE/broadcast/BROADCAST__LATEST__20260204T160027Z.txt
+RAW (branch): https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/broadcast/BROADCAST__LATEST__20260204T160027Z.txt
+RAW (commit): https://raw.githubusercontent.com/CoCivium/CoBusMirror/598dc03178e78e190eae91f47337b01da3bc2e01/docs/COBUS_LITE/broadcast/BROADCAST__LATEST__20260204T160027Z.txt
+
+SOURCE_LOCAL_SHA256: 24B5C0B4C5C243AA4AD7F5B60CFB6D093AD5061D2CBFC654FAB48F9EC4F299CC
