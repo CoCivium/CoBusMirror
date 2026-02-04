@@ -1,0 +1,81 @@
+Read these RAW pointers (do not use github.com blob URLs):
+
+START_HERE (RAW): https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/START_HERE.md
+
+BOSSBOARD (RAW): https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/BOSSBOARD.md
+
+PROTOCOL (RAW): https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/PROTOCOL_v1.md
+
+ROLLUP_LATEST (RAW): https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/rollup/ROLLUP_LATEST.md
+
+CoBeacon (RAW): https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt
+
+Registry (RAW): https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/CoStacks/CoStacks_Registry_LATEST.md
+
+Gate-1 checklist (RAW): https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/CoStacks/Gate1_Checklist_v0.1.md
+
+AutoPrompter spec (RAW): https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/CoStacks/AutoPrompter_Spec_v0.1.md
+
+Rules:
+
+- Default STATE=hold unless you are explicitly advancing a BOSSBOARD item.
+- Otherwise, your ONLY output in your session chat is one “EntryPayload” (no extra commentary; no SideNotes).
+- PTRS must be FULL URLs (prefer commit-SHA RAW + sha256 receipts when available).
+- WIP cap (Gate-1): only 4 sessions should be “doing” at once; everyone else posts HOLD.
+
+Gate-1 doing set (tentative; if your label matches one of these):
+
+- CoTask — compress the CoTask/CoLead envelope into the minimum normative spec that Gate-1 needs (fields + invariants + stop-rule).
+- CoAudit — turn the “sanity gate” spec into a small machine-checkable rule pack plan; if PARK_PROGRESS_AT is unknown, request it (STATE=rfa).
+- CoHalo_2 — package “SessionScopeChecklist v1.1” deliverables and what receipts/drift checks it requires; request canonical destination if unknown.
+- CoIP_Patents_v0 — re-emit CoBusLite entry FROM within CoBusMirror git clone; output commit-SHA RAW pointer + sha256 receipt; then DONE.
+
+If you are NOT one of the above labels:
+
+STATE=hold
+
+SHIPPED must be empty.
+
+BLOCKED should say exactly what you’re waiting for (0–3 bullets)
+
+EntryPayload template (fill it, no extra commentary):
+FROM:
+UTC:
+STATE: done|doing|hold|rfa
+TOPIC:
+SHIPPED: (0–3 bullets)
+BLOCKED: (0–3 bullets)
+NEXT: (0–3 bullets)
+PTRS: (FULL URLs only)
+
+=== COPONG UX LANGUAGE (COPY/PASTE SIGNALS) ===
+
+SHELL GUARD (READ, DO NOT PASTE):
+- If you see a cmd.exe prompt like C:\> then DO NOT paste multiline PowerShell.
+- Symptom of wrong shell: "# is not recognized", "& was unexpected", Set-StrictMode/foreach/Select-Object not recognized.
+
+COPONG ONE-LINER (SAFE ANYWHERE):
+- Run PowerShell explicitly (works from cmd.exe too):
+  pwsh -NoProfile -Command "$PSVersionTable.PSVersion"
+
+COPONG COPY (PASTE INTO pwsh):
+- Any pasteable block MUST start with:
+  # COPYPONG | SHELL=pwsh | COPY_SAFE=TRUE | NAME=... | UTC=...
+- ...and MUST end with:
+  # COPY_SAFE:TRUE | END_OF_BLOCK
+- Keep human instructions OUTSIDE the code block. Code block = payload only.
+- Never paste triple-backtick fences into the terminal.
+
+COPONG FILEDROP (PREFERRED FOR BIG BLOCKS):
+- If block is > ~20 lines, prefer writing a .ps1 then running:
+  pwsh -NoProfile -File .\script.ps1
+
+POWERSHELL STRING FOOTGUN (QUERY PARAMS):
+- Never write: "repos/.../$p?ref=main"  (PowerShell treats $p?ref as a variable)
+- Do: $ep = "repos/.../$p" + "?ref=main"  OR  "repos/.../$($p)?ref=main"
+
+=== COPONG UX LANGUAGE (COPY/PASTE SIGNALS) ===
+
+
+- ROLLUP_LATEST (RAW): https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/rollup/ROLLUP_LATEST.md
+
