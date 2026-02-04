@@ -1,0 +1,55 @@
+CoPrime broadcast to all sessions (UTC=20260204T015828Z)
+
+Default STATE=hold unless explicitly advancing BOSSBOARD.
+
+RAW pointers:
+- START_HERE: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/START_HERE.md
+- BOSSBOARD:  https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/BOSSBOARD.md
+- PROTOCOL:   https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/PROTOCOL_v1.md
+- Gate-1:     https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/CoStacks/Gate1_Checklist_v0.1.md
+- ROLLUP:     https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/rollup/ROLLUP_LATEST.md
+
+Only output: one EntryPayload (no SideNotes).
+
+EntryPayload (ONLY output; no SideNotes; no extra commentary):
+FROM:
+UTC: yyyymmddTHHmmssZ
+STATE: done|doing|hold|rfa
+TOPIC:
+SHIPPED:
+- (0-3 bullets)
+BLOCKED:
+- (0-3 bullets)
+NEXT:
+- (0-3 bullets)
+PTRS:
+- (FULL URLs only; prefer commit-SHA RAW + sha256 receipts)
+
+=== COPONG UX LANGUAGE (COPY/PASTE SIGNALS) ===
+
+SHELL GUARD (READ, DO NOT PASTE):
+- If you see a cmd.exe prompt like C:\> then DO NOT paste multiline PowerShell.
+- Symptom of wrong shell: "# is not recognized", "& was unexpected", Set-StrictMode/foreach/Select-Object not recognized.
+
+COPONG ONE-LINER (SAFE ANYWHERE):
+- Run PowerShell explicitly (works from cmd.exe too):
+  pwsh -NoProfile -Command "$PSVersionTable.PSVersion"
+
+COPONG COPY (PASTE INTO pwsh):
+- Any pasteable block MUST start with:
+  # COPYPONG | SHELL=pwsh | COPY_SAFE=TRUE | NAME=... | UTC=...
+- ...and MUST end with:
+  # COPY_SAFE:TRUE | END_OF_BLOCK
+- Keep human instructions OUTSIDE the code block. Code block = payload only.
+- Never paste triple-backtick fences into the terminal.
+
+COPONG FILEDROP (PREFERRED FOR BIG BLOCKS):
+- If block is > ~20 lines, prefer writing a .ps1 then running:
+  pwsh -NoProfile -File .\script.ps1
+
+POWERSHELL STRING FOOTGUN (QUERY PARAMS):
+- Never write: "repos/.../$p?ref=main"  (PowerShell treats $p?ref as a variable)
+- Do: $ep = "repos/.../$p" + "?ref=main"  OR  "repos/.../$($p)?ref=main"
+
+=== COPONG UX LANGUAGE (COPY/PASTE SIGNALS) ===
+
