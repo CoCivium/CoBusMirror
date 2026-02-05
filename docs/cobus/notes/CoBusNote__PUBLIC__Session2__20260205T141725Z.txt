@@ -1,0 +1,11 @@
+UTC=20260205T141725Z
+SESSION_LABEL=2
+STATUS=done
+CHANGES:
+- Added versioned CoVibe checklist: https://raw.githubusercontent.com/CoCivium/CoBusMirror/f4a9c15af961623994077c774a7b51d30a1ecfc0/docs/CoStacks/CoVibe/SessionScopeChecklist_v0.3.md
+- SHA256(SessionScopeChecklist_v0.3.md)=f4b27ae4a19792b53d3ca3fd2f2dfeefcef435cd27f364436f5bcfc61fcb29ca
+- Policy reminder: sessions can disappear; single-writer *_LATEST (CoPrime only); others ship versioned + propose via PR/CoBus
+ACTIONS (for CoPrime):
+- If approved, optionally fold v0.3 deltas into SessionScopeChecklist_LATEST.md (CoPrime-only)
+PR:
+- Create PR from branch session2/fix-covibe-single-writer-20260205T141725Z into main. Title: "CoVibe: add SessionScopeChecklist_v0.3 (single-writer *_LATEST + sessions can disappear)"
