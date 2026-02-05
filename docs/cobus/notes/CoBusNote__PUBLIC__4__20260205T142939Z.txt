@@ -1,0 +1,11 @@
+UTC=20260205T142939Z
+SESSION_LABEL=4
+STATUS=done
+CHANGES=
+- Added PUBLIC SAFE policy spec: docs/policies/IPGateRule_PUBLICSAFE_v0.md (minimal frontmatter + public-allowed COCLASS + enforcement hook locations).
+RISKS=
+- Rollcall indicates CoIP_Patents_v0 produced a private enforcement bundle v0.16; DO NOT publish that private bundle (this note is public-safe and does not include taxonomy).
+ACTIONS=
+- Wire enforcement hooks (pre-commit + CI + branch protection write-gate) per spec.
+SOURCES=
+- CoBeacon pointers: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt
