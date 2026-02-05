@@ -4,7 +4,7 @@ Invoke-CoStacksGate1.ps1
 
 FAIL-CLOSED EXECUTION RULE:
   Must be run as a file:
-    pwsh -NoProfile -ExecutionPolicy Bypass -File .\Invoke-CoStacksGate1.ps1 -CoBeaconRaw "<FULL_URL>"
+    pwsh -NoProfile -ExecutionPolicy Bypass -File .\tools\Invoke-CoStacksGate1.ps1 -CoBeaconRaw "<FULL_URL>"
   If pasted into the console, it fails immediately.
 
 Goal:
@@ -16,11 +16,14 @@ Goal:
   - Print ready-to-paste CoBusLite EntryPayload (does NOT auto-write)
 
 Policy (fail-closed):
-  - Each non-.sha256 artifact must be verifiable via:
+  - Each downloaded non-.sha256 artifact must be verifiable via:
       (a) explicit companion URL ending ".sha256" present in CoBeacon pointers, OR
       (b) a referenced RECEIPT.sha256 that lists it by basename
   - Mutable "/main/" URLs rejected unless -AllowMutableMain
     (CoBeacon itself may be /main/; allowed but flagged.)
+  - CoBeacon may mark pointers as OPTIONAL_URL=... (or REQUIRED_URL=...).
+    OPTIONAL downloads may fail (e.g., 404) and are skipped; REQUIRED failures stop execution.
+    Bare https:// pointers remain REQUIRED for back-compat.
 #>
 
 [CmdletBinding()]
@@ -35,10 +38,7 @@ param(
   [string]$PackName = "",
 
   [Parameter(Mandatory=$false)]
-  [switch]$AllowMutableMain,
-
-  [Parameter(Mandatory=$false)]
-  [switch]$PrintGitPRHints
+  [switch]$AllowMutableMain
 )
 
 Set-StrictMode -Version Latest
@@ -52,7 +52,7 @@ function UTS { (Get-Date).ToUniversalTime().ToString('yyyyMMddTHHmmssZ') }
 
 # Guard: refuse interactive paste / partial execution
 if([string]::IsNullOrWhiteSpace($PSCommandPath)){
-  Fail "Run as a file, not pasted. Example:`n  pwsh -NoProfile -ExecutionPolicy Bypass -File .\Invoke-CoStacksGate1.ps1 -CoBeaconRaw `"$CoBeaconRaw`" -AllowMutableMain"
+  Fail "Run as a file, not pasted. Example:`n  pwsh -NoProfile -ExecutionPolicy Bypass -File .\tools\Invoke-CoStacksGate1.ps1 -CoBeaconRaw `"$CoBeaconRaw`" -AllowMutableMain"
 }
 if(-not (Test-Path -LiteralPath $PSCommandPath)){
   Fail "PSCommandPath set but file not found: $PSCommandPath"
@@ -81,10 +81,41 @@ function Download-File([string]$Url,[string]$DestPath){
   if(!(Test-Path -LiteralPath $DestPath)){ Fail "Download missing after fetch: $Url => $DestPath" }
 }
 
-function Parse-CoBeaconUrls([string]$Text){
-  $m = [regex]::Matches($Text, 'https://[^\s]+')
-  $urls = foreach($x in $m){ $x.Value.Trim() }
-  ($urls | Sort-Object -Unique)
+function Parse-CoBeaconPointers([string]$Text){
+  # Lines-based: supports OPTIONAL_URL=... and REQUIRED_URL=...
+  $ptrs = @()
+  foreach($raw in ($Text -split "`r?`n")){
+    $line = $raw.Trim()
+    if($line -eq "" -or $line.StartsWith("#")){ continue }
+
+    if($line -match '^OPTIONAL_URL\s*=\s*(https://\S+)\s*$'){
+      $ptrs += [pscustomobject]@{ Url=$Matches[1].Trim(); Required=$false }
+      continue
+    }
+    if($line -match '^REQUIRED_URL\s*=\s*(https://\S+)\s*$'){
+      $ptrs += [pscustomobject]@{ Url=$Matches[1].Trim(); Required=$true }
+      continue
+    }
+
+    # Back-compat: any bare https:// token on line counts as REQUIRED
+    $m = [regex]::Matches($line, 'https://[^\s]+')
+    foreach($x in $m){
+      $ptrs += [pscustomobject]@{ Url=$x.Value.Trim(); Required=$true }
+    }
+  }
+
+  # de-dupe by URL; if any occurrence is required => required
+  $map = @{}
+  foreach($p in $ptrs){
+    if(!$map.ContainsKey($p.Url)){ $map[$p.Url] = $p.Required }
+    else { $map[$p.Url] = ($map[$p.Url] -or $p.Required) }
+  }
+
+  $out = @()
+  foreach($k in ($map.Keys | Sort-Object)){
+    $out += [pscustomobject]@{ Url=$k; Required=$map[$k] }
+  }
+  $out
 }
 
 function Parse-Sha256FileLine([string]$line){
@@ -137,12 +168,15 @@ $packDir  = Join-Path $workRoot "pack"
 New-Item -ItemType Directory -Path $dlDir,$packDir -Force | Out-Null
 
 $coBeaconIsMutable = (Is-MutableMainUrl $CoBeaconRaw)
+
 $coBeaconPath = Join-Path $dlDir "COBEACON_LATEST.txt"
 Download-File -Url $CoBeaconRaw -DestPath $coBeaconPath
 $coBeaconText = Get-Content -LiteralPath $coBeaconPath -Raw -ErrorAction Stop
 
-$urls = Parse-CoBeaconUrls $coBeaconText
-if($urls.Count -eq 0){ Fail "No URLs found in CoBeacon." }
+$ptrs = Parse-CoBeaconPointers $coBeaconText
+if($ptrs.Count -eq 0){ Fail "No URLs found in CoBeacon." }
+
+$urls = @($ptrs.Url)
 
 $mutable = @($urls | Where-Object { Is-MutableMainUrl $_ })
 if($mutable.Count -gt 0 -and (-not $AllowMutableMain)){
@@ -153,23 +187,39 @@ if($mutable.Count -gt 0 -and (-not $AllowMutableMain)){
 $downloadIndex = @{}
 for($i=0; $i -lt $urls.Count; $i++){
   $u  = $urls[$i]
+  $req = ($ptrs | Where-Object { $_.Url -eq $u } | Select-Object -First 1).Required
+  if($null -eq $req){ $req = $true } # defensive default: REQUIRED
+
   $bn = [System.IO.Path]::GetFileName(([uri]$u).AbsolutePath)
   if([string]::IsNullOrWhiteSpace($bn)){ Fail "URL has no basename: $u" }
   $name = ('{0:d4}__{1}' -f $i, $bn)
   $dest = Join-Path $dlDir $name
-  Download-File -Url $u -DestPath $dest
-  $downloadIndex[$u] = $dest
-}
 
-$shaByTargetUrl = @{}
-foreach($u in $urls){
-  if($u -match '\.sha256$'){
-    $target = $u.Substring(0, $u.Length - 7)
-    if($urls -contains $target){ $shaByTargetUrl[$target] = $u }
+  try {
+    Download-File -Url $u -DestPath $dest
+    $downloadIndex[$u] = $dest
+  } catch {
+    if(-not $req){
+      Write-Host "SKIP_OPTIONAL_URL=$u"
+      continue
+    }
+    throw
   }
 }
 
-$receiptUrls = @($urls | Where-Object { $_ -match 'RECEIPT\.sha256$' } | Sort-Object -Unique)
+if($downloadIndex.Count -eq 0){ Fail "No artifacts downloaded (all optional failed?)" }
+
+# A) explicit companion sha URL: "<fileUrl>.sha256" exists in downloaded set
+$shaByTargetUrl = @{}
+foreach($u in ($downloadIndex.Keys | Sort-Object)){
+  if($u -match '\.sha256$'){
+    $target = $u.Substring(0, $u.Length - 7)
+    if($downloadIndex.ContainsKey($target)){ $shaByTargetUrl[$target] = $u }
+  }
+}
+
+# B) receipt files: any *RECEIPT.sha256 in downloaded set
+$receiptUrls = @($downloadIndex.Keys | Where-Object { $_ -match 'RECEIPT\.sha256$' } | Sort-Object -Unique)
 $receiptMap = @{}
 foreach($ru in $receiptUrls){
   $rp = $downloadIndex[$ru]
@@ -181,12 +231,16 @@ foreach($ru in $receiptUrls){
   }
 }
 
-foreach($u in $urls){
+# Verify every downloaded non-sha256 file (strict)
+foreach($u in ($downloadIndex.Keys | Sort-Object)){
   if($u -match '\.sha256$'){ continue }
+
   $p = $downloadIndex[$u]
   $actual = Get-Sha256Hex $p
 
   $expected = $null
+  $method = $null
+
   if($shaByTargetUrl.ContainsKey($u)){
     $shaUrl  = $shaByTargetUrl[$u]
     $shaPath = $downloadIndex[$shaUrl]
@@ -198,27 +252,38 @@ foreach($u in $urls){
     }
     if([string]::IsNullOrWhiteSpace($found)){ Fail "Companion sha256 had no parseable hash: $shaUrl" }
     $expected = $found
+    $method = "companion .sha256 URL"
   } else {
     $base = [System.IO.Path]::GetFileName(([uri]$u).AbsolutePath)
-    if($receiptMap.ContainsKey($base)){ $expected = $receiptMap[$base] }
+    if($receiptMap.ContainsKey($base)){
+      $expected = $receiptMap[$base]
+      $method = "RECEIPT.sha256 (basename match)"
+    }
   }
 
-  if([string]::IsNullOrWhiteSpace($expected)){ Fail "Unverified artifact: $u" }
+  if([string]::IsNullOrWhiteSpace($expected)){ Fail "Unverified artifact (no companion .sha256 URL and not covered by RECEIPT.sha256): $u" }
   if($actual -ne $expected){ Fail "SHA256 mismatch: $u`n  expected=$expected`n  actual  =$actual" }
 }
 
-foreach($u in $urls){ Copy-Item -LiteralPath $downloadIndex[$u] -Destination $packDir -Force }
+# Assemble pack deterministically: copy downloads into pack/ with stable filenames
+foreach($u in ($downloadIndex.Keys | Sort-Object)){
+  Copy-Item -LiteralPath $downloadIndex[$u] -Destination $packDir -Force
+}
 
+# Deterministic zip
 if([string]::IsNullOrWhiteSpace($PackName)){ $PackName = "PACK__CoStacksGate1__v0__${runUtc}.zip" }
 $zipPath = Join-Path $workRoot $PackName
 New-DeterministicZip -SourceDir $packDir -ZipPath $zipPath
+
+# Zip sha256 sidecar
 $zipHash = Get-Sha256Hex $zipPath
 $zipShaPath = $zipPath + ".sha256"
 "{0}  {1}" -f $zipHash, ([System.IO.Path]::GetFileName($zipPath)) | Set-Content -LiteralPath $zipShaPath -Encoding ascii -NoNewline
 
-$mutableNote  = if($mutable.Count -gt 0){"MUTABLE_MAIN_URLS=YES"}else{"MUTABLE_MAIN_URLS=NO"}
-$beaconNote   = if($coBeaconIsMutable){"COBEACON_MUTABLE=YES"}else{"COBEACON_MUTABLE=NO"}
-$urlsCompact  = ($urls -join ' ; ')
+# Print EntryPayload (does not write)
+$mutableNote = if($mutable.Count -gt 0){"MUTABLE_MAIN_URLS=YES"}else{"MUTABLE_MAIN_URLS=NO"}
+$coBeaconNote = if($coBeaconIsMutable){"COBEACON_MUTABLE=YES"}else{"COBEACON_MUTABLE=NO"}
+$urlsCompact = (($downloadIndex.Keys | Sort-Object) -join ' ; ')
 
 $entry = @"
 EntryPayload:
@@ -227,7 +292,7 @@ UTC=$runUtc
 KIND=CoStacksGate1
 INTENT=Gate1: downloaded FULL-URL pointers from CoBeacon; verified sha256 fail-closed; produced deterministic zip+sha; did NOT auto-write entry.
 COBEACON_RAW=$CoBeaconRaw
-$beaconNote ; $mutableNote
+$coBeaconNote ; $mutableNote
 PACK_ZIP_PATH=$zipPath
 PACK_ZIP_SHA256=$zipHash
 PACK_ZIP_SHA256_FILE=$zipShaPath
@@ -243,14 +308,5 @@ Write-Host $zipShaPath
 Write-Host ""
 Write-Host "=== CoBusLite EntryPayload (COPY/PASTE) ==="
 Write-Host $entry
-
-if($PrintGitPRHints){
-  if(!(Test-Path -LiteralPath (Join-Path $PWD ".git"))){
-    Write-Host "PR hints skipped: not in git repo."
-  } else {
-    Write-Host "git checkout -b tool/CoStacksGate1"
-    Write-Host "git add tools/Invoke-CoStacksGate1.ps1"
-    Write-Host "git commit -m `"Add Invoke-CoStacksGate1 Gate1 downloader+verifier+deterministic pack emitter`""
-    Write-Host "git push -u origin tool/CoStacksGate1"
-  }
-}
+Write-Host ""
+Write-Host "=== Done ==="
