@@ -19,3 +19,7 @@ Write-Host "==== SideNote (COPY this one physical line) ===="
 Write-Host $payload
 Write-Host "==============================================="
 Write-Host ""
+
+# PATCH_GUARD: strict TO validation
+if([string]::IsNullOrWhiteSpace($To)){ throw "FAIL-CLOSED: TO empty" }
+if($To -match "(?i)\b(chatgpt|notes?\s*to\s*self|self)\b"){ throw "FAIL-CLOSED: TO rejected (notes-to-self)." }
