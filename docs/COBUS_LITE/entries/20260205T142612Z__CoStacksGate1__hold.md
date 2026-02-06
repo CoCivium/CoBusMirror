@@ -1,0 +1,12 @@
+EntryPayload:
+STATE=hold
+UTC=20260205T142612Z
+KIND=CoStacksGate1
+INTENT=Ship Gate1 tool script; see RAW links below after merge. Script prints an EntryPayload at runtime; do NOT auto-write it.
+COBEACON_RAW=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt
+PACK_ZIP_RAW=__REPLACE_WITH_PUBLISHED_RAW_PICKUP_URL__
+PACK_ZIP_SHA256=__REPLACE_WITH_SCRIPT_SHA__
+PACK_ZIP_SHA256_RAW=__REPLACE_WITH_PUBLISHED_RAW_SHA_URL__
+SOURCE_URLS=__PASTE_FROM_SCRIPT_OUTPUT__
+VERIFIED=__SET_AFTER_RUNNING_SCRIPT__
+SHIPPED=NO
