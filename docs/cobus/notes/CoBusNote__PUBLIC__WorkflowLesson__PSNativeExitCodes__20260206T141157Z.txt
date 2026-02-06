@@ -1,0 +1,5 @@
+# WorkflowLesson: PowerShell native exit codes + git
+- When $ErrorActionPreference='Stop', PowerShell can treat native non-zero exit codes as terminating errors.
+- Many git commands intentionally use exit codes as control flow (e.g., git merge-base --is-ancestor returns 1 when NOT ancestor).
+- Pattern: scope $ErrorActionPreference='Continue' around such calls, then read $LASTEXITCODE and interpret it explicitly.
+- Prefer PR merges over cherry-pick for branch-level work; cherry-picking single commits from evolving branches is conflict-prone.
