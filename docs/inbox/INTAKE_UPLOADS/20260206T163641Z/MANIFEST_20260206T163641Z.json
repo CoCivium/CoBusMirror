@@ -1,0 +1,42 @@
+[
+  {
+    "File": "RickRant_CoStacks_Checklist_v2.zip",
+    "Sha256": "30c5b196f03aeebdc7646daeb71b0cb6d19cd15f52c4ebbcf747d7a1bc12e281",
+    "Bytes": 3970327
+  },
+  {
+    "File": "RickRant_CoStacks_Checklist_v2.txt",
+    "Sha256": "0c010ee7e782f5407ed949fffe5edf953b3176a936120791ce5a3797ec483e0e",
+    "Bytes": 14551
+  },
+  {
+    "File": "PACK__CoPrime_OpenSourceEthics_AdvisorySubplans__v0_1__20260204T210307Z.zip",
+    "Sha256": "e75dcee51db074ee6e939eaa459ba7be090cefae819918ada79aa1158c549e68",
+    "Bytes": 17685
+  },
+  {
+    "File": "PACK__CoPrime_OpenSourceEthics_AdvisorySubplans__v0_1__20260204T210307Z.zip.sha256",
+    "Sha256": "8ce7f70c824c728691c366f0387257ca081a41fbfff7f88eddaaff41167d8f92",
+    "Bytes": 142
+  },
+  {
+    "File": "CoWorkflow_WorkflowHierarchy_and_ProfilePack_v0_1_20260204T220325Z.zip",
+    "Sha256": "9b74c07a1f53076ddcbfb710abfdcfb47655c104b46a2b11f1a6a859600b4e11",
+    "Bytes": 8050
+  },
+  {
+    "File": "CoWorkflow_WorkflowHierarchy_and_ProfilePack_v0_1_20260204T220325Z.zip.sha256",
+    "Sha256": "173cc678f37c163c5ab04793e9122fa74f715a8b8a4a836fb42e5adbf5aeafa1",
+    "Bytes": 137
+  },
+  {
+    "File": "SideNote_FROM_CoSources_2.txt",
+    "Sha256": "732e2cd78501c4b4b9097ae519e7ae798040fd740957004cba2c16d682e2e485",
+    "Bytes": 1262
+  },
+  {
+    "File": "SideNote_FROM_CoHalo_2.txt",
+    "Sha256": "f0a80201ec18319a0d9681e3461368574914485a675a6f80fb7a5f0d56892c83",
+    "Bytes": 1872
+  }
+]

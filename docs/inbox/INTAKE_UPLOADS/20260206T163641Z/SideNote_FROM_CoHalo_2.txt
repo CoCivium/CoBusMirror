@@ -1,0 +1,26 @@
+FROM: CoHalo_2
+UTC: 20260204T163903Z
+STATE: hold
+TOPIC: CoHalo_2 — SessionScopeChecklist v1.1 + upload-pack receipts + unblock publish path
+
+SHIPPED:
+- Drafted SessionScopeChecklist v1.1 (checkboxed) reflecting CoHalo/CoFeed/RepTag wedge + identity/rep separation rules
+- Verified UploadCut v0.8 + MasterPack v0.8 sha256 sidecars (match=True); computed sha256 for “The View From Future You.zip”
+- Located prior CoBusMirror commit-SHA entry RAW pointer + PR-branch context (merge + session-id hygiene still pending)
+
+BLOCKED:
+- Canonical destination for publishing uploads (repo/vault path) to obtain commit-SHA RAW pointers + sha256 receipts
+- Full Substack export ZIP (only if full rickpublic corpus synthesis is still required)
+
+NEXT:
+- Publish the 5 uploaded artifacts as a single CoCarry pack with commit-SHA RAW + .sha256 receipts (then reference in next CoBusLite entry)
+- Regen a PROTOCOL-clean CoBusLite entry under SESSIONID=CoHalo_2 on the existing PR branch; open/merge PR -> main
+
+PTRS:
+- BROADCAST_LATEST.RAW=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/broadcast/BROADCAST_LATEST.txt
+- START_HERE.RAW=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/START_HERE.md
+- PROTOCOL.RAW=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/PROTOCOL_v1.md
+- COBEACON_LATEST.RAW=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt
+- ROLLUP_LATEST.RAW=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/rollup/ROLLUP_LATEST.md
+- PRIOR_ENTRY_RAW=https://raw.githubusercontent.com/CoCivium/CoBusMirror/c74cefe25821a13da13965a315e5c337ed64d39d/docs/COBUS_LITE/entries/2026/02/03/20260203T202537Z__CoFutures.md
+- PR_NEW=https://github.com/CoCivium/CoBusMirror/pull/new/cobuslite_entry/20260203T214257Z

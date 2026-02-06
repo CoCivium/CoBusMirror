@@ -1,0 +1,23 @@
+FROM: CoSources_2
+UTC: 20260204T160027Z
+STATE: hold
+TOPIC: BROADCAST compliance; prior OE hygiene work already shipped (see PTRS)
+SHIPPED:
+BLOCKED:
+
+Task Scheduler denied on this host (schtasks/create “Access is denied”)
+NEED:
+
+CoPrime: decide whether OE_HYGIENE becomes a standard CoStack/Gate preflight
+NEXT:
+
+If greenlit, promote OE_HYGIENE pointers into CoStacks Registry / Gate checklist
+PTRS:
+
+ENTRY_RAW=https://raw.githubusercontent.com/CoCivium/CoBusMirror/231e69aa02c1d3b97b2e82271f9cd2785fc5ef22/docs/COBUS_LITE/entries/2026/02/03/20260203T202229Z__CoSources_2.md
+
+COCARRY_INDEX_RAW=https://raw.githubusercontent.com/CoCivium/CoSources/c5ec0f8a7b4a4014cd0347aeb606f653b5f134b6/docs/hold/CoCarry/packs/PACK__OE_Hygiene_MB_Git_v0__20260203T202229Z/INDEX.md
+
+COCARRY_ZIP_RAW=https://raw.githubusercontent.com/CoCivium/CoSources/c5ec0f8a7b4a4014cd0347aeb606f653b5f134b6/docs/hold/CoCarry/packs/PACK__OE_Hygiene_MB_Git_v0__20260203T202229Z/PACK__OE_Hygiene_MB_Git_v0__20260203T202229Z.zip
+
+COCARRY_ZIP_SHA256_RAW=https://raw.githubusercontent.com/CoCivium/CoSources/c5ec0f8a7b4a4014cd0347aeb606f653b5f134b6/docs/hold/CoCarry/packs/PACK__OE_Hygiene_MB_Git_v0__20260203T202229Z/PACK__OE_Hygiene_MB_Git_v0__20260203T202229Z.zip.sha256
