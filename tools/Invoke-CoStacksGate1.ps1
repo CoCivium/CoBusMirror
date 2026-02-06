@@ -10,17 +10,37 @@ FAIL-CLOSED EXECUTION RULE:
 Goal:
   - Pull CoBeacon FULL-URL pointers only
   - Resolve required artifacts via FULL URLs (no guessing)
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
   - Download
   - Verify sha256 receipts (strict/fail-closed)
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
   - Emit deterministic zip pack + sha256
   - Print ready-to-paste CoBusLite EntryPayload (does NOT auto-write)
 
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
 Policy (fail-closed):
   - Each downloaded non-.sha256 artifact must be verifiable via:
       (a) explicit companion URL ending ".sha256" present in CoBeacon pointers, OR
       (b) a referenced RECEIPT.sha256 that lists it by basename
   - Mutable "/main/" URLs rejected unless -AllowMutableMain
     (CoBeacon itself may be /main/; allowed but flagged.)
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
   - CoBeacon may mark pointers as OPTIONAL_URL=... (or REQUIRED_URL=...).
     OPTIONAL downloads may fail (e.g., 404) and are skipped; REQUIRED failures stop execution.
     Bare https:// pointers remain REQUIRED for back-compat.
@@ -41,6 +61,11 @@ param(
   [switch]$AllowMutableMain
 )
 
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 $ProgressPreference    = 'SilentlyContinue'
@@ -65,11 +90,21 @@ function Ensure-FullUrl([string]$u){
 
 function Is-MutableMainUrl([string]$u){
   return ($u -match '^https://raw\.githubusercontent\.com/[^/]+/[^/]+/main/')
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
 }
 
 function Get-Sha256Hex([string]$Path){
   if(!(Test-Path -LiteralPath $Path)){ Fail "Missing file for hash: $Path" }
   (Get-FileHash -LiteralPath $Path -Algorithm SHA256).Hash.ToLowerInvariant()
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
 }
 
 function Download-File([string]$Url,[string]$DestPath){
@@ -84,8 +119,18 @@ function Download-File([string]$Url,[string]$DestPath){
 function Parse-CoBeaconPointers([string]$Text){
   # Lines-based: supports OPTIONAL_URL=... and REQUIRED_URL=...
   $ptrs = @()
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
   foreach($raw in ($Text -split "`r?`n")){
     $line = $raw.Trim()
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
     if($line -eq "" -or $line.StartsWith("#")){ continue }
 
     if($line -match '^OPTIONAL_URL\s*=\s*(https://\S+)\s*$'){
@@ -99,6 +144,11 @@ function Parse-CoBeaconPointers([string]$Text){
 
     # Back-compat: any bare https:// token on line counts as REQUIRED
     $m = [regex]::Matches($line, 'https://[^\s]+')
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
     foreach($x in $m){
       $ptrs += [pscustomobject]@{ Url=$x.Value.Trim(); Required=$true }
     }
@@ -112,6 +162,11 @@ function Parse-CoBeaconPointers([string]$Text){
   }
 
   $out = @()
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
   foreach($k in ($map.Keys | Sort-Object)){
     $out += [pscustomobject]@{ Url=$k; Required=$map[$k] }
   }
@@ -120,14 +175,29 @@ function Parse-CoBeaconPointers([string]$Text){
 
 function Parse-Sha256FileLine([string]$line){
   $t = $line.Trim()
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
   if($t -eq '' -or $t.StartsWith('#')){ return $null }
   $m = [regex]::Match($t, '^(?<h>[A-Fa-f0-9]{64})\s+\*?(?<f>.+)$')
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
   if(!$m.Success){ return $null }
   [pscustomobject]@{ Hash=$m.Groups['h'].Value.ToLowerInvariant(); File=$m.Groups['f'].Value.Trim() }
 }
 
 function Read-Receipt([string]$ReceiptPath){
   $items = @()
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
   foreach($line in (Get-Content -LiteralPath $ReceiptPath -ErrorAction Stop)){
     $p = Parse-Sha256FileLine $line
     if($null -ne $p){ $items += $p }
@@ -142,16 +212,51 @@ function New-DeterministicZip([string]$SourceDir,[string]$ZipPath){
   if(Test-Path -LiteralPath $ZipPath){ Remove-Item -LiteralPath $ZipPath -Force }
   $files = Get-ChildItem -LiteralPath $SourceDir -File -Recurse | Sort-Object FullName
   $zipFs = [System.IO.File]::Open($ZipPath, [System.IO.FileMode]::CreateNew)
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
   try {
     $zip = New-Object System.IO.Compression.ZipArchive($zipFs, [System.IO.Compression.ZipArchiveMode]::Create, $true)
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
     try {
       foreach($f in $files){
         $rel = [System.IO.Path]::GetRelativePath($SourceDir, $f.FullName).Replace('\','/')
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
         $entry = $zip.CreateEntry($rel, [System.IO.Compression.CompressionLevel]::Optimal)
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
         $entry.LastWriteTime = [datetimeoffset]::new([datetime]::SpecifyKind([datetime]'1980-01-01T00:00:00', 'Utc'))
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
         $inStream  = [System.IO.File]::OpenRead($f.FullName)
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
         try {
           $outStream = $entry.Open()
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
           try { $inStream.CopyTo($outStream) } finally { $outStream.Dispose() }
         } finally { $inStream.Dispose() }
       }
@@ -163,12 +268,22 @@ function New-DeterministicZip([string]$SourceDir,[string]$ZipPath){
 $CoBeaconRaw = Ensure-FullUrl $CoBeaconRaw
 $runUtc = UTS
 $workRoot = Join-Path $OutDir ("run_" + $runUtc)
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
 $dlDir    = Join-Path $workRoot "download"
 $packDir  = Join-Path $workRoot "pack"
 New-Item -ItemType Directory -Path $dlDir,$packDir -Force | Out-Null
 
 $coBeaconIsMutable = (Is-MutableMainUrl $CoBeaconRaw)
 
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
 $coBeaconPath = Join-Path $dlDir "COBEACON_LATEST.txt"
 Download-File -Url $CoBeaconRaw -DestPath $coBeaconPath
 $coBeaconText = Get-Content -LiteralPath $coBeaconPath -Raw -ErrorAction Stop
@@ -178,7 +293,17 @@ if($ptrs.Count -eq 0){ Fail "No URLs found in CoBeacon." }
 
 $urls = @($ptrs.Url)
 
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
 $mutable = @($urls | Where-Object { Is-MutableMainUrl $_ })
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
 if($mutable.Count -gt 0 -and (-not $AllowMutableMain)){
   $sample = ($mutable | Select-Object -First 8) -join "`n  "
   Fail "Mutable /main/ URLs present (rejected). Re-run with -AllowMutableMain if you accept mutable pointers.`n  $sample"
@@ -191,8 +316,18 @@ for($i=0; $i -lt $urls.Count; $i++){
   if($null -eq $req){ $req = $true } # defensive default: REQUIRED
 
   $bn = [System.IO.Path]::GetFileName(([uri]$u).AbsolutePath)
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
   if([string]::IsNullOrWhiteSpace($bn)){ Fail "URL has no basename: $u" }
   $name = ('{0:d4}__{1}' -f $i, $bn)
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
   $dest = Join-Path $dlDir $name
 
   try {
@@ -214,24 +349,44 @@ $shaByTargetUrl = @{}
 foreach($u in ($downloadIndex.Keys | Sort-Object)){
   if($u -match '\.sha256$'){
     $target = $u.Substring(0, $u.Length - 7)
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
     if($downloadIndex.ContainsKey($target)){ $shaByTargetUrl[$target] = $u }
   }
 }
 
 # B) receipt files: any *RECEIPT.sha256 in downloaded set
 $receiptUrls = @($downloadIndex.Keys | Where-Object { $_ -match 'RECEIPT\.sha256$' } | Sort-Object -Unique)
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
 $receiptMap = @{}
 foreach($ru in $receiptUrls){
   $rp = $downloadIndex[$ru]
   $items = Read-Receipt $rp
   foreach($it in $items){
     $base = [System.IO.Path]::GetFileName($it.File)
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
     if([string]::IsNullOrWhiteSpace($base)){ continue }
     $receiptMap[$base] = $it.Hash
   }
 }
 
 # Verify every downloaded non-sha256 file (strict)
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
 foreach($u in ($downloadIndex.Keys | Sort-Object)){
   if($u -match '\.sha256$'){ continue }
 
@@ -255,6 +410,11 @@ foreach($u in ($downloadIndex.Keys | Sort-Object)){
     $method = "companion .sha256 URL"
   } else {
     $base = [System.IO.Path]::GetFileName(([uri]$u).AbsolutePath)
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
     if($receiptMap.ContainsKey($base)){
       $expected = $receiptMap[$base]
       $method = "RECEIPT.sha256 (basename match)"
@@ -281,10 +441,20 @@ $zipShaPath = $zipPath + ".sha256"
 "{0}  {1}" -f $zipHash, ([System.IO.Path]::GetFileName($zipPath)) | Set-Content -LiteralPath $zipShaPath -Encoding ascii -NoNewline
 
 # Print EntryPayload (does not write)
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
 $mutableNote = if($mutable.Count -gt 0){"MUTABLE_MAIN_URLS=YES"}else{"MUTABLE_MAIN_URLS=NO"}
 $coBeaconNote = if($coBeaconIsMutable){"COBEACON_MUTABLE=YES"}else{"COBEACON_MUTABLE=NO"}
 $urlsCompact = (($downloadIndex.Keys | Sort-Object) -join ' ; ')
 
+
+
+if([string]::IsNullOrWhiteSpace($CoBeaconRaw)){ 
+  $CoBeaconRaw = 'https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt'
+}
 $entry = @"
 EntryPayload:
 STATE=hold
