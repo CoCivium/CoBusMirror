@@ -55,6 +55,3 @@ ProductSuite.RECEIPT.sha256: https://raw.githubusercontent.com/CoCivium/CoBusMir
 
 # CoBusRelay (SideNotes Bus) — tool immutable; logs always-latest; clipboard includes trailing Enter (CRLF)
 CoBusRelay.ps1: https://raw.githubusercontent.com/CoCivium/CoBusMirror/fbb90f368af3b05f5b813a0fc4ab16bbe640311e/docs/standards/CoBus/tools/CoBusRelay.ps1
-SideNotes__LATEST.md (main): REMOVED_DUE_TO_404__https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/CoBus/SideNotes/SideNotes__LATEST.md
-SideNotes.machine.jsonl (main): REMOVED_DUE_TO_404__https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/CoBus/SideNotes/SideNotes.machine.jsonl
-SideNotes.RECEIPT.sha256 (main): REMOVED_DUE_TO_404__https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/CoBus/SideNotes/RECEIPT.sha256
