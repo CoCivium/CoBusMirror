@@ -34,3 +34,7 @@ If uncertain => classify as Private until reviewed (GLUKEY/crown jewels never pu
 3) One-command bootstrap + self-test + rollback for the above
 
 # COPY_SAFE:TRUE | END_OF_BLOCK
+
+## Intake Promotions
+- CoCarry Intake Synthesis (20260206T181254Z): docs/MasterPlan/SubPlans/CoStacks/Intake/CoCarry_IntakeSynthesis__20260206T181254Z.md
+- CoCarry Dump Deprecations (LATEST): docs/MasterPlan/SubPlans/CoStacks/Intake/DEPRECATIONS__CoCarryDumps__LATEST.md
