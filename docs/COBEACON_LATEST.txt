@@ -1,4 +1,4 @@
-COBEACON_LATEST (FULL URL POINTERS ONLY) UTC=20260126T040146Z
+﻿COBEACON_LATEST (FULL URL POINTERS ONLY) UTC=20260126T040146Z
 START_HERE (FULL URL POINTERS)=
 - CoRepoPreflight Rail: https://raw.githubusercontent.com/CoCivium/CoBusMirror/587aa38629482d283b223e5a9cdb152136507106/docs/inbox/LATEST__CoBusNote__PUBLIC__CoRepoPreflight_Rail__LATEST.ps1
 - TypedSectionRails: https://raw.githubusercontent.com/CoCivium/CoBusMirror/587aa38629482d283b223e5a9cdb152136507106/docs/inbox/LATEST__CoBusNote__PUBLIC__TypedSectionRails__LATEST.txt
@@ -36,7 +36,7 @@ CoSourceID Pack ZIP sha256: https://raw.githubusercontent.com/CoCivium/CoSources
 
 
 
-# CoSideNote (PowerShell) — reverse-video SIDENOTE banner + green one-line printer (snapshot-coherent)
+# CoSideNote (PowerShell) â€” reverse-video SIDENOTE banner + green one-line printer (snapshot-coherent)
 CoSideNote.ps1: https://raw.githubusercontent.com/CoCivium/CoBusMirror/c9a05040f6677e84eafad9e22606fa28809c88a0/docs/standards/CoStatus/tools/CoSideNote.ps1
 
 # CoStacks v0 (manifest + receipts)
@@ -53,5 +53,6 @@ ProductSuite.RECEIPT.sha256: https://raw.githubusercontent.com/CoCivium/CoBusMir
 
 
 
-# CoBusRelay (SideNotes Bus) — tool immutable; logs always-latest; clipboard includes trailing Enter (CRLF)
+# CoBusRelay (SideNotes Bus) â€” tool immutable; logs always-latest; clipboard includes trailing Enter (CRLF)
 CoBusRelay.ps1: https://raw.githubusercontent.com/CoCivium/CoBusMirror/fbb90f368af3b05f5b813a0fc4ab16bbe640311e/docs/standards/CoBus/tools/CoBusRelay.ps1
+PINS_LATEST_RAW_PIN=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/canon/PINS_LATEST.txt
