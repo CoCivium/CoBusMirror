@@ -58,3 +58,5 @@ CoBusRelay.ps1: https://raw.githubusercontent.com/CoCivium/CoBusMirror/fbb90f368
 PINS_LATEST_RAW_PIN=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/canon/PINS_LATEST.txt
 COPRIME_SCOPE_LATEST_RAW_PIN=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/canon/COPRIME_SESSION_SCOPE_LATEST.md
 WAVESET_MANIFEST_LATEST_RAW_PIN=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/canon/WaveSet/WAVESET_MANIFEST_LATEST.md
+SESSION_CYCLING_STANDARD_RAW_PIN=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/canon/SESSION_CYCLING_STANDARD_LATEST.md
+WAVE_FORMAT_STANDARD_RAW_PIN=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/canon/WAVE_FORMAT_STANDARD_LATEST.md
