@@ -15,5 +15,5 @@ HOLD_UNTIL_YYYYMMDD=
 PASS_CRITERIA_DEFAULT=HASH_ONLY
 
 # Optional: UNC drop target for CoBus entry payloads (no user paste)
-COBUS_DROP_UNC_PIN=\\Server\homes\RB\logs\OE_Snapshots
+COBUS_DROP_UNC_PIN=\\Server\homes\RB\CoBux\INBOX
 HOME_RB_UNC=\\Server\homes\RB
