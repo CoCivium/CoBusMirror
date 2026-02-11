@@ -56,3 +56,5 @@ ProductSuite.RECEIPT.sha256: https://raw.githubusercontent.com/CoCivium/CoBusMir
 # CoBusRelay (SideNotes Bus) â€” tool immutable; logs always-latest; clipboard includes trailing Enter (CRLF)
 CoBusRelay.ps1: https://raw.githubusercontent.com/CoCivium/CoBusMirror/fbb90f368af3b05f5b813a0fc4ab16bbe640311e/docs/standards/CoBus/tools/CoBusRelay.ps1
 PINS_LATEST_RAW_PIN=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/canon/PINS_LATEST.txt
+COPRIME_SCOPE_LATEST_RAW_PIN=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/canon/COPRIME_SESSION_SCOPE_LATEST.md
+WAVESET_MANIFEST_LATEST_RAW_PIN=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/canon/WaveSet/WAVESET_MANIFEST_LATEST.md
