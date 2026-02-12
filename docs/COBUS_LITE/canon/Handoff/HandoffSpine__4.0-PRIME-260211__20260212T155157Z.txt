@@ -1,0 +1,12 @@
+﻿HANDOFF_SPINE | SESSION=4.0|PRIME|260211 | UTC=20260212T155157Z
+SOURCE_RECEIPT=\\Server\homes\RB\CoBux\INBOX\WaveSet_Preflight_Receipt__20260212T003244Z.txt
+STATE=PASS
+MAIN_SHA=ec8c40c4603bb3ae154fa88afeadc02e438a89cc
+COBUS_DROP_UNC_PIN=\\Server\homes\RB\CoBux\INBOX
+RAW_COBEACON=https://raw.githubusercontent.com/CoCivium/CoBusMirror/ec8c40c4603bb3ae154fa88afeadc02e438a89cc/docs/COBEACON_LATEST.txt
+RAW_PINS=https://raw.githubusercontent.com/CoCivium/CoBusMirror/ec8c40c4603bb3ae154fa88afeadc02e438a89cc/docs/COBUS_LITE/canon/PINS_LATEST.txt
+RULES:
+  - Bootstrap is SHA-pinned via MAIN_SHA above; avoid /main unless PINS explicitly says otherwise.
+  - This spine supersedes ad-hoc SideNotes for bootstrap; SideNotes should only point to this file.
+NEXT:
+  - Open RAW_COBEACON then follow ONLY pins contained therein (or via RAW_PINS).

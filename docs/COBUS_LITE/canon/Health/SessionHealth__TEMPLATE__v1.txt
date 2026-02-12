@@ -1,0 +1,12 @@
+﻿SESSION_HEALTH | TEMPLATE=v1
+FOOTER_LINE_FORMAT (single-line, pasteable):
+CoHealth|UTC=<UTC>|SESSION=<label>|CU=<OK/SOFT/HARD/FATAL>|PU=<OK/SOFT/HARD/FATAL>|HU=<OK/SOFT/HARD/FATAL>|WT=<OK/SOFT/HARD/FATAL>|TRIGGER=<none|cycle_now>|NOTES=<short>
+
+CYCLING RULE (fail-closed):
+- If ANY of CU/PU/HU/WT == HARD or FATAL => TRIGGER=cycle_now and begin handoff immediately.
+- Handoff requires: HandoffSpine + PointerPack + GateStatus + ScopeChecklist + this CoHealth line posted to CoBus.
+
+MINIMUM SIGNALS (operator-side; do NOT guess model internals):
+- Browser tab count / responsiveness (HU/WT proxy)
+- Local RAM free + CPU load (PU proxy)
+- Size/count of CoBus handoff artifacts (CU proxy)

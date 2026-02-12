@@ -1,0 +1,49 @@
+﻿POINTER_PACK | SESSION=4.0|PRIME|260211 | UTC=20260212T155455Z
+SOURCE_SPINE=\\Server\homes\RB\CoBux\INBOX\HandoffSpine__4.0-PRIME-260211__20260212T155157Z.txt
+RAW_COBEACON=https://raw.githubusercontent.com/CoCivium/CoBusMirror/ec8c40c4603bb3ae154fa88afeadc02e438a89cc/docs/COBEACON_LATEST.txt
+RAW_PINS=https://raw.githubusercontent.com/CoCivium/CoBusMirror/ec8c40c4603bb3ae154fa88afeadc02e438a89cc/docs/COBUS_LITE/canon/PINS_LATEST.txt
+NOTES:
+  - All pointers here are derived from SHA-pinned RAW docs above.
+  - Gate A (MasterPlan) is PASS only if MASTERPLAN pointer is present below.
+
+- CoBus Index: https://raw.githubusercontent.com/CoCivium/CoBusMirror/587aa38629482d283b223e5a9cdb152136507106/docs/inbox/LATEST__CoBusNote__PUBLIC__CoBus_Index__LATEST.json
+- CoBus Spec: https://raw.githubusercontent.com/CoCivium/CoBusMirror/587aa38629482d283b223e5a9cdb152136507106/docs/inbox/LATEST__CoBusNote__PUBLIC__CoBus_Spec__LATEST.txt
+- CoPong Spec: https://raw.githubusercontent.com/CoCivium/CoBusMirror/587aa38629482d283b223e5a9cdb152136507106/docs/inbox/LATEST__CoBusNote__PUBLIC__CoPong_Spec__LATEST.txt
+- CoPre WaveHeader: https://raw.githubusercontent.com/CoCivium/CoBusMirror/587aa38629482d283b223e5a9cdb152136507106/docs/inbox/LATEST__CoBusNote__PUBLIC__CoPre_WaveHeader__LATEST.txt
+- CoRepoPreflight Rail: https://raw.githubusercontent.com/CoCivium/CoBusMirror/587aa38629482d283b223e5a9cdb152136507106/docs/inbox/LATEST__CoBusNote__PUBLIC__CoRepoPreflight_Rail__LATEST.ps1
+- CoStacks Primer: https://raw.githubusercontent.com/CoCivium/CoBusMirror/587aa38629482d283b223e5a9cdb152136507106/docs/CoStacks/CoStacks_Primer_LATEST.md
+- CoStacks Registry: https://raw.githubusercontent.com/CoCivium/CoBusMirror/587aa38629482d283b223e5a9cdb152136507106/docs/CoStacks/CoStacks_Registry_LATEST.md
+- MasterPlan Pointer Status: https://raw.githubusercontent.com/CoCivium/CoBusMirror/587aa38629482d283b223e5a9cdb152136507106/docs/MasterPlan/MasterPlan_Pointer_Status_LATEST.md
+- PointerSpec: https://raw.githubusercontent.com/CoCivium/CoBusMirror/587aa38629482d283b223e5a9cdb152136507106/docs/inbox/LATEST__CoBusNote__PUBLIC__Pointer_Spec__LATEST.txt
+- TypedSectionRails: https://raw.githubusercontent.com/CoCivium/CoBusMirror/587aa38629482d283b223e5a9cdb152136507106/docs/inbox/LATEST__CoBusNote__PUBLIC__TypedSectionRails__LATEST.txt
+COBEACON_RAW_PIN=https://raw.githubusercontent.com/CoCivium/CoBusMirror/5dd6352cf3da72ec5dc0a3b23947a61a95648b7f/docs/COBEACON_LATEST.txt
+CoBusRelay.ps1: https://raw.githubusercontent.com/CoCivium/CoBusMirror/fbb90f368af3b05f5b813a0fc4ab16bbe640311e/docs/standards/CoBus/tools/CoBusRelay.ps1
+CoFooterSchema.vNext: https://raw.githubusercontent.com/CoCivium/CoBusMirror/f1d51d5d9bf0b801c9667afed0c5ce252dd6717c/docs/standards/CoStatus/CoFooterSchema/CoFooterSchema.vNext.md
+COPRE_WAVEHEADER_RAW_PIN=https://raw.githubusercontent.com/CoCivium/CoBusMirror/587aa38629482d283b223e5a9cdb152136507106/docs/inbox/LATEST__CoBusNote__PUBLIC__CoPre_WaveHeader__LATEST.txt
+COPRIME_SCOPE_LATEST_RAW_PIN=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/canon/COPRIME_SESSION_SCOPE_LATEST.md
+CoSideNote.ps1: https://raw.githubusercontent.com/CoCivium/CoBusMirror/c9a05040f6677e84eafad9e22606fa28809c88a0/docs/standards/CoStatus/tools/CoSideNote.ps1
+CoSourceID Pack ZIP (pickup): https://raw.githubusercontent.com/CoCivium/CoSources/0c00fa6fe4adea2d027c783bdc33aacccb4c3c72/docs/hold/CoCarry/packs/PACK__CoSourceID__v0__20260129T200324Z/PACK__CoSourceID__v0__20260129T200324Z.zip
+CoSourceID Pack ZIP sha256: https://raw.githubusercontent.com/CoCivium/CoSources/0c00fa6fe4adea2d027c783bdc33aacccb4c3c72/docs/hold/CoCarry/packs/PACK__CoSourceID__v0__20260129T200324Z/PACK__CoSourceID__v0__20260129T200324Z.zip.sha256
+CoSourceID.machine.json: https://raw.githubusercontent.com/CoCivium/CoBusMirror/e0279986b1bbe545c2f8a503dcae738916418e96/docs/MasterPlan/Appendix/CoSourceID/CoSourceID.machine.json
+CoSourceID.RECEIPT.sha256: https://raw.githubusercontent.com/CoCivium/CoBusMirror/e0279986b1bbe545c2f8a503dcae738916418e96/docs/MasterPlan/Appendix/CoSourceID/RECEIPT.sha256
+CoSourceID__LATEST.md: https://raw.githubusercontent.com/CoCivium/CoBusMirror/e0279986b1bbe545c2f8a503dcae738916418e96/docs/MasterPlan/Appendix/CoSourceID/CoSourceID__LATEST.md
+CoStacks.machine.json: https://raw.githubusercontent.com/CoCivium/CoBusMirror/c646d510514f9cfcfb24bd34e7340b1124c64374/docs/MasterPlan/Appendix/CoStacks/CoStacks.machine.json
+CoStacks.RECEIPT.sha256: https://raw.githubusercontent.com/CoCivium/CoBusMirror/c646d510514f9cfcfb24bd34e7340b1124c64374/docs/MasterPlan/Appendix/CoStacks/RECEIPT.sha256
+CoStacks__LATEST.md: https://raw.githubusercontent.com/CoCivium/CoBusMirror/c646d510514f9cfcfb24bd34e7340b1124c64374/docs/MasterPlan/Appendix/CoStacks/CoStacks__LATEST.md
+CoStatusCard.vNext: https://raw.githubusercontent.com/CoCivium/CoBusMirror/f1d51d5d9bf0b801c9667afed0c5ce252dd6717c/docs/standards/CoStatus/CoStatusCard/CoStatusCard.vNext.md
+Example: https://raw.githubusercontent.com/CoCivium/CoBusMirror/f1d51d5d9bf0b801c9667afed0c5ce252dd6717c/docs/standards/CoStatus/examples/Example_CoStatusCard__vNext.md
+https://raw.githubusercontent.com/CoCivium/CoBusMirror/587aa38629482d283b223e5a9cdb152136507106/docs/inbox/LATEST__CoBusTool__PUBLIC__Emit-CoNotes__LATEST.ps1
+https://raw.githubusercontent.com/CoCivium/CoBusMirror/587aa38629482d283b223e5a9cdb152136507106/docs/inbox/LATEST__CoBusTool__PUBLIC__Emit-CoNotes__LATEST.ps1.sha256
+https://raw.githubusercontent.com/CoCivium/CoBusMirror/587aa38629482d283b223e5a9cdb152136507106/docs/inbox/LATEST__CoBusTool__PUBLIC__Test-CoBusLine__LATEST.ps1
+https://raw.githubusercontent.com/CoCivium/CoBusMirror/587aa38629482d283b223e5a9cdb152136507106/docs/inbox/LATEST__CoBusTool__PUBLIC__Test-CoBusLine__LATEST.ps1.sha256
+PINS_LATEST_RAW_PIN=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/canon/PINS_LATEST.txt
+POINTER_SPEC_RAW_PIN=https://raw.githubusercontent.com/CoCivium/CoBusMirror/587aa38629482d283b223e5a9cdb152136507106/docs/inbox/LATEST__CoBusNote__PUBLIC__Pointer_Spec__LATEST.txt
+ProductSuite.INDEX__LATEST.md: https://raw.githubusercontent.com/CoCivium/CoBusMirror/587aa38629482d283b223e5a9cdb152136507106/docs/MasterPlan/ProductSuite/INDEX__LATEST.md
+ProductSuite.machine.json: https://raw.githubusercontent.com/CoCivium/CoBusMirror/587aa38629482d283b223e5a9cdb152136507106/docs/MasterPlan/ProductSuite/ProductSuite.machine.json
+ProductSuite.RECEIPT.sha256: https://raw.githubusercontent.com/CoCivium/CoBusMirror/587aa38629482d283b223e5a9cdb152136507106/docs/MasterPlan/ProductSuite/RECEIPT.sha256
+SESSION_CYCLING_STANDARD_RAW_PIN=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/canon/SESSION_CYCLING_STANDARD_LATEST.md
+Template CoFooter: https://raw.githubusercontent.com/CoCivium/CoBusMirror/f1d51d5d9bf0b801c9667afed0c5ce252dd6717c/docs/standards/CoStatus/templates/CoFooter_TEMPLATE.md
+Template CoStatusCard: https://raw.githubusercontent.com/CoCivium/CoBusMirror/f1d51d5d9bf0b801c9667afed0c5ce252dd6717c/docs/standards/CoStatus/templates/CoStatusCard_TEMPLATE.md
+WAVE_FORMAT_STANDARD_RAW_PIN=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/canon/WAVE_FORMAT_STANDARD_LATEST.md
+WAVESET_MANIFEST_LATEST_RAW_PIN=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/canon/WaveSet/WAVESET_MANIFEST_LATEST.md
+
