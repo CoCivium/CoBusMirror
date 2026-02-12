@@ -7,7 +7,7 @@ $ProgressPreference='SilentlyContinue'
 function UTS { (Get-Date).ToUniversalTime().ToString('yyyyMMddTHHmmssZ') }
 function Fail([string]$m){ throw "FAIL-CLOSED: $m" }
 function OneLine([string]$s){ ($s -replace "(\r?\n)+"," " -replace "\s{2,}"," ").Trim() }
-function San([string]$s){ ($s -replace '[^\w\.\-]+','_').Trim('_') } # windows-safe
+function SanPath([string]$s){ ($s -replace '[^\w\.\-]+','_').Trim('_') } # filesystem-safe ONLY
 function EnsureDir([string]$p){ New-Item -ItemType Directory -Force -Path $p | Out-Null }
 
 param(
@@ -18,6 +18,7 @@ param(
 )
 
 $utc = UTS
+$PathLabel = SanPath $SessionLabel   # pipes preserved in SessionLabel, sanitized only for paths
 
 # Repo root auto
 $repo = (& git rev-parse --show-toplevel 2>$null)
@@ -45,7 +46,7 @@ if(-not [string]::IsNullOrWhiteSpace($MegaZipRawUrl)){
 if(-not (Test-Path -LiteralPath $MegaZipPath)){ Fail "MegaZip missing: $MegaZipPath" }
 
 # Stage (windows-safe)
-$stage = Join-Path $HOME ("Downloads\_SessionLocalStage\{0}\_megawave_{1}" -f (San $SessionLabel), $utc)
+$stage = Join-Path $HOME ("Downloads\_SessionLocalStage\{0}\_megawave_{1}" -f $PathLabel, $utc)
 EnsureDir $stage
 
 Expand-Archive -LiteralPath $MegaZipPath -DestinationPath $stage -Force
@@ -68,11 +69,11 @@ function RunStep($step){
   $sid = [string]$step.id
   if([string]::IsNullOrWhiteSpace($sid)){ Fail "Step missing id" }
 
-  $stepOut = Join-Path $outRoot (San $sid)
+  $stepOut = Join-Path $outRoot (SanPath $sid)
   EnsureDir $stepOut
 
-  $log = Join-Path $stepOut ("LOG__{0}__{1}.txt" -f (San $sid), $utc)
-  $rcp = Join-Path $stepOut ("RECEIPT__{0}__{1}.txt" -f (San $sid), $utc)
+  $log = Join-Path $stepOut ("LOG__{0}__{1}.txt" -f (SanPath $sid), $utc)
+  $rcp = Join-Path $stepOut ("RECEIPT__{0}__{1}.txt" -f (SanPath $sid), $utc)
 
   $scriptPath = Join-Path $stage $step.script
   if(-not (Test-Path -LiteralPath $scriptPath)){ Fail "Step script missing: $($step.script)" }
@@ -96,10 +97,9 @@ function RunStep($step){
         }
       }
     }
-    if($step.on_fail -eq 'stop'){ }
   }
 
-  $line = OneLine ("RECEIPT|UTC={0}|MEGAZIP={1}|STEP={2}|STATE={3}|COMMIT_SHA=NA|RAW_PTR=NA|NOTES={4}" -f $utc,$manifest.megazip_id,$sid,$state,$notes)
+  $line = OneLine ("RECEIPT|UTC={0}|MEGAZIP={1}|STEP={2}|STATE={3}|NOTES={4}" -f $utc,$manifest.megazip_id,$sid,$state,$notes)
   Set-Content -LiteralPath $rcp -Value $line -Encoding UTF8
 
   $results.Add([pscustomobject]@{ step=$sid; state=$state; receipt=$rcp; log=$log })
@@ -114,17 +114,26 @@ foreach($s in $manifest.plan){ RunStep $s }
 $canonAbs = Join-Path $repo $CanonOutRel
 EnsureDir $canonAbs
 
-$runFolderName = "MEGARUN__{0}__{1}__{2}" -f (San $manifest.megazip_id), (San $SessionLabel), $utc
+$runFolderName = "MEGARUN__{0}__{1}__{2}" -f (SanPath $manifest.megazip_id), $PathLabel, $utc
 $runFolder = Join-Path $canonAbs $runFolderName
 EnsureDir $runFolder
 
 Copy-Item -LiteralPath $outRoot -Destination (Join-Path $runFolder 'out') -Recurse -Force
 
 $triage = Join-Path $runFolder ("TRIAGE__{0}.txt" -f $utc)
+$meta   = Join-Path $runFolder ("METADATA__{0}.txt" -f $utc)
+
 $tri = @()
 $tri += "TRIAGE|UTC=$utc|MEGAZIP=$($manifest.megazip_id)|SESSION=$SessionLabel"
 foreach($r in $results){ $tri += ("STEP={0}|STATE={1}|RECEIPT={2}" -f $r.step,$r.state,(Split-Path -Leaf $r.receipt)) }
 Set-Content -LiteralPath $triage -Value ($tri -join "`r`n") -Encoding UTF8
+
+$m = @()
+$m += "UTC=$utc"
+$m += "SESSION_LABEL=$SessionLabel"
+$m += "PATH_LABEL=$PathLabel"
+$m += "MEGAZIP_ID=$($manifest.megazip_id)"
+Set-Content -LiteralPath $meta -Value ($m -join "`r`n") -Encoding UTF8
 
 & git add $runFolder | Out-Null
 & git commit -m ("MegaRun: {0} {1} {2}" -f $manifest.megazip_id,$SessionLabel,$utc) | Out-Null
@@ -132,3 +141,4 @@ $sha = (& git rev-parse HEAD).Trim()
 
 Write-Host ("MEGARUN_COMMIT_SHA: " + $sha)
 Write-Host ("MEGARUN_RAW_TRIAGE: https://raw.githubusercontent.com/CoCivium/CoBusMirror/{0}/{1}" -f $sha, (($triage.Substring($repo.Length)).TrimStart('\') -replace '\\','/'))
+Write-Host ("MEGARUN_RAW_META:   https://raw.githubusercontent.com/CoCivium/CoBusMirror/{0}/{1}" -f $sha, (($meta.Substring($repo.Length)).TrimStart('\') -replace '\\','/'))
