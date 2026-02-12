@@ -1,5 +1,12 @@
 # MegaWaveRunner__LATEST.ps1
-# Zero-ask: derive repo + defaults; only required input is -MegaZipPath (or -MegaZipRawUrl)
+# Zero-ask runner. CRITICAL: param() must be first non-comment statement in PowerShell scripts.
+param(
+  [string]$MegaZipPath,
+  [string]$MegaZipRawUrl,
+  [string]$SessionLabel = "SESSION",
+  [string]$CanonOutRel  = "docs/COBUS_LITE/canon/MegaRuns"
+)
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference='Stop'
 $ProgressPreference='SilentlyContinue'
@@ -10,15 +17,8 @@ function OneLine([string]$s){ ($s -replace "(\r?\n)+"," " -replace "\s{2,}"," ")
 function SanPath([string]$s){ ($s -replace '[^\w\.\-]+','_').Trim('_') } # filesystem-safe ONLY
 function EnsureDir([string]$p){ New-Item -ItemType Directory -Force -Path $p | Out-Null }
 
-param(
-  [string]$MegaZipPath,
-  [string]$MegaZipRawUrl,
-  [string]$SessionLabel = "SESSION",
-  [string]$CanonOutRel  = "docs/COBUS_LITE/canon/MegaRuns"
-)
-
 $utc = UTS
-$PathLabel = SanPath $SessionLabel   # pipes preserved in SessionLabel, sanitized only for paths
+$PathLabel = SanPath $SessionLabel   # pipes preserved in SessionLabel; sanitized only for filesystem paths
 
 # Repo root auto
 $repo = (& git rev-parse --show-toplevel 2>$null)
@@ -36,7 +36,7 @@ if((-not [string]::IsNullOrWhiteSpace($MegaZipPath)) -and (-not [string]::IsNull
 if(-not [string]::IsNullOrWhiteSpace($MegaZipRawUrl)){
   $dl = Join-Path $env:TEMP ("MEGAZIP__dl__{0}.zip" -f $utc)
   try {
-    Invoke-WebRequest -Uri $MegaZipRawUrl -OutFile $dl -UseBasicParsing -ErrorAction Stop | Out-Null
+    Invoke-WebRequest -Uri $MegaZipRawUrl -OutFile $dl -ErrorAction Stop | Out-Null
   } catch {
     Fail ("Fetch failed: " + $MegaZipRawUrl + " :: " + $_.Exception.Message)
   }
@@ -45,7 +45,7 @@ if(-not [string]::IsNullOrWhiteSpace($MegaZipRawUrl)){
 
 if(-not (Test-Path -LiteralPath $MegaZipPath)){ Fail "MegaZip missing: $MegaZipPath" }
 
-# Stage (windows-safe)
+# Stage
 $stage = Join-Path $HOME ("Downloads\_SessionLocalStage\{0}\_megawave_{1}" -f $PathLabel, $utc)
 EnsureDir $stage
 
