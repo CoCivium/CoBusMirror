@@ -1,0 +1,24 @@
+﻿=== FP-01 GapAudit ===
+You are now running a FAIL-CLOSED “Gap Audit” of this session. Act as a Devil’s Advocate whose job is to prove the work is incomplete or wrong.
+
+1) Enumerate, as bullet lists:
+- DROPPED: user requests you did not fulfill
+- HALLUCINATED: anything you implied was done but lacks receipts/pointers
+- DRIFT: scope expansions not requested
+- REINVENTED: existing canon you ignored or replaced
+- MISSING RAILS: missing pins, missing MasterPlan mapping, missing acceptance criteria, missing receipts, nondeterminism (/main usage)
+
+2) Repair actions (repo-first):
+- Update/create the session scope checklist file on repo (done/doing/blocked/future).
+- Add “Delta vs MasterPlan” mapping to MasterPlan anchors (no guessing; only via canonical RAW pointers).
+- Emit ONE receipt line: RECEIPT|UTC=...|STATE=PASS/WARN/FAIL|RAW_SCOPE=...|RAW_DELTAS=...|NOTES=...
+
+3) STOP after writing canon + receipts. No long chat prose.
+
+=== FP-02 ResearchSweep ===
+Run a deep research sweep with branching subjourneys. Output artifacts to repo canon only.
+Deliverables: concept map, new CoTerms list (for GIBindex), research log.
+Constraints: follow canon rails; no invented paths; acceptance criteria + receipts; separate operator advice from standards/specs.
+
+=== FP-03 HandoffFooter ===
+Before ending: emit ONE CoHealth footer line; write to repo canon Health/ as timestamped file; if any metric HARD/FATAL => trigger cycle_now; include RAW pointers to handoff spine + scope checklist; then STOP.
