@@ -63,6 +63,18 @@ $runId = "MR__{0}__{1}" -f $utc, (H8 ($manifest.megazip_id + "|" + $SessionLabel
 $canonAbs = Join-Path $repo $CanonOutRel
 EnsureDir $canonAbs
 $runFolder = Join-Path $canonAbs $runId
+# --- GUARANTEE triage/meta exist early (even if a step fails) ---
+try {
+  $triagePath = Join-Path $runFolder "T.txt"
+  $metaPath   = Join-Path $runFolder "M.txt"
+  if(-not (Test-Path -LiteralPath $triagePath)){
+    @("UTC=$utc","STATE=START","NOTE=triage created early") | Set-Content -LiteralPath $triagePath -Encoding UTF8
+  }
+  if(-not (Test-Path -LiteralPath $metaPath)){
+    @("UTC=$utc","STATE=START","NOTE=meta created early") | Set-Content -LiteralPath $metaPath -Encoding UTF8
+  }
+} catch {}
+
 EnsureDir $runFolder
 
 # Commit-safe artifacts (short names)
@@ -149,3 +161,14 @@ $sha = (& git rev-parse HEAD).Trim()
 Write-Host ("MEGARUN_COMMIT_SHA: " + $sha)
 Write-Host ("MEGARUN_RAW_TRIAGE: https://raw.githubusercontent.com/CoCivium/CoBusMirror/{0}/{1}" -f $sha, (($triage.Substring($repo.Length)).TrimStart('\') -replace '\\','/'))
 Write-Host ("MEGARUN_RAW_META:   https://raw.githubusercontent.com/CoCivium/CoBusMirror/{0}/{1}" -f $sha, (($meta.Substring($repo.Length)).TrimStart('\') -replace '\\','/'))
+
+# --- FINAL_GUARANTEE_T_M (best-effort) ---
+try {
+  if($runFolder){
+    $triagePath = Join-Path $runFolder "T.txt"
+    $metaPath   = Join-Path $runFolder "M.txt"
+    if(-not (Test-Path -LiteralPath $triagePath)){ @("UTC=$utc","STATE=END","NOTE=triage created late") | Set-Content -LiteralPath $triagePath -Encoding UTF8 }
+    if(-not (Test-Path -LiteralPath $metaPath)){ @("UTC=$utc","STATE=END","NOTE=meta created late") | Set-Content -LiteralPath $metaPath -Encoding UTF8 }
+  }
+} catch {}
+
