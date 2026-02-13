@@ -1,0 +1,6 @@
+UTC=20260213T003056Z
+SESSION_LABEL=MegaWave-Baseline|RunnerExec|20260213T003051Z
+RUNID=MR__20260213T003056Z__a817cd53
+MEGAZIP_ID=MegaZipTemplate.TrueMegaWave.v1
+MEGAZIP_PATH=C:\Users\rball\Downloads\MEGAZIP__MegaZipTemplate.TrueMegaWave.v1__20260212T214736Z.zip
+LOGS_ROOT=C:\Users\rball\Downloads\_MegaWaveLogs\MR__20260213T003056Z__a817cd53
