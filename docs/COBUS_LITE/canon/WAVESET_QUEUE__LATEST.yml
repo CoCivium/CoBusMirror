@@ -1,127 +1,105 @@
 # WAVESET_QUEUE__LATEST
-# UTC: 20260217T053509Z
-# NOTE: Replace placeholders with canon tasks discovered from CoBeacon + PointerPack.
+# UTC: 20260217T154451Z
 waveset:
-  utc: 20260217T053509Z
+  utc: 20260217T154451Z
   lanes: 24
+  bootstrap:
+    raw_cobeacon: https://raw.githubusercontent.com/CoCivium/CoBusMirror/c74c936183d102ef4fcbeac656bb4ddffff44c60/docs/COBEACON_LATEST.txt
+    raw_pointerpack_yml: https://raw.githubusercontent.com/CoCivium/CoBusMirror/6c9d1f04b2474316d5f5956ad108031483ffe55f/docs/COBUS_LITE/canon/POINTERPACK__LATEST.yml
   tasks:
     - sub_id: Sub1
-      intent: NOT_YET
-      target_repo: CoBusMirror
-      canon_target: NOT_YET
-      done_criteria: PR+Receipt+PinsUsed
+      intent: "FILL_DOMAIN_PIN: canonpaths"
+      canon_target: "docs/COBUS_LITE/canon/POINTERPACK__LATEST.yml"
+      done_criteria: "PR+Receipt+PinsUsed+BusEntryUpdated"
     - sub_id: Sub2
-      intent: NOT_YET
-      target_repo: CoBusMirror
-      canon_target: NOT_YET
-      done_criteria: PR+Receipt+PinsUsed
+      intent: "FILL_DOMAIN_PIN: coaudit"
+      canon_target: "docs/COBUS_LITE/canon/POINTERPACK__LATEST.yml"
+      done_criteria: "PR+Receipt+PinsUsed+BusEntryUpdated"
     - sub_id: Sub3
-      intent: NOT_YET
-      target_repo: CoBusMirror
-      canon_target: NOT_YET
-      done_criteria: PR+Receipt+PinsUsed
+      intent: "FILL_DOMAIN_PIN: coindex"
+      canon_target: "docs/COBUS_LITE/canon/POINTERPACK__LATEST.yml"
+      done_criteria: "PR+Receipt+PinsUsed+BusEntryUpdated"
     - sub_id: Sub4
-      intent: NOT_YET
-      target_repo: CoBusMirror
-      canon_target: NOT_YET
-      done_criteria: PR+Receipt+PinsUsed
+      intent: "FILL_DOMAIN_PIN: coshare"
+      canon_target: "docs/COBUS_LITE/canon/POINTERPACK__LATEST.yml"
+      done_criteria: "PR+Receipt+PinsUsed+BusEntryUpdated"
     - sub_id: Sub5
-      intent: NOT_YET
-      target_repo: CoBusMirror
-      canon_target: NOT_YET
-      done_criteria: PR+Receipt+PinsUsed
+      intent: "FILL_DOMAIN_PIN: costeward_ops"
+      canon_target: "docs/COBUS_LITE/canon/POINTERPACK__LATEST.yml"
+      done_criteria: "PR+Receipt+PinsUsed+BusEntryUpdated"
     - sub_id: Sub6
-      intent: NOT_YET
-      target_repo: CoBusMirror
-      canon_target: NOT_YET
-      done_criteria: PR+Receipt+PinsUsed
+      intent: "FILL_DOMAIN_PIN: gibindex"
+      canon_target: "docs/COBUS_LITE/canon/POINTERPACK__LATEST.yml"
+      done_criteria: "PR+Receipt+PinsUsed+BusEntryUpdated"
     - sub_id: Sub7
-      intent: NOT_YET
-      target_repo: CoBusMirror
-      canon_target: NOT_YET
-      done_criteria: PR+Receipt+PinsUsed
+      intent: "FILL_DOMAIN_PIN: masterplan"
+      canon_target: "docs/COBUS_LITE/canon/POINTERPACK__LATEST.yml"
+      done_criteria: "PR+Receipt+PinsUsed+BusEntryUpdated"
     - sub_id: Sub8
-      intent: NOT_YET
-      target_repo: CoBusMirror
-      canon_target: NOT_YET
-      done_criteria: PR+Receipt+PinsUsed
+      intent: "FILL_DOMAIN_PIN: subplans_index"
+      canon_target: "docs/COBUS_LITE/canon/POINTERPACK__LATEST.yml"
+      done_criteria: "PR+Receipt+PinsUsed+BusEntryUpdated"
     - sub_id: Sub9
-      intent: NOT_YET
-      target_repo: CoBusMirror
-      canon_target: NOT_YET
-      done_criteria: PR+Receipt+PinsUsed
+      intent: "FILL_DOMAIN_PIN: tiers_volatility"
+      canon_target: "docs/COBUS_LITE/canon/POINTERPACK__LATEST.yml"
+      done_criteria: "PR+Receipt+PinsUsed+BusEntryUpdated"
     - sub_id: Sub10
-      intent: NOT_YET
-      target_repo: CoBusMirror
-      canon_target: NOT_YET
-      done_criteria: PR+Receipt+PinsUsed
+      intent: "TRIAGE_SPARE: read bus, fix one FAIL lane"
+      canon_target: "docs/COBUS_LITE/canon/POINTERPACK__LATEST.yml"
+      done_criteria: "PR+Receipt+PinsUsed+BusEntryUpdated"
     - sub_id: Sub11
-      intent: NOT_YET
-      target_repo: CoBusMirror
-      canon_target: NOT_YET
-      done_criteria: PR+Receipt+PinsUsed
+      intent: "TRIAGE_SPARE: read bus, fix one FAIL lane"
+      canon_target: "docs/COBUS_LITE/canon/POINTERPACK__LATEST.yml"
+      done_criteria: "PR+Receipt+PinsUsed+BusEntryUpdated"
     - sub_id: Sub12
-      intent: NOT_YET
-      target_repo: CoBusMirror
-      canon_target: NOT_YET
-      done_criteria: PR+Receipt+PinsUsed
+      intent: "TRIAGE_SPARE: read bus, fix one FAIL lane"
+      canon_target: "docs/COBUS_LITE/canon/POINTERPACK__LATEST.yml"
+      done_criteria: "PR+Receipt+PinsUsed+BusEntryUpdated"
     - sub_id: Sub13
-      intent: NOT_YET
-      target_repo: CoBusMirror
-      canon_target: NOT_YET
-      done_criteria: PR+Receipt+PinsUsed
+      intent: "TRIAGE_SPARE: read bus, fix one FAIL lane"
+      canon_target: "docs/COBUS_LITE/canon/POINTERPACK__LATEST.yml"
+      done_criteria: "PR+Receipt+PinsUsed+BusEntryUpdated"
     - sub_id: Sub14
-      intent: NOT_YET
-      target_repo: CoBusMirror
-      canon_target: NOT_YET
-      done_criteria: PR+Receipt+PinsUsed
+      intent: "TRIAGE_SPARE: read bus, fix one FAIL lane"
+      canon_target: "docs/COBUS_LITE/canon/POINTERPACK__LATEST.yml"
+      done_criteria: "PR+Receipt+PinsUsed+BusEntryUpdated"
     - sub_id: Sub15
-      intent: NOT_YET
-      target_repo: CoBusMirror
-      canon_target: NOT_YET
-      done_criteria: PR+Receipt+PinsUsed
+      intent: "TRIAGE_SPARE: read bus, fix one FAIL lane"
+      canon_target: "docs/COBUS_LITE/canon/POINTERPACK__LATEST.yml"
+      done_criteria: "PR+Receipt+PinsUsed+BusEntryUpdated"
     - sub_id: Sub16
-      intent: NOT_YET
-      target_repo: CoBusMirror
-      canon_target: NOT_YET
-      done_criteria: PR+Receipt+PinsUsed
+      intent: "TRIAGE_SPARE: read bus, fix one FAIL lane"
+      canon_target: "docs/COBUS_LITE/canon/POINTERPACK__LATEST.yml"
+      done_criteria: "PR+Receipt+PinsUsed+BusEntryUpdated"
     - sub_id: Sub17
-      intent: NOT_YET
-      target_repo: CoBusMirror
-      canon_target: NOT_YET
-      done_criteria: PR+Receipt+PinsUsed
+      intent: "TRIAGE_SPARE: read bus, fix one FAIL lane"
+      canon_target: "docs/COBUS_LITE/canon/POINTERPACK__LATEST.yml"
+      done_criteria: "PR+Receipt+PinsUsed+BusEntryUpdated"
     - sub_id: Sub18
-      intent: NOT_YET
-      target_repo: CoBusMirror
-      canon_target: NOT_YET
-      done_criteria: PR+Receipt+PinsUsed
+      intent: "TRIAGE_SPARE: read bus, fix one FAIL lane"
+      canon_target: "docs/COBUS_LITE/canon/POINTERPACK__LATEST.yml"
+      done_criteria: "PR+Receipt+PinsUsed+BusEntryUpdated"
     - sub_id: Sub19
-      intent: NOT_YET
-      target_repo: CoBusMirror
-      canon_target: NOT_YET
-      done_criteria: PR+Receipt+PinsUsed
+      intent: "TRIAGE_SPARE: read bus, fix one FAIL lane"
+      canon_target: "docs/COBUS_LITE/canon/POINTERPACK__LATEST.yml"
+      done_criteria: "PR+Receipt+PinsUsed+BusEntryUpdated"
     - sub_id: Sub20
-      intent: NOT_YET
-      target_repo: CoBusMirror
-      canon_target: NOT_YET
-      done_criteria: PR+Receipt+PinsUsed
+      intent: "TRIAGE_SPARE: read bus, fix one FAIL lane"
+      canon_target: "docs/COBUS_LITE/canon/POINTERPACK__LATEST.yml"
+      done_criteria: "PR+Receipt+PinsUsed+BusEntryUpdated"
     - sub_id: Sub21
-      intent: NOT_YET
-      target_repo: CoBusMirror
-      canon_target: NOT_YET
-      done_criteria: PR+Receipt+PinsUsed
+      intent: "TRIAGE_SPARE: read bus, fix one FAIL lane"
+      canon_target: "docs/COBUS_LITE/canon/POINTERPACK__LATEST.yml"
+      done_criteria: "PR+Receipt+PinsUsed+BusEntryUpdated"
     - sub_id: Sub22
-      intent: NOT_YET
-      target_repo: CoBusMirror
-      canon_target: NOT_YET
-      done_criteria: PR+Receipt+PinsUsed
+      intent: "TRIAGE_SPARE: read bus, fix one FAIL lane"
+      canon_target: "docs/COBUS_LITE/canon/POINTERPACK__LATEST.yml"
+      done_criteria: "PR+Receipt+PinsUsed+BusEntryUpdated"
     - sub_id: Sub23
-      intent: NOT_YET
-      target_repo: CoBusMirror
-      canon_target: NOT_YET
-      done_criteria: PR+Receipt+PinsUsed
+      intent: "TRIAGE_SPARE: read bus, fix one FAIL lane"
+      canon_target: "docs/COBUS_LITE/canon/POINTERPACK__LATEST.yml"
+      done_criteria: "PR+Receipt+PinsUsed+BusEntryUpdated"
     - sub_id: Sub24
-      intent: NOT_YET
-      target_repo: CoBusMirror
-      canon_target: NOT_YET
-      done_criteria: PR+Receipt+PinsUsed
+      intent: "TRIAGE_SPARE: read bus, fix one FAIL lane"
+      canon_target: "docs/COBUS_LITE/canon/POINTERPACK__LATEST.yml"
+      done_criteria: "PR+Receipt+PinsUsed+BusEntryUpdated"
