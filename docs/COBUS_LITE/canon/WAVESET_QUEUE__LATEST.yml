@@ -1,0 +1,127 @@
+# WAVESET_QUEUE__LATEST
+# UTC: 20260217T053509Z
+# NOTE: Replace placeholders with canon tasks discovered from CoBeacon + PointerPack.
+waveset:
+  utc: 20260217T053509Z
+  lanes: 24
+  tasks:
+    - sub_id: Sub1
+      intent: NOT_YET
+      target_repo: CoBusMirror
+      canon_target: NOT_YET
+      done_criteria: PR+Receipt+PinsUsed
+    - sub_id: Sub2
+      intent: NOT_YET
+      target_repo: CoBusMirror
+      canon_target: NOT_YET
+      done_criteria: PR+Receipt+PinsUsed
+    - sub_id: Sub3
+      intent: NOT_YET
+      target_repo: CoBusMirror
+      canon_target: NOT_YET
+      done_criteria: PR+Receipt+PinsUsed
+    - sub_id: Sub4
+      intent: NOT_YET
+      target_repo: CoBusMirror
+      canon_target: NOT_YET
+      done_criteria: PR+Receipt+PinsUsed
+    - sub_id: Sub5
+      intent: NOT_YET
+      target_repo: CoBusMirror
+      canon_target: NOT_YET
+      done_criteria: PR+Receipt+PinsUsed
+    - sub_id: Sub6
+      intent: NOT_YET
+      target_repo: CoBusMirror
+      canon_target: NOT_YET
+      done_criteria: PR+Receipt+PinsUsed
+    - sub_id: Sub7
+      intent: NOT_YET
+      target_repo: CoBusMirror
+      canon_target: NOT_YET
+      done_criteria: PR+Receipt+PinsUsed
+    - sub_id: Sub8
+      intent: NOT_YET
+      target_repo: CoBusMirror
+      canon_target: NOT_YET
+      done_criteria: PR+Receipt+PinsUsed
+    - sub_id: Sub9
+      intent: NOT_YET
+      target_repo: CoBusMirror
+      canon_target: NOT_YET
+      done_criteria: PR+Receipt+PinsUsed
+    - sub_id: Sub10
+      intent: NOT_YET
+      target_repo: CoBusMirror
+      canon_target: NOT_YET
+      done_criteria: PR+Receipt+PinsUsed
+    - sub_id: Sub11
+      intent: NOT_YET
+      target_repo: CoBusMirror
+      canon_target: NOT_YET
+      done_criteria: PR+Receipt+PinsUsed
+    - sub_id: Sub12
+      intent: NOT_YET
+      target_repo: CoBusMirror
+      canon_target: NOT_YET
+      done_criteria: PR+Receipt+PinsUsed
+    - sub_id: Sub13
+      intent: NOT_YET
+      target_repo: CoBusMirror
+      canon_target: NOT_YET
+      done_criteria: PR+Receipt+PinsUsed
+    - sub_id: Sub14
+      intent: NOT_YET
+      target_repo: CoBusMirror
+      canon_target: NOT_YET
+      done_criteria: PR+Receipt+PinsUsed
+    - sub_id: Sub15
+      intent: NOT_YET
+      target_repo: CoBusMirror
+      canon_target: NOT_YET
+      done_criteria: PR+Receipt+PinsUsed
+    - sub_id: Sub16
+      intent: NOT_YET
+      target_repo: CoBusMirror
+      canon_target: NOT_YET
+      done_criteria: PR+Receipt+PinsUsed
+    - sub_id: Sub17
+      intent: NOT_YET
+      target_repo: CoBusMirror
+      canon_target: NOT_YET
+      done_criteria: PR+Receipt+PinsUsed
+    - sub_id: Sub18
+      intent: NOT_YET
+      target_repo: CoBusMirror
+      canon_target: NOT_YET
+      done_criteria: PR+Receipt+PinsUsed
+    - sub_id: Sub19
+      intent: NOT_YET
+      target_repo: CoBusMirror
+      canon_target: NOT_YET
+      done_criteria: PR+Receipt+PinsUsed
+    - sub_id: Sub20
+      intent: NOT_YET
+      target_repo: CoBusMirror
+      canon_target: NOT_YET
+      done_criteria: PR+Receipt+PinsUsed
+    - sub_id: Sub21
+      intent: NOT_YET
+      target_repo: CoBusMirror
+      canon_target: NOT_YET
+      done_criteria: PR+Receipt+PinsUsed
+    - sub_id: Sub22
+      intent: NOT_YET
+      target_repo: CoBusMirror
+      canon_target: NOT_YET
+      done_criteria: PR+Receipt+PinsUsed
+    - sub_id: Sub23
+      intent: NOT_YET
+      target_repo: CoBusMirror
+      canon_target: NOT_YET
+      done_criteria: PR+Receipt+PinsUsed
+    - sub_id: Sub24
+      intent: NOT_YET
+      target_repo: CoBusMirror
+      canon_target: NOT_YET
+      done_criteria: PR+Receipt+PinsUsed
