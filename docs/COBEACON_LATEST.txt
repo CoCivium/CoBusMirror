@@ -1,4 +1,4 @@
-﻿COBEACON_LATEST (FULL URL POINTERS ONLY) UTC=20260126T040146Z
+COBEACON_LATEST (FULL URL POINTERS ONLY) UTC=20260126T040146Z
 START_HERE (FULL URL POINTERS)=
 - CoRepoPreflight Rail: https://raw.githubusercontent.com/CoCivium/CoBusMirror/587aa38629482d283b223e5a9cdb152136507106/docs/inbox/LATEST__CoBusNote__PUBLIC__CoRepoPreflight_Rail__LATEST.ps1
 - TypedSectionRails: https://raw.githubusercontent.com/CoCivium/CoBusMirror/587aa38629482d283b223e5a9cdb152136507106/docs/inbox/LATEST__CoBusNote__PUBLIC__TypedSectionRails__LATEST.txt
@@ -60,3 +60,6 @@ COPRIME_SCOPE_LATEST_RAW_PIN=https://raw.githubusercontent.com/CoCivium/CoBusMir
 WAVESET_MANIFEST_LATEST_RAW_PIN=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/canon/WaveSet/WAVESET_MANIFEST_LATEST.md
 SESSION_CYCLING_STANDARD_RAW_PIN=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/canon/SESSION_CYCLING_STANDARD_LATEST.md
 WAVE_FORMAT_STANDARD_RAW_PIN=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/canon/WAVE_FORMAT_STANDARD_LATEST.md
+https://raw.githubusercontent.com/CoCivium/CoBusMirror/6c9d1f04b2474316d5f5956ad108031483ffe55f/docs/COBUS_LITE/canon/POINTERPACK__LATEST.yml
+https://raw.githubusercontent.com/CoCivium/CoBusMirror/6c9d1f04b2474316d5f5956ad108031483ffe55f/docs/COBUS_LITE/canon/POINTERPACK__LATEST.md
+https://raw.githubusercontent.com/CoCivium/CoBusMirror/6c9d1f04b2474316d5f5956ad108031483ffe55f/docs/COBUS_LITE/canon/BOOTSTRAP_ROLLUP__LATEST.md
