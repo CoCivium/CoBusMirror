@@ -1,0 +1,29 @@
+version: 1
+generated_utc: "20260217T020659Z"
+rules:
+  raw_only: true
+  no_main_raw: true
+  literal_urls_only: true
+  fail_closed_on_required_not_yet: true
+
+# ONE authoritative place: exactly one pin per domain (or NOT_YET).
+# REQUIRED + NOT_YET => intentional FAIL-CLOSED until published.
+
+domains:
+  coindex: { required: true,  status: NOT_YET }
+  gibindex:{ required: true,  status: NOT_YET }
+  coaudit: { required: true,  status: NOT_YET }
+  costeward_ops:{ required: true, status: NOT_YET }
+  cocontributor_ops:{ required: false, status: NOT_YET }
+  masterplan:{ required: true, status: NOT_YET }
+  subplans_index:{ required: true, status: NOT_YET }
+  canonpaths:{ required: true, status: NOT_YET }
+  coshare:{ required: true, status: NOT_YET }
+  cocta_cometatrain:{ required: false, status: NOT_YET }
+  tiers_volatility:{ required: true, status: NOT_YET }
+
+compliance:
+  status: PLANNED
+  targets: ["OWASP_ASVS", "NIST_SSDF", "MITRE", "NIST_AI_RMF", "SAIF"]
+  mapping_doc_raw: NOT_YET
+  blocking_until_g2: false
