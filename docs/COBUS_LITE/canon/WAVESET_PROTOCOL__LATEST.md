@@ -24,7 +24,7 @@ Run N lanes (default 24) in parallel with least user effort. No chat glue. Repo 
 
 ## Canon bootstrap (always first)
 RAW_COBEACON:
-https://raw.githubusercontent.com/CoCivium/CoBusMirror/5dd6352cf3da72ec5dc0a3b23947a61a95648b7f/docs/COBEACON_LATEST.txt
+https://raw.githubusercontent.com/CoCivium/CoBusMirror/c74c936183d102ef4fcbeac656bb4ddffff44c60/docs/COBEACON_LATEST.txt
 
 ## Repo surfaces
 - Lane state (Bus Entry): docs/COBUS_LITE/bus/subsessions/SubX__LATEST.md
@@ -62,7 +62,7 @@ HARD RAILS:
 
 BOOTSTRAP:
 Fetch CoBeacon RAW:
-https://raw.githubusercontent.com/CoCivium/CoBusMirror/5dd6352cf3da72ec5dc0a3b23947a61a95648b7f/docs/COBEACON_LATEST.txt
+https://raw.githubusercontent.com/CoCivium/CoBusMirror/c74c936183d102ef4fcbeac656bb4ddffff44c60/docs/COBEACON_LATEST.txt
 Follow ONLY the FULL-URL pointers listed there.
 If required pointer is missing, write BLOCKED bus-entry and STOP.
 
@@ -85,3 +85,4 @@ For each lane:
 - Promote new canon pins where appropriate.
 - Update progress surfaces.
 - Define next WaveSet queue.
+
