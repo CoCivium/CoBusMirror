@@ -47,8 +47,8 @@ try {
     if([string]::IsNullOrWhiteSpace($raw)){ Fail "Clipboard empty. Copy WF_DRAIN blocks first." }
   } else {
     EnsureDir $pendingAbs
-    $files = Get-ChildItem -LiteralPath $pendingAbs -File -Force | Sort-Object FullName
-    if(-not $files -or $files.Count -eq 0){ Fail "No pending files in: $pendingAbs" }
+    $files = @(Get-ChildItem -LiteralPath $pendingAbs -File -Force | Sort-Object FullName)
+    if((@($files)).Count -eq 0){ Fail "No pending files in: $pendingAbs" }
     $raw = ($files | ForEach-Object { Get-Content -LiteralPath $_.FullName -Raw }) -join "`n`n"
   }
 
@@ -218,3 +218,4 @@ try {
   Write-Host (OneLine "# <# # Workflows | UTC=$utc | MODE=$Mode | HEAD=$head | PARSED=$($sessions.Count) | REJECTS=$($rejects.Count) | LEDGER_SHA256=$ledgerSha | ENTRY_SHA256=$entrySha | CAPTURE_SHA256=$capSha | REJECTS_SHA256=$rejSha | ACTION=Ingest_v0_2+Ledger+Entry+Commit+Push END #>") -ForegroundColor Cyan
 }
 finally { Pop-Location }
+
