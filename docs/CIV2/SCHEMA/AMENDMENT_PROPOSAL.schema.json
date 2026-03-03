@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Civ2 Amendment Proposal",
+  "type": "object",
+  "required": ["id","summary","change_set","evidence_pack","risk_analysis","metrics_impact","rollback","dissent","created_utc"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^C2\\\\.AM\\\\.PR-[0-9]{4}(\\\\.[A-Z0-9_-]+)?$" },
+    "summary": { "type": "string" },
+    "change_set": { "type": "array", "items": { "type": "string" }, "description": "List of stable IDs being added/edited." },
+    "evidence_pack": { "type": "array", "items": { "type": "string" } },
+    "risk_analysis": { "type": "string" },
+    "metrics_impact": { "type": "string" },
+    "rollback": { "type": "string" },
+    "dissent": { "type": "string" },
+    "created_utc": { "type": "string" },
+    "receipts": { "type": "array", "items": { "type": "string" } }
+  }
+}
