@@ -1,0 +1,8 @@
+UTC: 20260303T172125Z
+MODE: Folder
+NOTE: blocks that could not be parsed into SESSION_LABEL. Fix upstream drain format or add SESSION_LABEL=...
+REJECT_COUNT: 3
+
+<# DO [Workflows.CoCarryDrain_InputLoader_v0_1__OpenPending+Dropfile+OptionalClipboardCapture+RunIngestTool__FailClosed 20260303T__AUTO__Z] #> & {   Set-StrictMode -Version Latest   $ErrorActionPrefer
+<# # CoPong | ... #> format. # You can also delete this header after pasting. "@ | Set-Content -LiteralPath $dropAbs -Encoding UTF8     }     # If clipboard already has CoPong blocks, auto-save them a
+<# # CoPong | ... #> format. # You can also delete this header after pasting.

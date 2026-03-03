@@ -17,3 +17,10 @@ NOTE: This ledger records drained sessions and routing. `.liveYYYYMMDD` is valid
 ### 20260303 — workflows rails landed (20260303T165859Z)
 - NOTE=CoCarryDrain_SPEC_v0.1 + DrainLedger_SCHEMA_v0.2 + Invoke-CoCarryDrainIngest_v0.1 shipped; use these as binding rails for draining ~20 sessions.
 
+
+### 20260303 — ingest 20260303T172125Z (Folder) v0.2
+- NOTE=0 sessions parsed; see rejects file and/or fix WF_DRAIN format upstream.
+- RAW_CAPTURE=docs\inbox\workflows\captures\WF_DRAIN_CAPTURE__Folder__20260303T172125Z.txt sha256=0643a7489e1a693fecf0239a04a563e62fcda33453ab8773f8502e36aa4607f6
+- REJECTS=docs\inbox\workflows\captures\WF_DRAIN_REJECTS__Folder__20260303T172125Z.txt sha256=b58c49bbfd197e0737e4c08e8fb426f1374afa972458d4f9908ebb0ace016db4
+- PARSED_SESSIONS=0
+
