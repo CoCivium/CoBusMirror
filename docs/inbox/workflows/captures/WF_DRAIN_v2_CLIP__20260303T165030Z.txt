@@ -1,0 +1,117 @@
+<# DO [Workflows.DrainLedger_v0_6__IngestFromClipboard__RegexEscapeFix__CaptureRaw+AppendLedger+Entry+CommitPush__FailClosed 20260303T__AUTO__Z] #>
+& {
+  Set-StrictMode -Version Latest
+  $ErrorActionPreference='Stop'
+  $ProgressPreference='SilentlyContinue'
+
+  function Fail([string]$m){ throw "FAIL-CLOSED: $m" }
+  function UTS { (Get-Date).ToUniversalTime().ToString('yyyyMMddTHHmmssZ') }
+  function EnsureDir([string]$p){ if(-not (Test-Path -LiteralPath $p)){ New-Item -ItemType Directory -Path $p -Force | Out-Null } }
+  function SHA256([string]$p){ (Get-FileHash -LiteralPath $p -Algorithm SHA256).Hash.ToLowerInvariant() }
+  function OneLine([string]$s){ ($s -replace "(\r?\n)+"," " -replace "\s{2,}"," ").Trim() }
+
+  $utc  = UTS
+  $repo = "C:\Users\rball\Documents\GitHub\CoBusMirror"
+  if(-not (Test-Path -LiteralPath (Join-Path $repo ".git"))){ Fail "Not a git repo: $repo" }
+
+  Push-Location $repo
+  try {
+    $n = (git config user.name) 2>$null
+    $e = (git config user.email) 2>$null
+    if([string]::IsNullOrWhiteSpace($n) -or [string]::IsNullOrWhiteSpace($e)){
+      Fail "Missing repo-local git identity (user.name/user.email)."
+    }
+
+    # 1) Grab clipboard
+    $raw = (Get-Clipboard -Raw)
+    if([string]::IsNullOrWhiteSpace($raw)){ Fail "Clipboard empty. Copy the WF_DRAIN v2 CoPong blocks first." }
+
+    # 2) Capture raw as receipt
+    $capDir = Join-Path $repo "docs\inbox\workflows\captures"
+    EnsureDir $capDir
+    $capRel  = Join-Path "docs\inbox\workflows\captures" ("WF_DRAIN_v2_CLIP__{0}.txt" -f $utc)
+    $capPath = Join-Path $repo $capRel
+    $raw | Set-Content -LiteralPath $capPath -Encoding UTF8
+    $capSha = SHA256 $capPath
+
+    # 3) Parse blocks
+    $blocks = ($raw -split '(?=<#\s*#\s*CoPong\s*\|)') | Where-Object { $_.Trim() -ne '' }
+    if($blocks.Count -lt 1){ Fail "No '<# # CoPong |' blocks found in clipboard." }
+
+    $rows = New-Object System.Collections.Generic.List[string]
+    foreach($b in $blocks){
+      $s = ($b -replace "(\r?\n)+"," ").Trim()
+
+      $get = {
+        param([string]$key)
+        $k = [regex]::Escape($key)
+        $pat = "(?:^|\s)$k\s*=\s*([^|]+)"
+        $m = [regex]::Match($s, $pat)
+        if($m.Success){ return $m.Groups[1].Value.Trim() }
+        return $null
+      }
+
+      $session = & $get 'SESSION_LABEL'
+      if(-not $session){ continue } # skip non-drain blocks
+
+      $q = (& $get 'Q_PERSISTENCE_CLASS'); if(-not $q){ $q='UNK' }
+      $r = (& $get 'R_PUBLISH_REQUIRED'); if(-not $r){ $r='UNK' }
+      $t = (& $get 'T_RECOMMENDED_ACTION'); if(-not $t){ $t='UNK' }
+      $p = (& $get 'P_TERMINATION_READY'); if(-not $p){ $p='UNK' }
+
+      $rows.Add(("- SESSION={0} | Q={1} | R={2} | T={3} | TERM={4}" -f $session,$q,$r,$t,$p))
+    }
+    if($rows.Count -eq 0){ Fail "Parsed 0 sessions (no SESSION_LABEL= found). Wrong clipboard content?" }
+
+    # 4) Append to ledger
+    $ledgerRel  = 'docs\Workflows__CoCarryDrainLedger__v0.1.md'
+    $ledgerPath = Join-Path $repo $ledgerRel
+    if(-not (Test-Path -LiteralPath $ledgerPath)){ Fail "Ledger missing: $ledgerRel" }
+
+    $date = (Get-Date).ToUniversalTime().ToString('yyyyMMdd')
+    $sectionHeader = "### $date — ingest $utc (clipboard)"
+    $section = @($sectionHeader) + $rows + @(
+      ("- RAW_CAPTURE={0} sha256={1}" -f $capRel, $capSha),
+      ""
+    )
+    Add-Content -LiteralPath $ledgerPath -Value ("`n" + ($section -join "`n")) -Encoding UTF8
+    $ledgerSha = SHA256 $ledgerPath
+
+    # 5) Write CoBusLite entry
+    $entryRel  = Join-Path "docs\COBUS_LITE\entries\2026\03\03" ("{0}__Workflows.md" -f $utc)
+    $entryPath = Join-Path $repo $entryRel
+    EnsureDir (Split-Path -Parent $entryPath)
+
+    @(
+      'FROM: Workflows',
+      "UTC: $utc",
+      'STATE: doing',
+      'TOPIC: WF_DRAIN v2 clipboard ingested into drain ledger',
+      '',
+      'SHIPPED:',
+      ("- {0} sha256={1}" -f $ledgerRel, $ledgerSha),
+      ("- {0} sha256={1}" -f $capRel, $capSha),
+      '',
+      'NEXT:',
+      '- For any session with R=Y, publish required artifacts to CoSource and add pinned RAW pointers to ledger.',
+      '- Only then relabel sessions to .liveYYYYMMDD.<Session>.',
+      '',
+      'PTRS:',
+      ("- REPO_PATH={0}" -f $ledgerRel),
+      ''
+    ) -join "`n" | Set-Content -LiteralPath $entryPath -Encoding UTF8
+    $entrySha = SHA256 $entryPath
+
+    # 6) Commit + push
+    git add $ledgerRel $entryRel $capRel | Out-Null
+    $out = (git commit -m "Workflows: ingest WF_DRAIN v2 (clipboard) $utc") 2>&1
+    if($LASTEXITCODE -ne 0){ Fail "git commit failed: $out" }
+    $head = (git rev-parse HEAD).Trim()
+    git push | Out-Null
+
+    Write-Host "# Pushed HEAD=$head" -ForegroundColor Green
+    Write-Host (OneLine "# <# # Workflows | UTC=$utc | HEAD=$head | LEDGER_SHA256=$ledgerSha | ENTRY_SHA256=$entrySha | CAPTURE_SHA256=$capSha | ACTION=ClipboardIngest+Ledger+Entry+Commit+Push END #>") -ForegroundColor Cyan
+    Write-Host "# COPY_SAFE:TRUE | END_OF_BLOCK" -ForegroundColor Cyan
+  }
+  finally { Pop-Location }
+}
