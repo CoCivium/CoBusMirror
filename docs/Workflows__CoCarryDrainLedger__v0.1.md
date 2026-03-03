@@ -24,3 +24,7 @@ NOTE: This ledger records drained sessions and routing. `.liveYYYYMMDD` is valid
 - REJECTS=docs\inbox\workflows\captures\WF_DRAIN_REJECTS__Folder__20260303T172125Z.txt sha256=b58c49bbfd197e0737e4c08e8fb426f1374afa972458d4f9908ebb0ace016db4
 - PARSED_SESSIONS=0
 
+
+### 20260303 - additive CoMetaTrain/MP suggestions shipped (20260303T180329Z)
+- NOTE=Shipped THIN CoMetaTrain policy + additive MasterPlan suggestion pack (CoPrime port-required).
+
