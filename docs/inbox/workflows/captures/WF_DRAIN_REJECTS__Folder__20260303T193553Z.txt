@@ -1,0 +1,6 @@
+UTC: 20260303T193553Z
+MODE: Folder
+NOTE: blocks that could not be parsed into SESSION_LABEL. Fix upstream drain format or add SESSION_LABEL=...
+REJECT_COUNT: 1
+
+PS C:\Users\rball> PS C:\Users\rball> PS C:\Users\rball> PS C:\Users\rball> PS C:\Users\rball> PS C:\Users\rball> PS C:\Users\rball>
