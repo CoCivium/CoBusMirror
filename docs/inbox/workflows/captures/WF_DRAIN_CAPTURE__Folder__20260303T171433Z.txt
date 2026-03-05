@@ -1,0 +1,74 @@
+<# DO [Workflows.CoCarryDrain_InputLoader_v0_1__OpenPending+Dropfile+OptionalClipboardCapture+RunIngestTool__FailClosed 20260303T__AUTO__Z] #>
+& {
+  Set-StrictMode -Version Latest
+  $ErrorActionPreference='Stop'
+  $ProgressPreference='SilentlyContinue'
+
+  function Fail([string]$m){ throw "FAIL-CLOSED: $m" }
+  function UTS { (Get-Date).ToUniversalTime().ToString('yyyyMMddTHHmmssZ') }
+  function EnsureDir([string]$p){ if(-not (Test-Path -LiteralPath $p)){ New-Item -ItemType Directory -Path $p -Force | Out-Null } }
+  function SHA256([string]$p){ (Get-FileHash -LiteralPath $p -Algorithm SHA256).Hash.ToLowerInvariant() }
+  function OneLine([string]$s){ ($s -replace "(\r?\n)+"," " -replace "\s{2,}"," ").Trim() }
+
+  $utc = UTS
+  $repo = "C:\Users\rball\Documents\GitHub\CoBusMirror"
+  if(-not (Test-Path -LiteralPath (Join-Path $repo ".git"))){ Fail "Not a git repo: $repo" }
+
+  Push-Location $repo
+  try {
+    $n = (git config user.name) 2>$null
+    $e = (git config user.email) 2>$null
+    if([string]::IsNullOrWhiteSpace($n) -or [string]::IsNullOrWhiteSpace($e)){ Fail "Missing repo-local git identity." }
+
+    $remote = (git remote -v) 2>$null
+    if(-not $remote){ Fail "No remote configured; refusing to strand drain state locally." }
+
+    $pullOut = (git pull --ff-only) 2>&1
+    if($LASTEXITCODE -ne 0){ Fail "git pull --ff-only failed: $pullOut" }
+
+    $pendingRel = "docs\inbox\workflows\pending"
+    $pendingAbs = Join-Path $repo $pendingRel
+    EnsureDir $pendingAbs
+
+    # Dropfile template (so you can paste many replies once, or drag in exported text)
+    $dropRel = Join-Path $pendingRel ("DROP__WF_DRAIN_BULK__{0}.txt" -f $utc)
+    $dropAbs = Join-Path $repo $dropRel
+    if(-not (Test-Path -LiteralPath $dropAbs)){
+      @"
+# Paste or drop WF_DRAIN v2 CoPong blocks below (many at once). Keep the <# # CoPong | ... #> format.
+# You can also delete this header after pasting.
+"@ | Set-Content -LiteralPath $dropAbs -Encoding UTF8
+    }
+
+    # If clipboard already has CoPong blocks, auto-save them as a pending file too (zero extra steps)
+    $clip = ''
+    try { $clip = (Get-Clipboard -Raw) } catch { $clip = '' }
+    if((-not [string]::IsNullOrWhiteSpace($clip)) -and ($clip -match '<#\s*#\s*CoPong\s*\|')){
+      $clipRel = Join-Path $pendingRel ("CLIP__WF_DRAIN__{0}.txt" -f $utc)
+      $clipAbs = Join-Path $repo $clipRel
+      $clip | Set-Content -LiteralPath $clipAbs -Encoding UTF8
+      Write-Host ("# Clipboard captured -> {0} sha256={1}" -f $clipRel, (SHA256 $clipAbs)) -ForegroundColor Green
+    }
+
+    # Open folder + dropfile so you can paste once / drag files in
+    Start-Process explorer.exe $pendingAbs | Out-Null
+    Start-Process notepad.exe $dropAbs | Out-Null
+
+    # Run ingest tool in Folder mode (it will fail-closed if DROPFILE still empty)
+    $toolRel = "docs\COBUS_LITE\workflows\tools\Invoke-CoCarryDrainIngest_v0.1.ps1"
+    $toolAbs = Join-Path $repo $toolRel
+    if(-not (Test-Path -LiteralPath $toolAbs)){ Fail "Missing ingest tool: $toolRel (rails wave should have created it)." }
+
+    # If the operator hasn't populated pending yet, this will fail-closed quickly (good).
+    pwsh -NoProfile -File $toolAbs -Mode Folder -PendingDirRel $pendingRel
+
+    Write-Host (OneLine "# <# # Workflows | UTC=$utc | ACTION=InputLoader+RunIngestTool END #>") -ForegroundColor Cyan
+    Write-Host "# COPY_SAFE:TRUE | END_OF_BLOCK" -ForegroundColor Cyan
+  }
+  finally { Pop-Location }
+}
+
+
+# Paste or drop WF_DRAIN v2 CoPong blocks below (many at once). Keep the <# # CoPong | ... #> format.
+# You can also delete this header after pasting.
+
