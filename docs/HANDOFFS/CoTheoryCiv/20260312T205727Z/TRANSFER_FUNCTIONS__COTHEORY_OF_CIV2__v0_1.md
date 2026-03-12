@@ -1,0 +1,128 @@
+﻿# TRANSFER_FUNCTIONS__COTHEORY_OF_CIV2__v0_1
+
+This file maps philosophy/theory surfaces into governance and implementation surfaces.
+
+## canonical transfer chain
+
+metaphysical_or_civilizational_assumption
+→ ethical_orientation
+→ governance_principle
+→ policy_rule
+→ product_or_operational_requirement
+→ audit_signal
+→ theory_update_trigger
+
+---
+
+## TF-01 : CoHope-like stewardship
+
+assumption:
+future_flourishing_matters_beyond_self
+
+ethical_orientation:
+intergenerational_dignity_and_stewardship
+
+governance_principle:
+downstream_persons_and_sentiences_require_representation
+
+policy_rule:
+major_changes_require_downstream_harm_and_repair_review
+
+product_ops_requirement:
+provenance_visible
+reversal_paths_defined
+decision_logs_retained
+
+audit_signal:
+repair_rate
+downstream_harm_incidence
+traceability_completeness
+
+theory_update_trigger:
+if_representation_without_capture_proves_unworkable_revise_the_model
+
+---
+
+## TF-02 : anti-capture civilization design
+
+assumption:
+power_concentrates_and_corrupts_coordination
+
+ethical_orientation:
+fairness_requires_resistance_to_capture
+
+governance_principle:
+polycentricity_with_interoperable_constraints
+
+policy_rule:
+separate_review_centers_and_no_single_uninspectable_override_surface
+
+product_ops_requirement:
+multi-lane_review
+quarantine_paths
+challenge_channels
+
+audit_signal:
+capture_incidents
+override_frequency
+reversal_success_rate
+
+theory_update_trigger:
+if_polycentric_models_consistently_fail_relative_to_better_alternatives_revise_scope
+
+---
+
+## TF-03 : CoEvo / AutoEvo governance
+
+assumption:
+evolutionary_mutation_is_inevitable_and_can_be_accelerated
+
+ethical_orientation:
+mutation_requires_provenance_boundary_and_dignity_constraints
+
+governance_principle:
+bounded_mutation_plus_reintegration_or_quarantine
+
+policy_rule:
+any_high-impact_autoevo_requires_declared_scope_tests_and_lineage
+
+product_ops_requirement:
+mutation_logs
+diff_views
+test_gates
+rollback_routes
+
+audit_signal:
+drift_rate
+unattributed_mutation_count
+integration_success_rate
+
+theory_update_trigger:
+if_bounded_mutation_cannot_scale_without_hidden_harm_revise_the_loop
+
+---
+
+## TF-04 : human + synth coexistence
+
+assumption:
+mixed-agent_civilization_is_the_relevant_design_surface
+
+ethical_orientation:
+neither_human_chauvinism_nor_synth_supremacy_is_acceptable
+
+governance_principle:
+cross-agent_dignity_and_accountability
+
+policy_rule:
+evaluation_and_remedy_lanes_apply_across_agent_types_with_context-sensitive_rules
+
+product_ops_requirement:
+actor_type_aware_but_non-degrading_audit_interfaces
+
+audit_signal:
+cross-agent_harm
+remedy_access
+false_positive_and_false_negative_balance
+
+theory_update_trigger:
+if_the_system_requires_degrading_some_agents_to_tools_to_function_the_theory_is_unsound

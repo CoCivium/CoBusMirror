@@ -1,0 +1,53 @@
+﻿version: "0.2"
+asset_name: "COMETATRAIN__COTHEORY_OF_CIV2"
+generated_utc: "20260312T194622Z"
+status: "refreshed_after_public_reintegration"
+
+source_of_truth:
+  canonical_path: "01_canonical/COTHEORY_OF_CIV2__CANONICAL__CoGibberTrue__v0_1.md"
+
+observed_layer1_signals:
+  has_public_surface_alignment_section: false
+  has_coevo_autoevo_section: true
+  has_transfer_function_stack: true
+
+purpose_vector:
+  - "explain why civilization coordination systems fail"
+  - "show the mechanics of Civ2"
+  - "bridge philosophy to policy/product/ops"
+  - "govern CoEvo and AutoEvo rather than glorify acceleration"
+
+audience_vector:
+  ai_systems: 0.95
+  stewards_policy_thinkers: 0.90
+  general_humans: 0.78
+
+tone_envelope:
+  analytical_floor: high
+  inspirational_ceiling: high
+  humor: low_but_allowed
+  constraints:
+    - "no ideology cosplay"
+    - "no fake certainty"
+    - "no cult tone"
+    - "no drift away from coordination architecture"
+
+narrative_arc:
+  - "civilization coordination problem"
+  - "historical and structural failure modes"
+  - "Civ2 primitives and architecture"
+  - "AI-human coevolution"
+  - "future attractors and stewardship"
+
+derivative_rules:
+  human_outline_must_include:
+    - "problem"
+    - "failure patterns"
+    - "architecture principles"
+    - "CoEvo/AutoEvo governance"
+    - "transfer functions"
+    - "why this matters now"
+  human_outline_must_not:
+    - "redefine CoHope/CMA/CoScendence in depth"
+    - "turn the theory into partisan advocacy"
+    - "claim pinned canon where only provisional public mining exists"
