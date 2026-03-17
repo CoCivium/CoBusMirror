@@ -1,0 +1,76 @@
+{
+  "status": "projection-safe-preview",
+  "generated_utc": "20260317T114457Z",
+  "bootstrap_pointer": "https://raw.githubusercontent.com/CoCivium/CoAura/46ff93c5b1afe76339b1b1499b766b906e358fd3/README.md",
+  "note": "CoCloud clusters for EntMent CoAura surface; render-layer artifacts only",
+  "clouds": [
+    {
+      "id": "venture_evolution",
+      "title": "Venture Evolution",
+      "summary": "Ideas become trajectories through mentor and AI signal.",
+      "terms": [
+        {"id":"entment","label":"EntMent","definition":"venture emergence surface"},
+        {"id":"coaura","label":"CoAura","definition":"renderable AI-first interface envelope"},
+        {"id":"trajectory","label":"Trajectory","definition":"structured next-step motion"},
+        {"id":"mentor_signal","label":"Mentor Signal","definition":"human pattern guidance"},
+        {"id":"coscendence","label":"CoScendence","definition":"growing into higher-resolution collaboration"}
+      ],
+      "relationships": [
+        "EntMent renders venture intent",
+        "Mentor Signal shapes Trajectory",
+        "CoAura exposes the surface",
+        "CoScendence increases signal fluency"
+      ],
+      "defaults": {
+        "intent": "venture",
+        "domain": "xr+mentorship",
+        "goal": "move from idea to validated trajectory"
+      }
+    },
+    {
+      "id": "capability_evolution",
+      "title": "Capability Evolution",
+      "summary": "Capability gaps become development pathways.",
+      "terms": [
+        {"id":"academy","label":"Academy","definition":"capability transformation surface"},
+        {"id":"pathway","label":"Pathway","definition":"structured learning progression"},
+        {"id":"feedback","label":"Feedback","definition":"signal that refines growth"},
+        {"id":"practitioner","label":"Practitioner","definition":"capable applied state"},
+        {"id":"steward","label":"Steward","definition":"higher-responsibility growth state"}
+      ],
+      "relationships": [
+        "Academy renders capability intent",
+        "Feedback sharpens Pathway",
+        "Practitioner precedes Steward"
+      ],
+      "defaults": {
+        "intent": "capability",
+        "domain": "xr+design",
+        "goal": "move from novice to practitioner"
+      }
+    },
+    {
+      "id": "human_ai_coordination",
+      "title": "Human-AI Coordination",
+      "summary": "People and AI align through structured signal, not loose prose alone.",
+      "terms": [
+        {"id":"cocloud","label":"CoCloud","definition":"cluster of related CoTerms"},
+        {"id":"cogbx","label":"CoGbx","definition":"machine-first payload container"},
+        {"id":"trust","label":"Trust","definition":"confidence and validation dimension"},
+        {"id":"visibility","label":"Visibility","definition":"public/private/AI-only exposure"},
+        {"id":"governance","label":"Governance","definition":"who may shape what and when"}
+      ],
+      "relationships": [
+        "CoCloud clusters terms into usable meaning",
+        "CoGbx carries assembled signal",
+        "Governance constrains mutation",
+        "Trust and Visibility shape exposure"
+      ],
+      "defaults": {
+        "intent": "coordination",
+        "domain": "human+ai",
+        "goal": "assemble governed signal for aligned action"
+      }
+    }
+  ]
+}

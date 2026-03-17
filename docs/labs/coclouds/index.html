@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EntMent CoClouds Lab</title>
+  <meta name="description" content="Explore CoClouds, assemble signal, and preview prompt generation on the EntMent CoAura surface." />
+  <style>
+    :root{
+      --bg:#0b1220; --panel:#121a2a; --text:#e7eefc; --muted:#9eb1d1; --line:#26344f; --accent:#8dd0ff; --accent2:#a2ffd0;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#09101d,#0c1323);color:var(--text);font:16px/1.5 system-ui,Segoe UI,Roboto,Arial,sans-serif}
+    .wrap{max-width:1200px;margin:0 auto;padding:24px}
+    .hero,.panel{background:rgba(18,26,42,.94);border:1px solid var(--line);border-radius:18px;box-shadow:0 10px 28px rgba(0,0,0,.25)}
+    .hero{padding:28px;margin-bottom:18px}
+    .panel{padding:18px}
+    h1{margin:0 0 10px;font-size:clamp(32px,5vw,56px);line-height:1.05}
+    h2{margin:0 0 12px;font-size:22px}
+    h3{margin:0 0 10px;font-size:18px}
+    p{margin:10px 0;color:var(--text)}
+    .muted{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:360px 1fr;gap:18px}
+    .stack{display:grid;gap:18px}
+    .clouds{display:grid;gap:10px}
+    .cloud{padding:14px;border:1px solid var(--line);border-radius:14px;background:#0f1727;cursor:pointer}
+    .cloud.active{border-color:#4d85b8;background:#13213a}
+    .terms{display:flex;flex-wrap:wrap;gap:8px}
+    .term{padding:6px 10px;border-radius:999px;border:1px solid var(--line);background:#10192b;color:var(--text);font-size:13px}
+    label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+    input,textarea{width:100%;padding:11px 12px;border-radius:12px;border:1px solid var(--line);background:#0b1220;color:var(--text)}
+    textarea{min-height:220px;font:13px/1.45 ui-monospace,SFMono-Regular,Consolas,monospace}
+    .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    button{padding:11px 14px;border-radius:12px;border:1px solid var(--line);background:#13203a;color:var(--text);cursor:pointer}
+    button.primary{background:linear-gradient(90deg,#14304d,#15395a);border-color:#3c78ab}
+    pre{margin:0;background:#09101b;border:1px solid #1f2a40;border-radius:14px;padding:14px;overflow:auto;color:#d8f0ff}
+    .small{font-size:13px}
+    @media(max-width:900px){.grid,.row{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="small muted">Projection-safe preview · render-layer lab · EntMent CoAura instance extension</div>
+      <h1>CoClouds Lab</h1>
+      <p>Explore clustered CoTerms, inspect relationships, and assemble prompt payloads around each CoCloud. This is an early public trailblazing surface for EntMent.</p>
+      <p class="muted">Not a glossary. Not a wiki. A working signal-cluster surface.</p>
+    </section>
+
+    <div class="grid">
+      <section class="panel">
+        <h2>CoClouds</h2>
+        <div id="cloudList" class="clouds"></div>
+      </section>
+
+      <div class="stack">
+        <section class="panel">
+          <h2 id="cloudTitle">Cloud</h2>
+          <p id="cloudSummary" class="muted"></p>
+          <h3>Terms</h3>
+          <div id="termList" class="terms"></div>
+          <h3 style="margin-top:16px;">Relationships</h3>
+          <ul id="relationshipList"></ul>
+        </section>
+
+        <section class="panel">
+          <h2>Assemble Signal</h2>
+          <div class="row">
+            <div>
+              <label for="intent">Intent</label>
+              <input id="intent" />
+            </div>
+            <div>
+              <label for="domain">Domain</label>
+              <input id="domain" />
+            </div>
+          </div>
+          <div style="margin-top:12px;">
+            <label for="goal">Goal</label>
+            <input id="goal" />
+          </div>
+          <div style="margin-top:12px;">
+            <label for="notes">Notes</label>
+            <input id="notes" placeholder="optional context, constraint, or mutation" />
+          </div>
+          <div class="btns">
+            <button class="primary" id="generateBtn">Generate Prompt</button>
+            <button id="copyBtn">Copy Output</button>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2>Generated Output</h2>
+          <textarea id="output"></textarea>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let model = null;
+    let active = 0;
+
+    function byId(id){ return document.getElementById(id); }
+
+    function buildOutput(cloud){
+      const intent = byId('intent').value.trim();
+      const domain = byId('domain').value.trim();
+      const goal = byId('goal').value.trim();
+      const notes = byId('notes').value.trim();
+      const terms = cloud.terms.map(t => t.label).join(', ');
+      const rels = cloud.relationships.map(r => '- ' + r).join('\\n');
+      const payload = [
+        'COCLOUD::' + cloud.id,
+        'TITLE::' + cloud.title,
+        'INTENT::' + intent,
+        'DOMAIN::' + domain,
+        'GOAL::' + goal,
+        'TERMS::' + terms,
+        'RELATIONSHIPS::',
+        rels,
+        'NOTES::' + (notes || 'none'),
+        '',
+        'PROMPT::',
+        'Use this CoCloud to shape a higher-resolution response.',
+        'Preserve the cloud relationships while adapting to the stated goal.',
+        'Prioritize signal usefulness, next-step structure, and evolvable framing.'
+      ].join('\\n');
+      byId('output').value = payload;
+    }
+
+    function renderCloud(index){
+      active = index;
+      const cloud = model.clouds[index];
+      document.querySelectorAll('.cloud').forEach((el,i)=>el.classList.toggle('active', i===index));
+      byId('cloudTitle').textContent = cloud.title;
+      byId('cloudSummary').textContent = cloud.summary;
+      byId('termList').innerHTML = cloud.terms.map(t => '<span class="term" title="' + t.definition + '">' + t.label + '</span>').join('');
+      byId('relationshipList').innerHTML = cloud.relationships.map(r => '<li>' + r + '</li>').join('');
+      byId('intent').value = cloud.defaults.intent;
+      byId('domain').value = cloud.defaults.domain;
+      byId('goal').value = cloud.defaults.goal;
+      byId('notes').value = '';
+      buildOutput(cloud);
+    }
+
+    fetch('../../api/coclouds/coclouds.v0.1.json')
+      .then(r => r.json())
+      .then(data => {
+        model = data;
+        byId('cloudList').innerHTML = data.clouds.map((c,i) =>
+          '<div class="cloud' + (i===0 ? ' active' : '') + '" data-i="' + i + '"><strong>' + c.title + '</strong><div class="small muted" style="margin-top:6px;">' + c.summary + '</div></div>'
+        ).join('');
+        document.querySelectorAll('.cloud').forEach(el => {
+          el.addEventListener('click', () => renderCloud(parseInt(el.dataset.i,10)));
+        });
+        renderCloud(0);
+        byId('generateBtn').addEventListener('click', () => buildOutput(model.clouds[active]));
+        byId('copyBtn').addEventListener('click', async () => {
+          await navigator.clipboard.writeText(byId('output').value);
+          byId('copyBtn').textContent = 'Copied';
+          setTimeout(()=>byId('copyBtn').textContent='Copy Output',1000);
+        });
+      });
+  </script>
+</body>
+</html>

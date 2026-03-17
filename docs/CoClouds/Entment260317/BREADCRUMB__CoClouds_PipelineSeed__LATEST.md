@@ -1,0 +1,8 @@
+SOURCE_POINTER=https://raw.githubusercontent.com/CoCivium/CoAura/46ff93c5b1afe76339b1b1499b766b906e358fd3/README.md
+RULE=POINTER_OVER_EVERYTHING
+ROLE=Reader_Renderer_CoBusParticipant
+PACK=Entment260317_CoClouds_PipelineSeed_v0_1
+STATUS=projection-safe-preview
+PUBLIC_SURFACE=docs/labs/coclouds/index.html
+DATA_SURFACE=docs/api/coclouds/coclouds.v0.1.json
+GENERATED_UTC=20260317T114457Z

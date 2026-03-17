@@ -1,0 +1,17 @@
+PACK_DIR=C:\Users\rball\Documents\GitHub\CoBusMirror\docs\CoClouds\Entment260317
+SOURCE_POINTER=https://raw.githubusercontent.com/CoCivium/CoAura/46ff93c5b1afe76339b1b1499b766b906e358fd3/README.md
+GENERATED_UTC=20260317T114457Z
+PromptMd=C:\Users\rball\Documents\GitHub\CoBusMirror\docs\CoClouds\Entment260317\PROMPT_ASSEMBLY_NOTES__v0_1.md
+PromptMd_SHA256=4F9D69212E0015A0E4B374B6B78A94BB51F294E7B3EEC06A2A4F33375925FD5D
+IndexTxt=C:\Users\rball\Documents\GitHub\CoBusMirror\docs\CoClouds\Entment260317\00__INDEX.txt
+IndexTxt_SHA256=
+Breadcrumb=C:\Users\rball\Documents\GitHub\CoBusMirror\docs\CoClouds\Entment260317\BREADCRUMB__CoClouds_PipelineSeed__LATEST.md
+Breadcrumb_SHA256=
+TrailHtml=C:\Users\rball\Documents\GitHub\CoBusMirror\docs\labs\coclouds\index.html
+TrailHtml_SHA256=
+MapMd=C:\Users\rball\Documents\GitHub\CoBusMirror\docs\CoClouds\Entment260317\COCLOUD_PIPELINE_MAP__v0_1.md
+MapMd_SHA256=
+DataJson=C:\Users\rball\Documents\GitHub\CoBusMirror\docs\api\coclouds\coclouds.v0.1.json
+DataJson_SHA256=
+ReadmeMd=C:\Users\rball\Documents\GitHub\CoBusMirror\docs\CoClouds\Entment260317\README__CoClouds_PipelineSeed__v0_1.md
+ReadmeMd_SHA256=
