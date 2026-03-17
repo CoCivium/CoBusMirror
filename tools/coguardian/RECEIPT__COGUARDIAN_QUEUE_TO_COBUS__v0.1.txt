@@ -1,0 +1,15 @@
+UTC=20260307T012018Z
+SESSION=4.0|PRIME|260307
+REPO=C:\Users\rball\Documents\GitHub\CoBusMirror
+BRIDGE_REPO_REL=tools\coguardian\CoGuardian_QueueToCoBus.ps1
+BRIDGE_FULL=C:\Users\rball\Documents\GitHub\CoBusMirror\tools\coguardian\CoGuardian_QueueToCoBus.ps1
+BRIDGE_SHA256=114d1bdaa3bf3a459a027318454d79259867035f6fa108a59d8372987be4f5b1
+LAUNCHER_REPO_REL=tools\coguardian\Start-CoGuardianQueueToCoBus.ps1
+LAUNCHER_FULL=C:\Users\rball\Documents\GitHub\CoBusMirror\tools\coguardian\Start-CoGuardianQueueToCoBus.ps1
+LAUNCHER_SHA256=0e5b66bb4c60f17739a4f0f2d49b5aa0db30ef7aaf97fef3fac56dd6bf35683a
+README_REPO_REL=tools\coguardian\README__CoGuardianQueueToCoBus__v0.1.md
+README_FULL=C:\Users\rball\Documents\GitHub\CoBusMirror\tools\coguardian\README__CoGuardianQueueToCoBus__v0.1.md
+README_SHA256=6da544df9e26e305cbfa2f7aceef184ab2b902dadef6aca24159650b396bc9d8
+ENTRY_REPO_REL=docs\COBUS_LITE\entries\2026\03\07\20260307T012018Z__4.0_PRIME_260307__QueueToCoBusBridge.md
+ENTRY_FULL=C:\Users\rball\Documents\GitHub\CoBusMirror\docs\COBUS_LITE\entries\2026\03\07\20260307T012018Z__4.0_PRIME_260307__QueueToCoBusBridge.md
+ENTRY_SHA256=2c6c37ac123bc7dab140cb1d791367f1cbd920d0ed5c8bd026f366b37ed35c48

@@ -1,0 +1,15 @@
+UTC=20260307T013707Z
+SESSION=4.0|PRIME|260307
+REPO=C:\Users\rball\Documents\GitHub\CoBusMirror
+SUPERVISOR_REPO_REL=tools\coguardian\CoGuardian_TraySupervisor.ps1
+SUPERVISOR_FULL=C:\Users\rball\Documents\GitHub\CoBusMirror\tools\coguardian\CoGuardian_TraySupervisor.ps1
+SUPERVISOR_SHA256=1724145f06651f6d0a6facb608766f5d038cedd5647d7de8d2fe824761a128df
+LAUNCHER_REPO_REL=tools\coguardian\Start-CoGuardianTraySupervisor.ps1
+LAUNCHER_FULL=C:\Users\rball\Documents\GitHub\CoBusMirror\tools\coguardian\Start-CoGuardianTraySupervisor.ps1
+LAUNCHER_SHA256=ddd7d896ffb2c93f1bb9930c4278c05a51199e3fbc66cd461621277df95c092c
+README_REPO_REL=tools\coguardian\README__CoGuardianTraySupervisor__v0.1.md
+README_FULL=C:\Users\rball\Documents\GitHub\CoBusMirror\tools\coguardian\README__CoGuardianTraySupervisor__v0.1.md
+README_SHA256=2b23522ed30e63a67620fe8e526bca1d41010d2a90d237ac8f1b7eb4dffaece8
+ENTRY_REPO_REL=docs\COBUS_LITE\entries\2026\03\07\20260307T013707Z__4.0_PRIME_260307__CoGuardianTraySupervisor.md
+ENTRY_FULL=C:\Users\rball\Documents\GitHub\CoBusMirror\docs\COBUS_LITE\entries\2026\03\07\20260307T013707Z__4.0_PRIME_260307__CoGuardianTraySupervisor.md
+ENTRY_SHA256=69d50072d3a1ec20169b14de255beb17b1d898652f1e5487c0047ba26dbb9a92

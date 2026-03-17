@@ -1,0 +1,11 @@
+FROM: PRM|DECAY|260307
+UTC: 20260307T074651Z
+STATE: done
+TOPIC: advisory protocol pattern pack emitted for CoPrime
+
+ADVISORY_PTR: C:\Users\rball\Documents\GitHub\CoBusMirror\research\coprime_takeover\4.0_PRIME_260307\CoPrime__ADVISORY_PATTERN_PACK__LATEST.md
+ADVISORY_SHA: 89a3ca326087a90b75e62f8e5e0e6ac96d6dc312f996be7c366082ce84aa3c85
+CHECKPOINT_PTR: C:\Users\rball\Documents\GitHub\CoBusMirror\research\coprime_takeover\4.0_PRIME_260307\CoDecayBench__CHECKPOINT__4.0_PRIME_260307__LATEST.md
+CHECKPOINT_SHA: 1f748fa67dfd3a2d80233e8f6aba100bc1e8d538ad07f532e3d58912a377c724
+LEDGER_PTR: C:\Users\rball\Documents\GitHub\CoBusMirror\docs\infrastructure\guardian\CoDecayBench__LEDGER__LATEST.md
+LEDGER_SHA: e904865a7713660658001adde08be2e8dd76131b0bb702545a6d94b0c5eee4f6

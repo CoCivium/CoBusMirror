@@ -1,0 +1,9 @@
+# CoDecayBench__LEDGER__LATEST
+
+UTC_CREATED: 20260307T065345Z
+
+| SESSION_LABEL | ROLE | WAVE | UTC | CTX_LOAD | STRUCTURE_STABILITY | RENDER_DISCIPLINE | REASONING_COHERENCE | OPERATOR_FRICTION | EXTERNALIZATION_RATIO | RECOVERY_COST | DEGRADATION_LEVEL | RECOMMENDATION |
+|---|---|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| 4.0|PRIME|260307 | PRM|DECAY_PROBE|260307 | 60 | 20260307T065345Z | 0.72 | 0.82 | 0.76 | 0.90 | 0.61 | 0.84 | 0.58 | 1 | continue_as_decay_probe_and_externalize |
+| 4.0|PRIME|260307 | PRM|DECAY_PROBE|260307 | 61 | 20260307T070803Z | 0.74 | 0.84 | 0.82 | 0.89 | 0.60 | 0.88 | 0.56 | 1 | continue_decay_probe_briefly_then_fade |
+| 4.0|PRIME|260307 | PRM|DECAY_PROBE|260307 | 62 | 20260307T074651Z | 0.76 | 0.84 | 0.83 | 0.89 | 0.60 | 0.89 | 0.55 | 1 | continue_decay_probe_until_pressure |

@@ -1,0 +1,12 @@
+UTC=20260307T020820Z
+SESSION=4.0|PRIME|260307
+REPO=C:\Users\rball\Documents\GitHub\CoBusMirror
+TRAY_FULL=C:\Users\rball\Documents\GitHub\CoBusMirror\tools\coguardian\CoGuardian_TrayHost.ps1
+TRAY_SHA256=c1187245b393f04f350adb550b44f3a967ae43abec8c8d42f415da53d55810d8
+PROTECTIONS_FULL=C:\Users\rball\Documents\GitHub\CoBusMirror\docs\infrastructure\guardian\RECENT_PROTECTIONS__LATEST.md
+PROTECTIONS_SHA256=2623ab1dd42717c30130f0f316958640f3adfc7b49dcc74d7aabb68abde43419
+README_FULL=C:\Users\rball\Documents\GitHub\CoBusMirror\tools\coguardian\README__CoGuardianTrayHost__v0.1.md
+README_SHA256=35c6c0c26dc1cd1984b5d84910f9bb7e7e845bb3d99db82947234fedfdf301b1
+ENTRY_REPO_REL=docs\COBUS_LITE\entries\2026\03\07\20260307T020820Z__4.0_PRIME_260307__CoGuardianHelpModelFix.md
+ENTRY_FULL=C:\Users\rball\Documents\GitHub\CoBusMirror\docs\COBUS_LITE\entries\2026\03\07\20260307T020820Z__4.0_PRIME_260307__CoGuardianHelpModelFix.md
+ENTRY_SHA256=676c7ab7ebef87fff28a53f4ddf8ed37d3fb7651d9d29e0bf2406b5a8e8ca2e4

@@ -1,0 +1,15 @@
+UTC=20260307T010036Z
+SESSION=4.0|PRIME|260307
+REPO=C:\Users\rball\Documents\GitHub\CoBusMirror
+WATCHER_REPO_REL=tools\coguardian\CoGuardian_Watcher.ps1
+WATCHER_FULL=C:\Users\rball\Documents\GitHub\CoBusMirror\tools\coguardian\CoGuardian_Watcher.ps1
+WATCHER_SHA256=d7e78a06d8e209461d20147b1c1d25921a2f875ebd328d7d94a1e5f1aa9fb8ae
+LAUNCHER_REPO_REL=tools\coguardian\Start-CoGuardianWatcher.ps1
+LAUNCHER_FULL=C:\Users\rball\Documents\GitHub\CoBusMirror\tools\coguardian\Start-CoGuardianWatcher.ps1
+LAUNCHER_SHA256=f1453157b40f7b1f27f3ed8c375f6b3e432f231c602e4312fb76bf844f4037af
+README_REPO_REL=tools\coguardian\README__CoGuardianWatcher__v0.1.md
+README_FULL=C:\Users\rball\Documents\GitHub\CoBusMirror\tools\coguardian\README__CoGuardianWatcher__v0.1.md
+README_SHA256=3f484d940387b3fbdc875b9e90f50e5f7cf8dc8c78272f73c4e2b88db3dd439a
+ENTRY_REPO_REL=docs\COBUS_LITE\entries\2026\03\07\20260307T010036Z__4.0_PRIME_260307__CoGuardianWatcherBootstrap.md
+ENTRY_FULL=C:\Users\rball\Documents\GitHub\CoBusMirror\docs\COBUS_LITE\entries\2026\03\07\20260307T010036Z__4.0_PRIME_260307__CoGuardianWatcherBootstrap.md
+ENTRY_SHA256=783bfbbf20625412931230de09246d7a25bd4cee6018e3d636e92f59253bc05b

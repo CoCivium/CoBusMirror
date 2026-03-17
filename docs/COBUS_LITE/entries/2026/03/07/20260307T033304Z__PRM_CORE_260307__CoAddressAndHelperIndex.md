@@ -1,0 +1,9 @@
+FROM: PRM|CORE|260307
+UTC: 20260307T033304Z
+STATE: done
+TOPIC: wrote CoAddress spec and seeded helper index
+
+SPEC_REPO_REL=docs\infrastructure\CoAddress__SPEC_v0.1.md
+SPEC_SHA256=608513f894c6a5212088c77a6c2f2700bc06267f93f183f9941baa9610a9c28d
+INDEX_REPO_REL=docs\infrastructure\helpers\HELPER_INDEX__LATEST.md
+INDEX_SHA256=3bd81b1c93dd3eb5a839cf96c6b7feee956ff75f45b2a7dcf7cffd12544d782a

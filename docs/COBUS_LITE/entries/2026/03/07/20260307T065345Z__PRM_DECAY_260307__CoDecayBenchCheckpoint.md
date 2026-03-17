@@ -1,0 +1,11 @@
+FROM: PRM|DECAY|260307
+UTC: 20260307T065345Z
+STATE: done
+TOPIC: initialized CoDecayBench and recorded checkpoint
+
+SPEC_PTR: C:\Users\rball\Documents\GitHub\CoBusMirror\docs\infrastructure\guardian\CoDecayBench__SPEC_v0.1.md
+SPEC_SHA: f385df87a72c1543184d4ba18f378f221e3cf86025d7142587afdde085b07569
+LEDGER_PTR: C:\Users\rball\Documents\GitHub\CoBusMirror\docs\infrastructure\guardian\CoDecayBench__LEDGER__LATEST.md
+LEDGER_SHA: 6471929360ed13e9794a8f8e218a8cc39b3ac5e51478cd12baca759dc608d37a
+CHECKPOINT_PTR: C:\Users\rball\Documents\GitHub\CoBusMirror\research\coprime_takeover\4.0_PRIME_260307\CoDecayBench__CHECKPOINT__4.0_PRIME_260307__LATEST.md
+CHECKPOINT_SHA: 7ea5f8b283921e3f5393c9beafbd53cc24a7424cb7bb11ff2c56639fc28e4192

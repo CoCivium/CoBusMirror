@@ -1,0 +1,15 @@
+UTC=20260307T024945Z
+SESSION=4.0|PRIME|260307
+REPO=C:\Users\rball\Documents\GitHub\CoBusMirror
+ROUTER_REPO_REL=tools\coguardian\CoGuardian_CoBusToTargetQueue.ps1
+ROUTER_FULL=C:\Users\rball\Documents\GitHub\CoBusMirror\tools\coguardian\CoGuardian_CoBusToTargetQueue.ps1
+ROUTER_SHA256=a7f059558e2a6087422271229344a8bef96c07392d7c01c9f6abaa5561d3a050
+LAUNCHER_REPO_REL=tools\coguardian\Start-CoGuardianCoBusToTargetQueue.ps1
+LAUNCHER_FULL=C:\Users\rball\Documents\GitHub\CoBusMirror\tools\coguardian\Start-CoGuardianCoBusToTargetQueue.ps1
+LAUNCHER_SHA256=2df3c9fef0344f115df278c8187614806e4b4fb08417b4d43f7a91626bfcaf55
+README_REPO_REL=tools\coguardian\README__CoGuardianCoBusToTargetQueue__v0.1.md
+README_FULL=C:\Users\rball\Documents\GitHub\CoBusMirror\tools\coguardian\README__CoGuardianCoBusToTargetQueue__v0.1.md
+README_SHA256=52b6dcf5b31c444b72675e095e11827939cc8789adf431a931604012b696f307
+ENTRY_REPO_REL=docs\COBUS_LITE\entries\2026\03\07\20260307T024945Z__4.0_PRIME_260307__TargetRouter.md
+ENTRY_FULL=C:\Users\rball\Documents\GitHub\CoBusMirror\docs\COBUS_LITE\entries\2026\03\07\20260307T024945Z__4.0_PRIME_260307__TargetRouter.md
+ENTRY_SHA256=90eaa8d2afdb11b8848e6d6902d54e234fc1d89a9286c0242ff8c8498443c29f

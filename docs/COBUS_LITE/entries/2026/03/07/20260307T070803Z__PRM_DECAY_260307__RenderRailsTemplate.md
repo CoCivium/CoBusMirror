@@ -1,0 +1,11 @@
+FROM: PRM|DECAY|260307
+UTC: 20260307T070803Z
+STATE: done
+TOPIC: wrote minimal render rails template and appended decay checkpoint
+
+TEMPLATE_PTR: C:\Users\rball\Documents\GitHub\CoBusMirror\docs\infrastructure\guardian\CoRenderRails__MINIMAL_TEMPLATE__v0.1.md
+TEMPLATE_SHA: 78d86d824c5090c373dec2821260c9d63ff1e4d289bcec5ba6ae64d89386182f
+CHECKPOINT_PTR: C:\Users\rball\Documents\GitHub\CoBusMirror\research\coprime_takeover\4.0_PRIME_260307\CoDecayBench__CHECKPOINT__4.0_PRIME_260307__LATEST.md
+CHECKPOINT_SHA: 55fe7fe7cc86432fb488d88e54f4e9e89bdb5933574033537d23c8b4fedb83bd
+LEDGER_PTR: C:\Users\rball\Documents\GitHub\CoBusMirror\docs\infrastructure\guardian\CoDecayBench__LEDGER__LATEST.md
+LEDGER_SHA: 16d90f0043b5ebdbf9ae9fb51c0aa5b90fb299fe4aa3b9ed00efd19be767d6dc
