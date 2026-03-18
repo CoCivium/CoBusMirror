@@ -1,0 +1,7 @@
+UTC=20260318T181247Z
+STATE=canonicalized
+PACK=CoBus_Attach_Normalized_MegaWave_v1
+SCRIPT=docs/COBUS_LITE/attach/CoBus_Attach_Normalized_MegaWave_v1.ps1
+STATE_MODEL=docs/COBUS_LITE/attach/STATE_MODEL__Normalized_Attach__v1.md
+USAGE=docs/COBUS_LITE/attach/USAGE__CoBus_Attach_Normalized_MegaWave_v1.md
+NOTE=This pack codifies the now-working public-verifiable attach ritual and normalized attachment state model.
