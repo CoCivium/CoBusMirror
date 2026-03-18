@@ -1,0 +1,4 @@
+TITLE=SessionNoMailmanRule_v0
+UTC=20260318T180744Z
+PACK=Session_NoMailman_Rule__v0.md
+INTENT=Deprecate human mailman mode and require ACTION-last CLI-copyable blocks plus CoPulse per wave
