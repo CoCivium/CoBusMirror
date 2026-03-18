@@ -1,0 +1,2 @@
+STATE=authoritative
+INTENT=publish_contract
