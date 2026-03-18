@@ -1,6 +1,6 @@
 # CoGoAll Writable Publish Contract v0
 
-- UTC: 20260318T223316Z
+- UTC: 20260318T223758Z
 - STATE: draft_v0
 - VISIBILITY: public
 - RULE: pointer-first; fail-closed; dashboard derived-only
