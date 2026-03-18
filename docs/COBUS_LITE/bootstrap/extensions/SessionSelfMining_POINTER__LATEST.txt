@@ -1,5 +1,6 @@
 TITLE=SessionSelfMining_Protocol_v0
-UTC=20260318T214343Z
+UTC=20260318T214605Z
 INTENT=Bootstrap-visible pointer to mandatory self-mining protocol
-POINTER=<REPLACE_WITH_LAST_RAW_POINTER>
+POINTER=https://raw.githubusercontent.com/CoCivium/CoAura/9af5e793abee1f77bf80db8cc820351cd12e1331/docs/protocols/SessionSelfMining_Protocol_v0/00__INDEX.txt
+SOURCE_COMMIT=9af5e793abee1f77bf80db8cc820351cd12e1331
 STATUS=candidate_for_beacon_promotion
