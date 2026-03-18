@@ -1,4 +1,4 @@
-COBUS_SPEC (PUBLIC) — Seed phase
+﻿COBUS_SPEC (PUBLIC) — Seed phase
 UTC=20260119T081728Z
 
 DEFINITION
@@ -13,7 +13,7 @@ COBUSGATE (ON-RAILS REQUIREMENTS)
   - new/changed repos, pointers, specs, policies, scripts, artifacts
   - decisions that affect other sessions
   - breakages (FAIL/WARN) with actionable details
-- Pure ideation MAY skip writes.
+- Every wave MUST emit at least a minimal CoPulse/CoSync. Pure ideation MUST still write a minimal heartbeat. Only STEALTH mode may avoid public visibility, but it MUST still write a restricted-visibility heartbeat with STEALTH=on, REASON_CLASS, REVIEW_UTC, and DECLASSIFY_WHEN_SAFE.
 
 MINIMUM NOTE FIELDS (RECOMMENDED)
 - UTC
