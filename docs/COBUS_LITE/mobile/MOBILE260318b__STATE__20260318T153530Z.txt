@@ -1,0 +1,8 @@
+SESSION=Mobile260318b
+UTC=20260318T153530Z
+STATE=write_attempt
+BOOTSTRAPPED=yes
+READ_ATTACHED=yes
+WRITE_ATTEMPTED=yes
+WRITE_METHOD=explicit_repo_path
+REPO_TOP=C:/Users/rball/Documents/GitHub/CoBusMirror
