@@ -62,4 +62,4 @@ SESSION_CYCLING_STANDARD_RAW_PIN=https://raw.githubusercontent.com/CoCivium/CoBu
 WAVE_FORMAT_STANDARD_RAW_PIN=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/canon/WAVE_FORMAT_STANDARD_LATEST.md
 https://raw.githubusercontent.com/CoCivium/CoBusMirror/6c9d1f04b2474316d5f5956ad108031483ffe55f/docs/COBUS_LITE/canon/POINTERPACK__LATEST.yml
 https://raw.githubusercontent.com/CoCivium/CoBusMirror/6c9d1f04b2474316d5f5956ad108031483ffe55f/docs/COBUS_LITE/canon/POINTERPACK__LATEST.md
-https://raw.githubusercontent.com/CoCivium/CoBusMirror/6c9d1f04b2474316d5f5956ad108031483ffe55f/docs/COBUS_LITE/canon/BOOTSTRAP_ROLLUP__LATEST.md
+https://raw.githubusercontent.com/CoCivium/CoBusMirror/6c9d1f04b2474316d5f5956ad108031483ffe55f/docs/COBUS_LITE/canon/BOOTSTRAP_ROLLUP__LATEST.md - Writable Publish Contract: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__Writable_Publish_Contract__LATEST.txt 
