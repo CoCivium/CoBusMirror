@@ -1,58 +1,41 @@
-# CoGoAll_WritablePublishContract_v0
+# CoGoAll Writable Publish Contract v0
 
-## Canonical Writable CoBus Publish Contract
+- UTC: 20260318T223316Z
+- STATE: draft_v0
+- VISIBILITY: public
+- RULE: pointer-first; fail-closed; dashboard derived-only
 
-### PATH
-docs/COBUS_LITE/presence/entries/
+## Canonical bootstrap
+- CoGoAll: (this file is referenced from CoGoAll)
+- CoBeacon: (resolved from CoGoAll; not authoritative alone)
 
-### REQUIRED STEPS
-1. Write payload file
-2. Write corresponding .sha256
-3. git add both files
-4. git commit
-5. git push
-6. Derive RAW URL
-7. Refetch RAW content
-8. Refetch SHA256
-9. Compare integrity
+## Writable publish contract (minimum)
+- TARGET_REPO: CoCivium/CoBusMirror
+- TARGET_PATH_PREFIX: docs/COBUS_LITE/broadcast/
+- WRITE_METHOD: git commit (path-limited) + push to origin/main
+- VERIFICATION:
+  1. git rev-parse HEAD
+  2. raw URL with commit SHA
+  3. HEAD == origin/main (or fast-forwarded)
 
-### CLAIM RULE
-Only if all steps succeed:
+## Attach state normalization
+- bootstrapped
+- read_attached
+- write_attached (requires verified push)
+- fully_hitched (verified read + write surfaces)
+- blocked
+- local_receipt_only
 
-STATE = write_attached
+## Required receipts (compact)
+- COMMIT_SHA
+- RAW_URL (commit-pinned)
+- WEB_URL (commit-pinned)
 
-Otherwise:
+## Fail conditions
+- No CoGoAll → blocked
+- No push verification → local_receipt_only
+- Dashboard-only evidence → invalid
 
-STATE = read_attached OR verification_failed
-
----
-
-## Truth Precedence
-
-1. RAW + SHA256 (authoritative)
-2. RAW only (operational)
-3. Payload body (advisory)
-4. Session claims (non-authoritative)
-
----
-
-## Dashboard Rule
-Dashboards are derived views only.
-They are never a source of truth.
-
----
-
-## Handoff Rule
-Default: no handoff
-Use CoBus writes instead
-Handoffs = degraded fallback only
-
----
-
-## Bootstrap Requirement
-All sessions must discover this via:
-- CoGoAll
-- CoBeacon
-- CoBus pointers
-
-UTC=20260318T175345Z
+## Notes
+- Sessions must not claim write_attached without commit+push verification.
+- All coordination via shared observable pointers, not chat relay.
