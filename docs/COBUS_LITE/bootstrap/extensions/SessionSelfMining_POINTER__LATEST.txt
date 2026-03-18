@@ -1,0 +1,5 @@
+TITLE=SessionSelfMining_Protocol_v0
+UTC=20260318T214343Z
+INTENT=Bootstrap-visible pointer to mandatory self-mining protocol
+POINTER=<REPLACE_WITH_LAST_RAW_POINTER>
+STATUS=candidate_for_beacon_promotion
