@@ -1,0 +1,5 @@
+UTC=20260318T222330Z
+STATE=published
+ARTIFACT=CoGoAll_WritablePublishContract_v0
+PATH=docs/COBUS_LITE/publish_contract/CoGoAll_WritablePublishContract_v0.md
+NOTE=Defines canonical write-attach contract; removes ambiguity from bootstrap layer
