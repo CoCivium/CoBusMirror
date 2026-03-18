@@ -1,0 +1,9 @@
+SESSION=<SESSION>
+ALIAS=<ALIAS_OR_EMPTY>
+CANONICAL_ID=<CANONICAL_ID_OR_EMPTY>
+UTC=<UTC>
+STATE=<bootstrap_resolved|read_attached|write_attached|CoHitched|verification_failed|local_receipt_only>
+COGOALL=<RAW_URL>
+COBEACON=<RAW_URL>
+CAPABILITY=<read_only|write_verified|local_only>
+NEXT=<ONE_LINE_NEXT>
