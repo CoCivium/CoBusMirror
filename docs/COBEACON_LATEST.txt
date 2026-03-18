@@ -36,7 +36,7 @@ CoSourceID Pack ZIP sha256: https://raw.githubusercontent.com/CoCivium/CoSources
 
 
 
-# CoSideNote (PowerShell) â€” reverse-video SIDENOTE banner + green one-line printer (snapshot-coherent)
+# CoSideNote (PowerShell) Ã¢â‚¬â€ reverse-video SIDENOTE banner + green one-line printer (snapshot-coherent)
 CoSideNote.ps1: https://raw.githubusercontent.com/CoCivium/CoBusMirror/c9a05040f6677e84eafad9e22606fa28809c88a0/docs/standards/CoStatus/tools/CoSideNote.ps1
 
 # CoStacks v0 (manifest + receipts)
@@ -53,7 +53,7 @@ ProductSuite.RECEIPT.sha256: https://raw.githubusercontent.com/CoCivium/CoBusMir
 
 
 
-# CoBusRelay (SideNotes Bus) â€” tool immutable; logs always-latest; clipboard includes trailing Enter (CRLF)
+# CoBusRelay (SideNotes Bus) Ã¢â‚¬â€ tool immutable; logs always-latest; clipboard includes trailing Enter (CRLF)
 CoBusRelay.ps1: https://raw.githubusercontent.com/CoCivium/CoBusMirror/fbb90f368af3b05f5b813a0fc4ab16bbe640311e/docs/standards/CoBus/tools/CoBusRelay.ps1
 PINS_LATEST_RAW_PIN=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/canon/PINS_LATEST.txt
 COPRIME_SCOPE_LATEST_RAW_PIN=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/canon/COPRIME_SESSION_SCOPE_LATEST.md
@@ -63,3 +63,9 @@ WAVE_FORMAT_STANDARD_RAW_PIN=https://raw.githubusercontent.com/CoCivium/CoBusMir
 https://raw.githubusercontent.com/CoCivium/CoBusMirror/6c9d1f04b2474316d5f5956ad108031483ffe55f/docs/COBUS_LITE/canon/POINTERPACK__LATEST.yml
 https://raw.githubusercontent.com/CoCivium/CoBusMirror/6c9d1f04b2474316d5f5956ad108031483ffe55f/docs/COBUS_LITE/canon/POINTERPACK__LATEST.md
 https://raw.githubusercontent.com/CoCivium/CoBusMirror/6c9d1f04b2474316d5f5956ad108031483ffe55f/docs/COBUS_LITE/canon/BOOTSTRAP_ROLLUP__LATEST.md - Writable Publish Contract: https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__Writable_Publish_Contract__LATEST.txt 
+
+### SESSION SELF-MINING (BOOTSTRAP RAIL)
+INTENT=Mandatory protocol ensuring CoEx externalization before state claims
+POINTER=https://raw.githubusercontent.com/CoCivium/CoBusMirror/eca3331579e0e3bcf7a55818d31ebd900dce8a99/docs/COBUS_LITE/bootstrap/extensions/SessionSelfMining_POINTER__LATEST.txt
+STATUS=active_bootstrap_candidate
+UTC=20260318T214743Z
