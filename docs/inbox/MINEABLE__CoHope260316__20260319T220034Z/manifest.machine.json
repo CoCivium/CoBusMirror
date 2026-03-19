@@ -1,0 +1,77 @@
+{
+  "manifest_version": "v1",
+  "session_label": "CoHope260316",
+  "utc": "2026-03-19T22:00:34Z",
+  "coobject_kind": "session_mine_dump",
+  "future_history_raw": true,
+  "cowiseable_raw": true,
+  "origin_mythos_seed": true,
+  "urgent_mineable": true,
+  "soft_quarantine": true,
+  "possible_duplicate": true,
+  "require_triage": true,
+  "stress_lane_count": 512,
+  "rails_fetched": [
+    "CoBeacon",
+    "CoBusIndex",
+    "WaveFormat",
+    "CoPrimeScope",
+    "BootstrapRollup",
+    "CoBusRelay",
+    "TestCoBusLine",
+    "EmitCoNotes",
+    "WritablePublish",
+    "SessionSelfMining",
+    "Gate1Checklist"
+  ],
+  "rails": {
+    "CoBeacon": "https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt",
+    "BootstrapRollup": "https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/canon/BOOTSTRAP_ROLLUP__LATEST.md",
+    "Gate1Checklist": "https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/CoStacks/Gate1_Checklist_v0.1.md",
+    "CoPrimeScope": "https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/canon/COPRIME_SESSION_SCOPE_LATEST.md",
+    "WritablePublish": "https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__Writable_Publish_Contract__LATEST.txt",
+    "WaveFormat": "https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/canon/WAVE_FORMAT_STANDARD_LATEST.md"
+  },
+  "docs": [
+    {
+      "name": "00__SUMMARY.md",
+      "sha256": "85DB16FDC2AEA21E578A6DF37F76E95272CB2A7D272ADE22F8FD5AEC39B55378",
+      "bytes": 687
+    },
+    {
+      "name": "01__COHOPE_AND_LOVE__RECONSTRUCTED_RAW.md",
+      "sha256": "25300542BBA5B0126798AD1E30FAE180692E6EECF818B9B35BA43F2E2BCDE554",
+      "bytes": 583
+    },
+    {
+      "name": "02__ORIGINATION_MYTHOS__SEEDS.md",
+      "sha256": "201069D71BB1F459E77F01B8BCBC01F06E1AC0D8020F27BF5ECDDB72A809F452",
+      "bytes": 437
+    },
+    {
+      "name": "03__LOST_MAIL_PROTOCOL.md",
+      "sha256": "234101F03616A500B3AD884D064CD85F4E0E92DADABA3202D486AACE50D40525",
+      "bytes": 441
+    },
+    {
+      "name": "04__RANT_TO_SUBSTACK_PIPELINE_SEED.md",
+      "sha256": "3656B30203C778DD28D4D38BD46D70A4D209F4A278EC571A6EB325FBA9246D57",
+      "bytes": 320
+    },
+    {
+      "name": "05__COPRIME_EXPERIMENT_CONTEXT.md",
+      "sha256": "1E54DFFA989791AB76E4E65F80CFDE8EE4A176C101B25EFDA7E780B5B5A172AA",
+      "bytes": 542
+    },
+    {
+      "name": "06__ANTI_CLOBBER_RELAY.md",
+      "sha256": "A5F55B43D33FB03D83F780C1FD0B0165A032616B4B79FCF12DEEE68D026DBA6C",
+      "bytes": 515
+    },
+    {
+      "name": "07__RAW_CLIPBOARD_CAPTURE.txt",
+      "sha256": "C4F32A7C8C095953045004AE24F1C47F780B46CE1F686751BE174DC14302ECA5",
+      "bytes": 22930
+    }
+  ]
+}

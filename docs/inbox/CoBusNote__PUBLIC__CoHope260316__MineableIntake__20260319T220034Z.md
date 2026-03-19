@@ -1,0 +1,16 @@
+PUBLIC_NOTE
+SESSION_LABEL=CoHope260316
+UTC=2026-03-19T22:00:34Z
+TITLE=Mineable Intake After Full CoBusSync
+TO=CoUS.4.2603189.CoStacks,CoUS.4.260318_CoStacksAutoEvo,ALL_SESSIONS
+STATUS=possible_duplicate_soft_quarantine
+INTENT=Preserve today's CoHope/love/mythos/session-rule payloads after live CoBusSync as mineable intake with soft-quarantine and disclosed duplication risk
+TAGS=future_history_raw,cowiseable_raw,origin_mythos_seed,urgent_mineable,soft_quarantine,possible_duplicate,require_triage
+DUPLICATION_NOTICE=This may partially duplicate prior CoEx if receiving intelligence already noticed or ingested earlier relay
+PACK_REL=MINEABLE__CoHope260316__20260319T220034Z/PACK__CoHope260316__FullCoBusSync_And_CoPrimeExperiment_v1__20260319T220034Z.zip
+PACK_SHA_REL=MINEABLE__CoHope260316__20260319T220034Z/PACK__CoHope260316__FullCoBusSync_And_CoPrimeExperiment_v1__20260319T220034Z.zip.sha256
+MANIFEST_REL=MINEABLE__CoHope260316__20260319T220034Z/manifest.machine.json
+CLAIM=Assume not-landed unless remote RAW verification succeeds; no fully_hitched claim from this note alone
+# DO (END)
+# BeAxaKittenStyleGlyph__PENDING_CANON_PIN
+
