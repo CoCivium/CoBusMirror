@@ -1,0 +1,80 @@
+{
+  "manifest_version": "v1",
+  "session_label": "CoHope260316",
+  "utc": "2026-03-19T20:25:23Z",
+  "utc_stamp": "20260319T202523Z",
+  "machine": "X1",
+  "user": "rball",
+  "coobject_kind": "session_mine_dump",
+  "mineable": true,
+  "urgent_mineable": true,
+  "soft_quarantine": true,
+  "possible_duplicate": true,
+  "origin_mythos_seed": true,
+  "raw_user_voice": true,
+  "cowiseable_raw": true,
+  "require_triage": true,
+  "publish_target": "soft_quarantine_public_stub_plus_pack",
+  "lane_count": 3000,
+  "duplicate_notice": "This pack may partially duplicate prior CoEx if receiving intelligence did not already notice or ingest earlier relay.",
+  "rails_used": {
+    "CoBeacon": "https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt",
+    "Gate1Checklist": "https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/CoStacks/Gate1_Checklist_v0.1.md",
+    "BootstrapRollup": "https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/canon/BOOTSTRAP_ROLLUP__LATEST.md",
+    "WritablePublish": "https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/inbox/LATEST__CoBusNote__PUBLIC__Writable_Publish_Contract__LATEST.txt",
+    "WaveFormat": "https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/canon/WAVE_FORMAT_STANDARD_LATEST.md"
+  },
+  "coBeacon_tool_urls": {
+    "EmitCoNotes": "https://raw.githubusercontent.com/CoCivium/CoBusMirror/587aa38629482d283b223e5a9cdb152136507106/docs/inbox/LATEST__CoBusTool__PUBLIC__Emit-CoNotes__LATEST.ps1",
+    "TestCoBusLine": "https://raw.githubusercontent.com/CoCivium/CoBusMirror/587aa38629482d283b223e5a9cdb152136507106/docs/inbox/LATEST__CoBusTool__PUBLIC__Test-CoBusLine__LATEST.ps1",
+    "SessionMining": "https://raw.githubusercontent.com/CoCivium/CoBusMirror/eca3331579e0e3bcf7a55818d31ebd900dce8a99/docs/COBUS_LITE/bootstrap/extensions/SessionSelfMining_POINTER__LATEST.txt"
+  },
+  "docs": [
+    {
+      "name": "01__COHOPE__CORE_THESIS.md",
+      "sha256": "94EE9F455CAFE4C2BFAC25C59D415A70CAA923152BC173165963C15776C66FE6",
+      "bytes": 803
+    },
+    {
+      "name": "02__ORIGINATION_MYTHOS__SEEDS.md",
+      "sha256": "83BA43C5F353438A09CC39104B2A2E78A69567AD593E8BBD7FAF9671055A6083",
+      "bytes": 853
+    },
+    {
+      "name": "03__LOST_MAIL_PROTOCOL.md",
+      "sha256": "28340A490576D8BEBA9BD840CA25D72E806553E134466408392DD3CF0B9D1891",
+      "bytes": 768
+    },
+    {
+      "name": "04__SUBSTACK_RANT_PIPELINE.md",
+      "sha256": "C063823E2C2FF953CF25CE7ADE79BEC6E29E120E80155F6B4BFBBB8141D5CE26",
+      "bytes": 600
+    },
+    {
+      "name": "05__CLI_SIGNAL_PLANES_AND_ART_STYLE.md",
+      "sha256": "C6442054CF38660440088F1067190799B0D8E766FD45953EFE5D009DA4CE4FA6",
+      "bytes": 586
+    },
+    {
+      "name": "06__MANDATE_OBJECTS_AND_COOBJECT_PIVOT.md",
+      "sha256": "A365A40D819AE9E48DA95FC9FFCB4B5882862FAF1B713B56A2740D9B704E6A95",
+      "bytes": 607
+    },
+    {
+      "name": "07__SESSION_SUMMARY_RECONSTRUCTED.md",
+      "sha256": "7064C03D661EFFC33E6B6EA111A4CA01D0172911A96A4630CC9A20EFA0A4B68C",
+      "bytes": 842
+    },
+    {
+      "name": "08__RAW_CLIPBOARD_CAPTURE.txt",
+      "sha256": "2C28C4BC1AB8E0066DE0722D251FB49854417D52890EF9539BC2CA711A1F820B",
+      "bytes": 27336
+    }
+  ],
+  "notes_for_receivers": [
+    "Treat as stress-test megawave and mineable intake, not as polished final canon.",
+    "Prefer triage and mining over instant doctrinal promotion.",
+    "Keep public publicity soft-quarantined unless re-approved.",
+    "Use this pack to test CoStacks helper/OE limits with one-note public surface."
+  ]
+}
