@@ -1,0 +1,6 @@
+LANE=20
+NAME=megawave_min_lane_rule
+UTC=20260320T045225Z
+RESULT=SUCCESS
+DETAIL=>=10 lanes required
+PASS=YES

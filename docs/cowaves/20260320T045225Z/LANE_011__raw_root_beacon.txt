@@ -1,0 +1,6 @@
+LANE=11
+NAME=raw_root_beacon
+UTC=20260320T045225Z
+RESULT=SUCCESS
+DETAIL=EXPECT_RAW: docs/cocivium_bootstrap/ROOT_BEACON.v1.yaml
+PASS=YES

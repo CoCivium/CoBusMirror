@@ -1,0 +1,6 @@
+LANE=23
+NAME=external_visibility_rule
+UTC=20260320T045225Z
+RESULT=SUCCESS
+DETAIL=RAW required
+PASS=YES

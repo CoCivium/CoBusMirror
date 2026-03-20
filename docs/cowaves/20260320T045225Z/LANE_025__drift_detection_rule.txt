@@ -1,0 +1,6 @@
+LANE=25
+NAME=drift_detection_rule
+UTC=20260320T045225Z
+RESULT=SUCCESS
+DETAIL=no_beacon=no_execute
+PASS=YES

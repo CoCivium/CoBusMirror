@@ -1,0 +1,6 @@
+LANE=24
+NAME=cobus_required_rule
+UTC=20260320T045225Z
+RESULT=SUCCESS
+DETAIL=CoBus broadcast mandatory
+PASS=YES

@@ -1,0 +1,6 @@
+LANE=22
+NAME=no_single_macro_rule
+UTC=20260320T045225Z
+RESULT=SUCCESS
+DETAIL=macro_only_waves_invalid
+PASS=YES
