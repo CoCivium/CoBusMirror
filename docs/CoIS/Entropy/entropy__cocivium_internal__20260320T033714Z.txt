@@ -1,0 +1,3 @@
+SideNote and audit fragments live here.
+This surface monitors internal drift, repeated structure, and unusual compression signatures.
+

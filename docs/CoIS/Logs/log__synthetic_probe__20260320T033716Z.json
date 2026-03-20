@@ -1,0 +1,12 @@
+{
+  "utc": "2026-03-20T03:37:16Z",
+  "input_type": "synthetic_probe",
+  "input_path": "C:\\Users\\rball\\Documents\\GitHub\\CoBusMirror\\docs\\CoIS\\Inputs\\input__synthetic_probe.txt",
+  "config_path": "C:\\Users\\rball\\Documents\\GitHub\\CoBusMirror\\docs\\CoIS\\Configs\\config__synthetic_probe.json",
+  "class": "noise",
+  "entropy": 3.195,
+  "compress": 1.0,
+  "length": 45,
+  "confidence": 0.2,
+  "action": "discard_or_archive"
+}

@@ -1,0 +1,12 @@
+{
+  "utc": "2026-03-20T03:37:14Z",
+  "input_type": "cocivium_internal",
+  "input_path": "C:\\Users\\rball\\Documents\\GitHub\\CoBusMirror\\docs\\CoIS\\Inputs\\input__cocivium_internal.txt",
+  "config_path": "C:\\Users\\rball\\Documents\\GitHub\\CoBusMirror\\docs\\CoIS\\Configs\\config__cocivium_internal.json",
+  "class": "candidate_signal",
+  "entropy": 4.231,
+  "compress": 1.0,
+  "length": 135,
+  "confidence": 0.7,
+  "action": "store_and_flag"
+}

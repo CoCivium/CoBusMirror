@@ -1,0 +1,13 @@
+{
+  "thresholds": {
+    "structured_anomaly": {
+      "entropy": 2.8,
+      "compressibility": 0.4
+    },
+    "candidate_signal": {
+      "entropy": 3.3,
+      "compressibility": 0.6
+    }
+  },
+  "min_length": 50
+}
