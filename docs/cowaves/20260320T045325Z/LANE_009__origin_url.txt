@@ -1,0 +1,6 @@
+LANE=9
+NAME=origin_url
+UTC=20260320T045325Z
+RESULT=SUCCESS
+DETAIL=https://github.com/CoCivium/CoBusMirror
+PASS=YES
