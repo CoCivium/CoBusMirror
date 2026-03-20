@@ -1,0 +1,12 @@
+DELTA: ## diminishing returns gate (stop planning, start building)
+COUNT: 1
+TYPES: TYPE: work
+
+DELTA: - where it should live (repo/path) and whether any mirror exists
+COUNT: 1
+TYPES: TYPE: work
+
+DELTA: rule: vector-first assets (svg) + raster only as cached outputs
+COUNT: 1
+TYPES: TYPE: policy
+
