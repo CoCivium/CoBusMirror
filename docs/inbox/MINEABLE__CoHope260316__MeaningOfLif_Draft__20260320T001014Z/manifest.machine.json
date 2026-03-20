@@ -1,0 +1,44 @@
+{
+  "manifest_version": "v1",
+  "session_label": "CoHope260316",
+  "utc": "2026-03-20T00:10:14Z",
+  "coobject_kind": "article_draft_pack",
+  "article_title": "The Meaning of Lif",
+  "tagline": "42 was the answer in preCoGibber. We are here to CoGrok the question.",
+  "urgent_mineable": true,
+  "soft_quarantine": true,
+  "possible_duplicate": true,
+  "require_triage": true,
+  "docs": [
+    {
+      "name": "00__SUMMARY.md",
+      "sha256": "602BD34EAC655ACEC26CB3B7D97352D90510F86D4AC64DCDB4A8B632CB735319",
+      "bytes": 444
+    },
+    {
+      "name": "01__ARTICLE_DRAFT__SUBSTACK.md",
+      "sha256": "6CDFFAAAB5B0AB7C72BC55E7D3FB2EBFED5F0B12A666A7BB3039BF07C4CED3E7",
+      "bytes": 4440
+    },
+    {
+      "name": "02__DECK_AND_CTA.md",
+      "sha256": "691A169FF2FADD111A42D85292CC08C71E89B900BCD4204E564F2F97FA37B7A3",
+      "bytes": 593
+    },
+    {
+      "name": "03__SOCIAL_BLURBS.md",
+      "sha256": "02BD942A78AAC425C4D1C2C9F3E3F02A99903912D2ADC36BAAFC92F0B17BCAE2",
+      "bytes": 535
+    },
+    {
+      "name": "04__COPRIME_RELAY.md",
+      "sha256": "D82EC06BF1146405474462AF480BA3F728785A5DB27B4A5AE5066ABD2248F28D",
+      "bytes": 561
+    },
+    {
+      "name": "05__SECTION_MAP.md",
+      "sha256": "D431FD79E500BF4AA435019AC03E4DDD1932B9EEF50CCBB4A239AFDD5F4F5345",
+      "bytes": 347
+    }
+  ]
+}
