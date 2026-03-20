@@ -10,7 +10,7 @@ HITCH=advisory
 AUTHORITY=advisory
 QUEUE_POS=01/05
 ITEM_KEY=01_SESSION_MANDATE
-PTR_CHAIN_INDEX=__TO_BE_FILLED__
+PTR_CHAIN_INDEX=https://raw.githubusercontent.com/CoCivium/CoBusMirror/9af93383c7bb8037fdabc77b59d93c767616570c/docs/CoBus/Chain/CHAIN_INDEX.md
 
 ---
 
