@@ -1,0 +1,39 @@
+{
+  "correlation_window_minutes": 120,
+  "planes": {
+    "shadow": {
+      "output_subdir": "Plane0_Shadow",
+      "min_confidence": 0.45,
+      "require_cross_surface": false,
+      "classes": [
+        "structured_anomaly",
+        "candidate_signal"
+      ]
+    },
+    "advisory": {
+      "output_subdir": "Plane1_Advisory",
+      "min_confidence": 0.65,
+      "require_cross_surface": false,
+      "classes": [
+        "candidate_signal"
+      ]
+    },
+    "escalation": {
+      "output_subdir": "Plane2_Escalation",
+      "min_confidence": 0.7,
+      "require_cross_surface": true,
+      "classes": [
+        "candidate_signal"
+      ]
+    },
+    "hold": {
+      "output_subdir": "Plane3_Hold",
+      "min_confidence": 0.9,
+      "require_cross_surface": true,
+      "classes": [
+        "candidate_signal"
+      ]
+    }
+  },
+  "max_files_scan": 500
+}
