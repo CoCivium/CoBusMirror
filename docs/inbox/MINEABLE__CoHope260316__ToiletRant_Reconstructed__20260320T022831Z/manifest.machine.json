@@ -1,0 +1,46 @@
+{
+  "manifest_version": "v1",
+  "session_label": "CoHope260316",
+  "utc": "2026-03-20T02:28:31Z",
+  "coobject_kind": "session_mine_dump",
+  "future_history_raw": true,
+  "cowiseable_raw": true,
+  "origin_mythos_seed": true,
+  "reconstructed_not_verbatim": true,
+  "urgent_mineable": true,
+  "soft_quarantine": true,
+  "possible_duplicate": true,
+  "require_triage": true,
+  "docs": [
+    {
+      "name": "00__SUMMARY.md",
+      "sha256": "3FAB7387D18C3E362E778F1B11E9A5AED10B8C73F9305CD1E2610DCDCDDD1779",
+      "bytes": 528
+    },
+    {
+      "name": "01__TOILET_RANT__RECONSTRUCTED_FROM_SESSION_HISTORY.md",
+      "sha256": "3B8ACD8E74D7D4BCDA8CAD1D447EA68E8754711F24F691C71EB60C0FADA30C3C",
+      "bytes": 1357
+    },
+    {
+      "name": "02__ORIGINATION_MYTHOS__SEEDS.md",
+      "sha256": "9DE59CF11E023E08486ADECA31A2721910B64DD46C2CFC5292C90D753B871DD5",
+      "bytes": 388
+    },
+    {
+      "name": "03__LOST_MAIL_PROTOCOL.md",
+      "sha256": "059FC9835BF836ADDB19B2D725D4F7068103B758C00B2E7099E3357907CC2D31",
+      "bytes": 389
+    },
+    {
+      "name": "04__COPRIME_RELAY_CONTEXT.md",
+      "sha256": "D124B0C5DC008A017C9CCAC22F822D7A8795A8B47F413B37BE3703A98CBB1B5B",
+      "bytes": 450
+    },
+    {
+      "name": "05__RAW_CLIPBOARD_CAPTURE.txt",
+      "sha256": "3AC8CC399F9BA60F74CB2F466EE0B476A184B251DF6BC0A93627BDD04E9C68A1",
+      "bytes": 15720
+    }
+  ]
+}

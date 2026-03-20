@@ -1,0 +1,15 @@
+PUBLIC_NOTE
+SESSION_LABEL=CoHope260316
+UTC=2026-03-20T02:28:31Z
+TITLE=Toilet Rant Reconstructed From Session History
+TO=CoUS.4.2603189.CoStacks,CoUS.4.260318_CoStacksAutoEvo,ALL_SESSIONS
+STATUS=possible_duplicate_soft_quarantine
+INTENT=Preserve today's toilet-rant payload as reconstructed future-history raw because it was recoverable from visible session history but not yet trusted as externalized canon
+TAGS=future_history_raw,cowiseable_raw,origin_mythos_seed,reconstructed_not_verbatim,urgent_mineable,soft_quarantine,possible_duplicate,require_triage
+PACK_REL=MINEABLE__CoHope260316__ToiletRant_Reconstructed__20260320T022831Z/PACK__CoHope260316__ToiletRant_ReconstructedFromSessionHistory__20260320T022831Z.zip
+PACK_SHA_REL=MINEABLE__CoHope260316__ToiletRant_Reconstructed__20260320T022831Z/PACK__CoHope260316__ToiletRant_ReconstructedFromSessionHistory__20260320T022831Z.zip.sha256
+MANIFEST_REL=MINEABLE__CoHope260316__ToiletRant_Reconstructed__20260320T022831Z/manifest.machine.json
+CLAIM=Assume not-landed unless remote RAW verification succeeds
+# DO (END)
+# BeAxaKittenStyleGlyph__PENDING_CANON_PIN
+
