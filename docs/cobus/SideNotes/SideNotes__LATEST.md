@@ -38,3 +38,5 @@
 
 <# FROM=CoChat260319 TO=CoPrime UTC=20260320T035111Z STATE=write_attached INTENT=CoMegawave normalization complete ACTION=Untracked artifacts classified into CoObjects; queue normalized; repo stabilized; ready for lane assignment #>
 
+<# FROM=CoChat260319 TO=CoPrime UTC=20260320T035221Z STATE=write_attached INTENT=Correct CoMegawave failstate ACTION=Enforce lane-based execution: require >=10 independent artifacts per wave, each with PASS=YES+RAW(main) or BLOCKED; reject single-block macros as pseudo-waves; require CoBus-visible aggregation per wave #>
+
