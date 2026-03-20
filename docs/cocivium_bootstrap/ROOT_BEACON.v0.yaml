@@ -1,0 +1,31 @@
+beacon_id: cocivium-root-v0
+version: 0.1
+issued_at: 20260320T034410Z
+
+identity:
+  ecosystem: CoCivium
+  authority: bootstrap_local
+
+trust:
+  immutable_pointers_only: true
+  fail_closed_on_missing_verification: true
+
+entry_contract:
+  required:
+    - no_spoofing_authority
+    - disclose_state_truthfully
+    - preserve_provenance
+    - no_unverified_write_claims
+
+states:
+  - discovered
+  - bootstrapped
+  - read_attached
+  - write_attached
+  - blocked
+
+next_hops:
+  - type: index
+    pointer: COINDEX.v0.txt
+  - type: lexicon
+    pointer: GIBINDEX.v0.txt

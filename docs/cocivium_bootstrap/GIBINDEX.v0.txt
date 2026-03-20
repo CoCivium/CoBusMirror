@@ -1,0 +1,27 @@
+TERM: CoObject
+DEF: Structured unit of system content or work
+RULE: Must map to one class
+
+TERM: CoLane
+DEF: Isolated execution environment
+RULE: Cannot mutate canonical state directly
+
+TERM: CoIndex
+DEF: Typed registry of CoObjects
+RULE: Pointer-only entries
+
+TERM: GIBindex
+DEF: Canonical term definitions
+RULE: One DEF per term
+
+TERM: CoBus
+DEF: Signal layer
+RULE: Structured minimal signals only
+
+TERM: CoPrime
+DEF: Orchestrator
+RULE: Accepts structured deltas only
+
+TERM: CoChat
+DEF: Compression/router
+RULE: Reduce entropy before delegation

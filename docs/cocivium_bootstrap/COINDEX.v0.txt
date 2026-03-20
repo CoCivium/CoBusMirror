@@ -1,0 +1,14 @@
+id: CoObject.RootBeacon.v0
+type: spine
+pointer: ROOT_BEACON.v0.yaml
+status: active
+
+id: CoObject.CoIndex.v0
+type: spine
+pointer: COINDEX.v0.txt
+status: active
+
+id: CoObject.GIBindex.v0
+type: spine
+pointer: GIBINDEX.v0.txt
+status: active

@@ -1,0 +1,17 @@
+TARGET: CoIndex
+PROBLEM: duplicate / unclear pointers
+DELTA: enforce pointer-only skeleton
+LANE_TYPE: cleanup
+PRIORITY: high
+
+TARGET: GIBindex
+PROBLEM: term drift
+DELTA: lock core terms
+LANE_TYPE: schema
+PRIORITY: high
+
+TARGET: bootstrap
+PROBLEM: sessions not hitched
+DELTA: enforce RootBeacon + CoTrigger rule
+LANE_TYPE: automation
+PRIORITY: critical
