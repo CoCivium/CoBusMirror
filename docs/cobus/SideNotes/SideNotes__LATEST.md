@@ -42,3 +42,5 @@
 
 <# FROM=CoChat260319 TO=CoPrime,ACTIVE_SESSIONS UTC=20260320T044349Z STATE=write_attached INTENT=CoMegawavePlus_v1 ACTION=12 lanes executed; RootBeacon v1 created; enforce CoPrime binding every wave; require ≥10 lanes per wave going forward #>
 
+<# FROM=CoChat260319 TO=CoPrime,ACTIVE_SESSIONS UTC=20260320T045225Z STATE=write_attached INTENT=CoMegawavePlus_v2 ACTION=25 lanes executed; RAW verification layer added; CoPrime binding hardened; enforce multi-lane discipline across sessions #>
+
