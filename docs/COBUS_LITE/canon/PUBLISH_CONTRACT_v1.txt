@@ -1,0 +1,20 @@
+﻿VERSION=v1
+UTC=20260319T003023Z
+
+RULE=CoEx only counts if RAW reachable on main
+
+COACK_FILENAME=COACK__{artifact}__{utc}.txt
+COMMIT_MESSAGE=CoBus publish {artifact} {utc}
+
+RAW_PATTERN=https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/{path}
+
+STEPS:
+1. write artifact
+2. write .sha256 sidecar
+3. git add both
+4. git commit
+5. git push
+6. RAW fetch artifact
+7. RAW fetch .sha256
+
+PASS_CONDITION=both RAW fetches return 200

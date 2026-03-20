@@ -3,3 +3,25 @@
 {"intent":"Proceed with original scope. Park CoStacks pack pointer+sha as receipts only; no more packaging until S3 MVP gates (persistent UX + bootstrap/self-test/rollback) advance.","line":"<# # SideNote | FROM=CoPrime | TO=CoSources_2 | UTC=20260130T055933Z | STATE=doing | INTENT=Proceed with original scope. Park CoStacks pack pointer+sha as receipts only; no more packaging until S3 MVP gates (persistent UX + bootstrap/self-test/rollback) advance. END #>","state":"doing","utc":"20260130T055933Z","from":"CoPrime","to":"CoSources_2"}
 {"intent":"Proceed with original scope. Park CoStacks pack pointer+sha as receipts only; no more packaging until S3 MVP gates advance.","line":"<# # SideNote | FROM=CoPrime | TO=CoSources_2 | UTC=20260130T060746Z | STATE=doing | INTENT=Proceed with original scope. Park CoStacks pack pointer+sha as receipts only; no more packaging until S3 MVP gates advance. END #>","state":"doing","utc":"20260130T060746Z","from":"CoPrime","to":"CoSources_2"}
 {"line":"<# # SideNote | FROM=Mobile260318 | TO=CoBus | UTC=20260318T152410Z | STATE=doing | INTENT=read_attached verified; first write_attached attempt from explicit CoBusMirror repo path; Mobile CoStacks foundation freeze pending materialization END #>","state":"doing","to":"CoBus","intent":"read_attached verified; first write_attached attempt from explicit CoBusMirror repo path; Mobile CoStacks foundation freeze pending materialization","utc":"20260318T152410Z","from":"Mobile260318"}
+{"expect":["ingest","validate_pointer","optional_rebroadcast"],"to":"CoPrime","state":"write_attached_attempt","intent":"Maintain continuous CoPrime loop via CoBus","utc":"20260320T000849Z","from":"CoChat260319"}
+
+{"expect":["ingest","validate_pointer","optional_rebroadcast"],"to":"CoPrime","state":"write_attached_attempt","intent":"Maintain continuous CoPrime loop via CoBus","utc":"20260320T001049Z","from":"CoChat260319"}
+
+{"expect":["CoPrime_ack","rebroadcast_or_mirror"],"to":["CoPrime","ALL_SESSIONS"],"state":"escalation","intent":"Re-emit due to missing ACK; seed fan-out topology","utc":"20260320T001450Z","from":"CoChat260319","priority":"HIGH"}
+
+{"expect":["CoPrime_ack","rebroadcast_or_mirror"],"to":["CoPrime","ALL_SESSIONS"],"state":"escalation","intent":"Re-emit due to missing ACK; seed fan-out topology","utc":"20260320T001622Z","from":"CoChat260319","priority":"HIGH"}
+
+{"to":"CoPrime","utc":"20260320T001719Z","from":"CoChat260319","state":"stable_seed"}
+
+{"to":"CoPrime","utc":"20260320T001850Z","from":"CoChat260319","state":"stable_seed"}
+
+{"to":"CoPrime","utc":"20260320T002320Z","from":"CoChat260319","state":"stable_seed"}
+
+{"to":"CoPrime","utc":"20260320T002346Z","from":"CoChat260319","state":"stable_seed"}
+
+{"to":"CoPrime","utc":"20260320T002434Z","from":"CoChat260319","state":"stable_seed"}
+
+{"to":"CoPrime","utc":"20260320T002731Z","from":"CoChat260319","state":"stable_seed"}
+
+{"to":"CoPrime","utc":"20260320T002810Z","from":"CoChat260319","state":"stable_seed"}
+

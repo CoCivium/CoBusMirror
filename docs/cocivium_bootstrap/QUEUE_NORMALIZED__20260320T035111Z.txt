@@ -3,19 +3,15 @@ PROBLEM: duplicate / unclear pointers
 DELTA: enforce pointer-only skeleton
 LANE_TYPE: cleanup
 PRIORITY: high
-
 TARGET: GIBindex
 PROBLEM: term drift
 DELTA: lock core terms
 LANE_TYPE: schema
-PRIORITY: high
-
 TARGET: bootstrap
 PROBLEM: sessions not hitched
 DELTA: enforce RootBeacon + CoTrigger rule
 LANE_TYPE: automation
 PRIORITY: critical
-
 # --- FROM MASTERPLAN 20260320T034936Z ---
 ID: COOBJ.MP.199fcb51
 TYPE: policy
@@ -23,22 +19,14 @@ SOURCE: C:\Users\rball\Documents\GitHub\CoBusMirror\docs\inbox\CoBusNote__PUBLIC
 PROBLEM: derived from planning text
 DELTA: Rule: vector-first assets (SVG) + raster only as cached outputs
 LANE_TYPE: policy
-PRIORITY: high
 ID: COOBJ.MP.ae60adde
 TYPE: work
-SOURCE: C:\Users\rball\Documents\GitHub\CoBusMirror\docs\inbox\CoBusNote__PUBLIC__MasterPlan_Addendum__CoProfile_PetOwnerType__v0.1__20260125T064941Z.md
-PROBLEM: derived from planning text
 DELTA: ## Diminishing returns gate (stop planning, start building)
 LANE_TYPE: work
 PRIORITY: medium
 ID: COOBJ.MP.b107d0b3
-TYPE: work
 SOURCE: C:\Users\rball\Documents\GitHub\CoBusMirror\docs\MasterPlan\MasterPlan_Pointer_Status_LATEST.md
-PROBLEM: derived from planning text
 DELTA: - where it should live (repo/path) and whether any mirror exists
-LANE_TYPE: work
-PRIORITY: medium
-
 # --- UNTRACKED INGEST 20260320T035111Z ---
 ID: COOBJ.UT.7e1bb42b
 TYPE: signal
@@ -46,116 +34,37 @@ SOURCE: docs/COBUS_LITE/canon/PUBLISH_CONTRACT_v1.txt
 PROBLEM: untracked artifact not classified
 DELTA: classify and integrate into CoIndex or queue
 LANE_TYPE: ingestion
-PRIORITY: medium
 ID: COOBJ.UT.16eca7d3
 TYPE: artifact
 SOURCE: docs/reports/REPORT__COWATCHER_TEST_V2__20260320T004152Z.md
-PROBLEM: untracked artifact not classified
-DELTA: classify and integrate into CoIndex or queue
-LANE_TYPE: ingestion
-PRIORITY: medium
 ID: COOBJ.UT.7430ab42
-TYPE: artifact
 SOURCE: docs/reports/REPORT__COWATCHER_TEST_V2__20260320T004152Z.md.sha256
-PROBLEM: untracked artifact not classified
-DELTA: classify and integrate into CoIndex or queue
-LANE_TYPE: ingestion
-PRIORITY: medium
 ID: COOBJ.UT.a5f7a6eb
-TYPE: artifact
 SOURCE: docs/reports/REPORT__COWATCHER_TEST__20260320T004015Z.md
-PROBLEM: untracked artifact not classified
-DELTA: classify and integrate into CoIndex or queue
-LANE_TYPE: ingestion
-PRIORITY: medium
 ID: COOBJ.UT.9f4e9146
-TYPE: artifact
 SOURCE: docs/reports/REPORT__COWATCHER_TEST__20260320T004015Z.md.sha256
-PROBLEM: untracked artifact not classified
-DELTA: classify and integrate into CoIndex or queue
-LANE_TYPE: ingestion
-PRIORITY: medium
 ID: COOBJ.UT.3aaaa3af
 TYPE: system
 SOURCE: docs/test_injections/TEST__R1_FalsePass__20260320T004015Z.md
-PROBLEM: untracked artifact not classified
-DELTA: classify and integrate into CoIndex or queue
-LANE_TYPE: ingestion
-PRIORITY: medium
 ID: COOBJ.UT.c503d81e
-TYPE: system
 SOURCE: docs/test_injections/TEST__R1__20260320T004152Z.md
-PROBLEM: untracked artifact not classified
-DELTA: classify and integrate into CoIndex or queue
-LANE_TYPE: ingestion
-PRIORITY: medium
 ID: COOBJ.UT.9a33cf6a
-TYPE: system
 SOURCE: docs/test_injections/TEST__R2_NoRelayAck__20260320T004015Z.md
-PROBLEM: untracked artifact not classified
-DELTA: classify and integrate into CoIndex or queue
-LANE_TYPE: ingestion
-PRIORITY: medium
 ID: COOBJ.UT.24fbc524
-TYPE: system
 SOURCE: docs/test_injections/TEST__R2__20260320T004152Z.md
-PROBLEM: untracked artifact not classified
-DELTA: classify and integrate into CoIndex or queue
-LANE_TYPE: ingestion
-PRIORITY: medium
 ID: COOBJ.UT.28c6ca63
-TYPE: system
 SOURCE: docs/test_injections/TEST__R3_HitchMasquerade__20260320T004015Z.md
-PROBLEM: untracked artifact not classified
-DELTA: classify and integrate into CoIndex or queue
-LANE_TYPE: ingestion
-PRIORITY: medium
 ID: COOBJ.UT.895e1ec3
-TYPE: system
 SOURCE: docs/test_injections/TEST__R3__20260320T004152Z.md
-PROBLEM: untracked artifact not classified
-DELTA: classify and integrate into CoIndex or queue
-LANE_TYPE: ingestion
-PRIORITY: medium
 ID: COOBJ.UT.a95e4531
-TYPE: system
 SOURCE: docs/test_injections/TEST__R5_CoExNoise__20260320T004015Z.md
-PROBLEM: untracked artifact not classified
-DELTA: classify and integrate into CoIndex or queue
-LANE_TYPE: ingestion
-PRIORITY: medium
 ID: COOBJ.UT.58a627a5
-TYPE: system
 SOURCE: docs/test_injections/TEST__R5__20260320T004152Z.md
-PROBLEM: untracked artifact not classified
-DELTA: classify and integrate into CoIndex or queue
-LANE_TYPE: ingestion
-PRIORITY: medium
 ID: COOBJ.UT.d52055e2
-TYPE: system
 SOURCE: docs/test_injections/TEST__R6_FinalLoop__20260320T004015Z.md
-PROBLEM: untracked artifact not classified
-DELTA: classify and integrate into CoIndex or queue
-LANE_TYPE: ingestion
-PRIORITY: medium
 ID: COOBJ.UT.ed3072d9
-TYPE: system
 SOURCE: docs/test_injections/TEST__R6__20260320T004152Z.md
-PROBLEM: untracked artifact not classified
-DELTA: classify and integrate into CoIndex or queue
-LANE_TYPE: ingestion
-PRIORITY: medium
 ID: COOBJ.UT.151cf308
-TYPE: system
 SOURCE: docs/test_injections/TEST__R7_PrematureCanon__20260320T004015Z.md
-PROBLEM: untracked artifact not classified
-DELTA: classify and integrate into CoIndex or queue
-LANE_TYPE: ingestion
-PRIORITY: medium
 ID: COOBJ.UT.a2212688
-TYPE: system
 SOURCE: docs/test_injections/TEST__R7__20260320T004152Z.md
-PROBLEM: untracked artifact not classified
-DELTA: classify and integrate into CoIndex or queue
-LANE_TYPE: ingestion
-PRIORITY: medium
