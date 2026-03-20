@@ -1,0 +1,6 @@
+LANE=2
+NAME=cobeacon_pointer_pack
+UTC=20260320T044349Z
+RESULT=SUCCESS
+DETAIL=docs/cocivium_bootstrap/ROOT_BEACON.v1.yaml exists
+PASS=YES

@@ -1,0 +1,2 @@
+RULE: All sessions must bind to CoPrime each wave
+FAIL: If not bound → drifted

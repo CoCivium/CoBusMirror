@@ -1,0 +1,6 @@
+LANE=12
+NAME=normalization_stub
+UTC=20260320T044349Z
+RESULT=SUCCESS
+DETAIL=normalization pass placeholder
+PASS=YES

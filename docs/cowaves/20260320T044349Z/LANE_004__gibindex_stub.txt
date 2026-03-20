@@ -1,0 +1,6 @@
+LANE=4
+NAME=gibindex_stub
+UTC=20260320T044349Z
+RESULT=SUCCESS
+DETAIL=GIBINDEX.v0.txt present or stubbed
+PASS=YES

@@ -1,0 +1,6 @@
+LANE=11
+NAME=policy_stub
+UTC=20260320T044349Z
+RESULT=SUCCESS
+DETAIL=policy seed created
+PASS=YES

@@ -1,0 +1,6 @@
+LANE=3
+NAME=coindex_stub
+UTC=20260320T044349Z
+RESULT=SUCCESS
+DETAIL=COINDEX.v0.txt present or stubbed
+PASS=YES

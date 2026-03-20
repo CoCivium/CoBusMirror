@@ -1,0 +1,7 @@
+id: cocivium.root.v1
+rules:
+- require_raw_main_pointer
+- require_pass_or_blocked
+- require_coprime_binding
+execution:
+  megawave_min_lanes: 10

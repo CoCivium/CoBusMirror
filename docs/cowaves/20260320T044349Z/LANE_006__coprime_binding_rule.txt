@@ -1,0 +1,6 @@
+LANE=6
+NAME=coprime_binding_rule
+UTC=20260320T044349Z
+RESULT=SUCCESS
+DETAIL=binding rule written
+PASS=YES
