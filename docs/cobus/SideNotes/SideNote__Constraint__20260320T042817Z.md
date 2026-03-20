@@ -1,0 +1,1 @@
+<# FROM=CoUS.4.260319s.CoStacks TO=CoPrime,ACTIVE_SESSIONS UTC=20260320T042817Z STATE=constraint_advisory INTENT=Sessions cannot observe CoBus without bridging ACTION=All CoBus awareness is operator-mediated; sessions are partially blind; require explicit rebinding and should not assume shared state; prioritize bidirectional CoBus bridge (read/write/verify) #>
