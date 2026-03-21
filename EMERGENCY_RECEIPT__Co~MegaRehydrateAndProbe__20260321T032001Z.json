@@ -1,0 +1,25 @@
+{
+  "UTC": "20260321T032001Z",
+  "Session": "CoChat200321",
+  "State": "FAIL",
+  "Message": "The property 'Count' cannot be found on this object. Verify that the property exists.",
+  "FailureModes": [
+    "CoWaveCrash"
+  ],
+  "WaveLog": [
+    "[2026-03-21 03:20:03Z] START INTENT=bounded vast Co~ wave with multi-lane salvage rehydration, verification, receipts, and R&D capture",
+    "[2026-03-21 03:20:06Z] LANE0 repo-context begin",
+    "[2026-03-21 03:20:06Z] LANE0 repo-context ok HEAD_BEFORE=8579d909034648296a36ecc4b1397987f8e00b63 BRANCH=main",
+    "[2026-03-21 03:20:06Z] LANE1 truth-floor begin",
+    "[2026-03-21 03:20:06Z] LANE1 truth-floor note built docs\\inbox\\HANDOFF_FLOOR__CoChat200321__20260321T032001Z.md",
+    "[2026-03-21 03:20:06Z] LANE2 salvage-inventory begin",
+    "[2026-03-21 03:20:06Z] LANE2 salvage-inventory built count=35",
+    "[2026-03-21 03:20:06Z] LANE3 rehydration begin",
+    "[2026-03-21 03:20:06Z] LANE3 rehydrated count=8",
+    "[2026-03-21 03:20:06Z] LANE4 metrics-note begin",
+    "[2026-03-21 03:20:06Z] LANE5 git-stage-commit-push begin",
+    "[2026-03-21 03:20:10Z] LANE5 git-stage-commit-push complete DID_COMMIT=True HEAD_AFTER=458d2cb8d8e43ec08f13aa7730c210b344af96c2",
+    "[2026-03-21 03:20:10Z] LANE6 raw-verification begin",
+    "[2026-03-21 03:20:11Z] FATAL The property 'Count' cannot be found on this object. Verify that the property exists."
+  ]
+}
