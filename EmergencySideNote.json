@@ -1,0 +1,14 @@
+{
+  "Message": "Node1903 primitive waves 1-3 complete, SHA verified. All active sessions must pause multi-lane/multi-artifact execution until primitive PASS streak is acknowledged.",
+  "LocalLogPath": "C:\\Users\\rball\\Downloads\\CoBusEmergency\\Node1903_WaveLog.json",
+  "Status": "EMERGENCY",
+  "CanonicalPointers": {
+    "CoBeacon": "https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt",
+    "CoStacksRegistry": "https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/CoStacks/CoStacks_Registry_LATEST.md",
+    "CoMasterPlan": "https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/canon/COPRIME_SESSION_SCOPE_LATEST.md",
+    "BOOTSTRAP_ROLLUP": "https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/canon/BOOTSTRAP_ROLLUP__LATEST.md"
+  },
+  "Timestamp": "2026-03-20T20:54:31Z",
+  "Session": "CoUS.4.260320.CoStacks",
+  "RAWArtifactURL": "https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/Node1903__Manifest_v0.md"
+}
