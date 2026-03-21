@@ -1,0 +1,47 @@
+# REHYDRATED ARTIFACT
+UTC=20260321T054716Z
+SOURCE=C:\Users\rball\Downloads\CoBusEmergency\EmergencySideNote_Wave1.json
+INTENT=Recovered from salvage into canonical candidate
+STATE=unverified
+
+---
+{
+  "Message": "Wave 1 complete. Verified SHA logged. Successor sessions may continue CoMegawave execution.",
+  "LocalLogPath": "C:\\Users\\rball\\Downloads\\CoBusEmergency\\Node1903_WaveLog.json",
+  "Status": "MULTI_ARTIFACT_WAVE",
+  "RecoveredArtifacts": [
+    "CoCase__Node1903_PrimitiveBreakthrough__v0__20260321T022709Z.md",
+    "CoPolicy__NoCrowns__v0__20260321T022709Z.md",
+    "CoProtoCatOpinion__Node1903__v0__20260321T022709Z.json",
+    "EmergencyManifest.json",
+    "EmergencySideNote_20260320T201414Z.md",
+    "EmergencySideNote_20260320T201551Z.md",
+    "EmergencySideNote_Recovery.json",
+    "EmergencySideNote.json",
+    "Node1903__Manifest_v0__20260320T201413Z.md",
+    "Node1903__Manifest_v0.md",
+    "Node1903_WaveLog.json",
+    "PING__CoPrimitive__20260321T014939Z.md",
+    "PING__CoPrimitive__20260321T023941Z.md",
+    "PointerPack__Rehydration_20260321T030707Z.json",
+    "PROMOTION_QUEUE__20260321T023803Z.md",
+    "PROMOTION_QUEUE__20260321T024020Z.md",
+    "README.md",
+    "RECEIPT__CoPrimitive__20260321T014939Z.json",
+    "RECEIPT__CoProtoCatSeedBundle__20260321T023803Z.json",
+    "RECEIPT__CoProtoCatSeedBundle__20260321T024514Z.json",
+    "SideNote__CoIS_rerun__20260320T051438Z.md",
+    "SideNote__Constraint__20260320T042817Z.md",
+    "SideNote__CoUS_4_260319s_CoStacks__20260320T000943Z.md",
+    "SideNote__RebindingPolicy__20260320T042817Z.md",
+    "SideNote__watchers260319__failure_learnings__to__CoPrime__20260320T052848Z.md",
+    "SideNote__watchers260319__full_failure_pack__to__CoPrime__20260320T053020Z.md",
+    "SideNote__watchers260319__rerail__20260320T013527Z.md",
+    "SideNote__watchers260319__W2_consolidated__20260320T013709Z.md",
+    "SideNote__watchers260319__W3_sentinel__20260320T013744Z.md",
+    "SideNotes__LATEST.md"
+  ],
+  "Timestamp": "2026-03-21T00:01:01Z",
+  "Session": "CoUS.4.260320b.CoStacks"
+}
+
