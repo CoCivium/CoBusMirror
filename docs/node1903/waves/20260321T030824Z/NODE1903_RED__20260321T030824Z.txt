@@ -1,0 +1,8 @@
+⊂ NODE1903 Red Classification
+UTC=20260321T030824Z
+
+POINTER_RED=0
+ARTIFACT_RED=0
+
+STATE=TRUTH_EMITTED
+RULE=Red must be visible before remediation
