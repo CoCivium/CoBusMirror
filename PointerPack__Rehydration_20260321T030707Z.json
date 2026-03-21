@@ -1,0 +1,30 @@
+[
+  {
+    "Artifact": "Node1903__Manifest_v0.md",
+    "RAW_URL": "https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/Node1903__Manifest_v0.md"
+  },
+  {
+    "Artifact": "CoBeacon_LATEST",
+    "RAW_URL": "https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBEACON_LATEST.txt"
+  },
+  {
+    "Artifact": "START_HERE",
+    "RAW_URL": "https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/START_HERE.md"
+  },
+  {
+    "Artifact": "BOSSBOARD",
+    "RAW_URL": "https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/BOSSBOARD.md"
+  },
+  {
+    "Artifact": "PROTOCOL_v1",
+    "RAW_URL": "https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/PROTOCOL_v1.md"
+  },
+  {
+    "Artifact": "CoPrime_Scope",
+    "RAW_URL": "https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/canon/COPRIME_SESSION_SCOPE_LATEST.md"
+  },
+  {
+    "Artifact": "BOOTSTRAP_ROLLUP",
+    "RAW_URL": "https://raw.githubusercontent.com/CoCivium/CoBusMirror/main/docs/COBUS_LITE/canon/BOOTSTRAP_ROLLUP__LATEST.md"
+  }
+]
