@@ -1,0 +1,150 @@
+[
+  {},
+  {
+    "Artifact": "Node1903__Manifest_v0.md",
+    "Timestamp": "2026-03-20T20:54:20Z",
+    "SHA": "9007C0F8D8859DCA990460F08CB3487EF4277CD62D4DC875FD66DDBDFE68510D",
+    "Status": "PASS",
+    "Wave": 2
+  },
+  {
+    "Artifact": "Node1903__Manifest_v0.md",
+    "Timestamp": "2026-03-20T20:54:22Z",
+    "SHA": "9007C0F8D8859DCA990460F08CB3487EF4277CD62D4DC875FD66DDBDFE68510D",
+    "Status": "PASS",
+    "Wave": 3
+  },
+  {
+    "Artifact": "EmergencyManifest.json",
+    "Timestamp": "2026-03-20T22:53:44Z",
+    "SHA": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "Status": "PASS",
+    "Wave": 1
+  },
+  {
+    "Artifact": "EmergencySideNote_20260320T201414Z.md",
+    "Timestamp": "2026-03-20T22:53:47Z",
+    "SHA": "162952FDA534E60ED6A2A9C36560CD43E34A26C5B440CFDEBA00C805E51C8CDC",
+    "Status": "PASS",
+    "Wave": 1
+  },
+  {
+    "Artifact": "EmergencySideNote_20260320T201551Z.md",
+    "Timestamp": "2026-03-20T22:53:50Z",
+    "SHA": "9B8F62FFE083EAE6304F5FC1D9787ED6EDA7DFAC2CB7A3CC8BF2914D929E6E1F",
+    "Status": "PASS",
+    "Wave": 1
+  },
+  {
+    "Artifact": "EmergencySideNote_Recovery.json",
+    "Timestamp": "2026-03-20T22:53:53Z",
+    "SHA": "28B3CBBE72BC9F747A70A78F22BC1552E46FEB77A26F2DCE7E867203769E22AC",
+    "Status": "PASS",
+    "Wave": 1
+  },
+  {
+    "Artifact": "EmergencySideNote.json",
+    "Timestamp": "2026-03-20T22:53:56Z",
+    "SHA": "66AB0FFB0371ECD119A88A743344C7C8769DDC656184C927DFD1087AABDA39E1",
+    "Status": "PASS",
+    "Wave": 1
+  },
+  {
+    "Artifact": "Node1903__Manifest_v0__20260320T201413Z.md",
+    "Timestamp": "2026-03-20T22:53:58Z",
+    "SHA": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6",
+    "Status": "PASS",
+    "Wave": 1
+  },
+  {
+    "Artifact": "Node1903__Manifest_v0.md",
+    "Timestamp": "2026-03-20T22:54:01Z",
+    "SHA": "9007C0F8D8859DCA990460F08CB3487EF4277CD62D4DC875FD66DDBDFE68510D",
+    "Status": "PASS",
+    "Wave": 1
+  },
+  {
+    "Artifact": "Node1903_WaveLog.json",
+    "Timestamp": "2026-03-20T22:54:04Z",
+    "SHA": "C53BD0AC4F9E4B86E79CFC0E736DB38C8D701A50AC32B8DE2AC3FB042DFDB9BB",
+    "Status": "PASS",
+    "Wave": 1
+  },
+  {
+    "Artifact": "RECEIPT__CoProtoCatSeedBundle__20260321T024514Z.json",
+    "Timestamp": "2026-03-20T22:54:07Z",
+    "SHA": "CD986F5B952489C416568A689C8E1C0BABB72EA7CA0FB9FAB253C42A8BF64897",
+    "Status": "PASS",
+    "Wave": 1
+  },
+  {
+    "Artifact": "SideNote__CoIS_rerun__20260320T051438Z.md",
+    "Timestamp": "2026-03-20T22:54:09Z",
+    "SHA": "01A57993A1D954782971EF39D9C4BFFCD9CA4C4FF2DA7974B79389EB86FED9FE",
+    "Status": "PASS",
+    "Wave": 1
+  },
+  {
+    "Artifact": "SideNote__Constraint__20260320T042817Z.md",
+    "Timestamp": "2026-03-20T22:54:12Z",
+    "SHA": "9F0104BC2FCF0DBAFC1C626B35D724D31E0402F52D1633BC5311B959D274658A",
+    "Status": "PASS",
+    "Wave": 1
+  },
+  {
+    "Artifact": "SideNote__CoUS_4_260319s_CoStacks__20260320T000943Z.md",
+    "Timestamp": "2026-03-20T22:54:15Z",
+    "SHA": "EDAD3958D3F37801B9406A7D5288F08F2C17DFE0B4D305DFFF00A8AEF36F7D5B",
+    "Status": "PASS",
+    "Wave": 1
+  },
+  {
+    "Artifact": "SideNote__RebindingPolicy__20260320T042817Z.md",
+    "Timestamp": "2026-03-20T22:54:18Z",
+    "SHA": "16DA6D62A5F4F107A1B765105940AEEE759365C79E9C53080DD1D5F6AA5A6F3A",
+    "Status": "PASS",
+    "Wave": 1
+  },
+  {
+    "Artifact": "SideNote__watchers260319__failure_learnings__to__CoPrime__20260320T052848Z.md",
+    "Timestamp": "2026-03-20T22:54:20Z",
+    "SHA": "1BFB1818EEFEA845A174B2B1B7792E7BC404A94176595A0002D816C04E1C238D",
+    "Status": "PASS",
+    "Wave": 1
+  },
+  {
+    "Artifact": "SideNote__watchers260319__full_failure_pack__to__CoPrime__20260320T053020Z.md",
+    "Timestamp": "2026-03-20T22:54:23Z",
+    "SHA": "0FB88CB15662C0C44C68C95996FA50B64C5C438AE7362E9316844B7AA362BBA9",
+    "Status": "PASS",
+    "Wave": 1
+  },
+  {
+    "Artifact": "SideNote__watchers260319__rerail__20260320T013527Z.md",
+    "Timestamp": "2026-03-20T22:54:26Z",
+    "SHA": "840DC42E4B287B2364C4CCF53B9724D1A06B6F2F3DAC7AA0447E9ED8222AE80D",
+    "Status": "PASS",
+    "Wave": 1
+  },
+  {
+    "Artifact": "SideNote__watchers260319__W2_consolidated__20260320T013709Z.md",
+    "Timestamp": "2026-03-20T22:54:29Z",
+    "SHA": "8A44029E90EF1A36C49F3F6D9120F4EEDCA4F222FB8735BDFFA02B54CD96E962",
+    "Status": "PASS",
+    "Wave": 1
+  },
+  {
+    "Artifact": "SideNote__watchers260319__W3_sentinel__20260320T013744Z.md",
+    "Timestamp": "2026-03-20T22:54:32Z",
+    "SHA": "29C0674259D8C738DBB737DE484C4383E4282EDE4A028159A1819EFA369A3B3C",
+    "Status": "PASS",
+    "Wave": 1
+  },
+  {
+    "Artifact": "SideNotes__LATEST.md",
+    "Timestamp": "2026-03-20T22:54:35Z",
+    "SHA": "9798240C65D4FD0247CA3C86134D819EDD039B9FB5BED2FF1F437914A83C0EBE",
+    "Status": "PASS",
+    "Wave": 1
+  }
+]
