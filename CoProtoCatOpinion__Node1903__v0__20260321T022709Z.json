@@ -1,0 +1,7 @@
+{
+  "conclusion": "Primitive-first required before scaling",
+  "precedent": "Node1903",
+  "policy": "NoCrowns",
+  "confidence": 0.85,
+  "risk": "low"
+}
