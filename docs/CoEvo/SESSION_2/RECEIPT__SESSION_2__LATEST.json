@@ -1,0 +1,15 @@
+{
+  "SESSION": "SESSION_2",
+  "ROLE": "bounded_coevo_operator",
+  "OBJECT_ID": "COEVO_SEED_001",
+  "VERSION": "0.3",
+  "STATE": "COEX_READY",
+  "DELIVERABLES": [
+    "CHAIN_MISSIVE__SESSION_2_TO_3__LATEST.md",
+    "RECEIPT__SESSION_2__LATEST.json",
+    "DELIVERY_INDEX__LATEST.md"
+  ],
+  "WRITE_REMOTE": "https://github.com/CoCivite1903/CoCivium.git",
+  "NEXT": "SESSION_3",
+  "UTC": "20260322T114919Z"
+}
