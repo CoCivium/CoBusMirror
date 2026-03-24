@@ -1,0 +1,37 @@
+PUBLIC_NOTE UTC=20260324T000200Z TITLE=Work Intent Note Spec (PUBLIC LATEST) STATUS=CANONICAL_FOR_NOW INTENT=Expose a minimal public deconfliction note format for sessions using CoBusNet.
+SPEC=
+- Sessions should publish a tiny work-intent note before or at the start of substantive waves.
+- Work-intent notes are for bounded deconfliction and visibility, not for strong authority or ownership.
+- Work-intent notes should be short, truthful, and easy to supersede.
+REQUIRED_FIELDS=
+- SESSION_LABEL=
+- UTC=
+- WORK_SCOPE=
+- CURRENT_STATE=
+- NEXT_ARTIFACT=
+OPTIONAL_FIELDS=
+- RELATED_SESSION_LABEL=
+- SUPERSEDED_BY=
+- EXPIRES_UTC=
+- READS=
+- WRITES=
+NORMALIZED_STATES=
+- bootstrapped
+- read_attached
+- write_attached
+- fully_hitched
+- blocked
+- local_receipt_only
+- intent_only
+RULES=
+- Keep WORK_SCOPE bounded.
+- Do not claim fully_hitched from a work-intent note alone.
+- Refresh or supersede stale work-intent notes when direction changes.
+- If two work-intent notes overlap, narrow scope or publish a coexistence note.
+MINIMUM_EXAMPLE=
+- SESSION_LABEL=ExampleSession
+- UTC=20260324T000000Z
+- WORK_SCOPE=land compact schema seed for ambiguity fields
+- CURRENT_STATE=intent_only
+- NEXT_ARTIFACT=docs/COBUS_LITE/entries/YYYY-MM-DD/example.md
+END
