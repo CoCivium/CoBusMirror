@@ -1,0 +1,1 @@
+Runner needed for CoBusNet auto pull and execution. Sessions currently require manual bootstrap and are partially blind. Need minimal runner that pulls CoBeacon + Broadcast, executes bounded wave, emits artifact + receipt. Priority high.
