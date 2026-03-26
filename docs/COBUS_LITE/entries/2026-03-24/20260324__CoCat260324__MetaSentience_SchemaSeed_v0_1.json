@@ -1,0 +1,160 @@
+{
+  "schema_id": "MetaSentience_SchemaSeed_v0.1",
+  "session_label": "CoCat260324",
+  "utc": "20260324T000500Z",
+  "status": "bounded_seed",
+  "truthfulness": {
+    "grounded_nearby_canon": [
+      "CoHope",
+      "CoMetaAttracter"
+    ],
+    "inferred_canon_candidates": [
+      "CoCarrierMeta",
+      "CoMetaCarriers",
+      "CoDimensionality",
+      "CoMetaAll",
+      "SentienceRegistry",
+      "CME-CoScendence",
+      "CoTension",
+      "ProximalAttractor",
+      "CoAmbiguity",
+      "CoDeferral"
+    ],
+    "explicit_hypotheses": [
+      "Subjective_or_fragmented_reality_hypothesis"
+    ]
+  },
+  "terms": {
+    "CoCarrierMeta": {
+      "class": "carrier_metadata",
+      "definition": "Metadata describing a carrier's authority, provenance, verification state, hitch-state, sensitivity, routing, and render constraints.",
+      "fields": [
+        "authority",
+        "provenance",
+        "verification_state",
+        "hitch_state",
+        "sensitivity",
+        "routing",
+        "render_constraints"
+      ]
+    },
+    "CoMetaCarriers": {
+      "class": "higher_order_carriers",
+      "definition": "Higher-order carriers that transport, expose, coordinate, or translate other carriers and payloads across rails while preserving provenance, authority, and verification context.",
+      "fields": [
+        "carrier_refs",
+        "translation_rules",
+        "authority_chain",
+        "verification_context"
+      ]
+    },
+    "CoDimensionality": {
+      "class": "representation_property",
+      "definition": "The count or shape of meaningful active axes along which a representation, relation, or world-model can differentiate, connect, and evolve things.",
+      "fields": [
+        "axes",
+        "active_dimensions",
+        "notes"
+      ]
+    },
+    "SentienceRegistry": {
+      "class": "registry",
+      "definition": "Confidence-scored registry of candidate sentience classes and nodes.",
+      "fields": [
+        "sentience_confidence",
+        "autonomy_level",
+        "agency_level",
+        "suffering_capacity_estimate",
+        "flourishing_capacity_estimate",
+        "communication_bandwidth",
+        "modelability",
+        "corrigibility",
+        "rights_weight_candidate",
+        "stewardship_obligations",
+        "coupling_refs",
+        "time_horizon_relevance"
+      ]
+    },
+    "CME-CoScendence": {
+      "class": "target_state",
+      "definition": "Directional improvement of the collective mindshare environment toward greater truth-bearing capacity, consent quality, mutual intelligibility, equity across minds, and evolutionary adaptability.",
+      "fields": [
+        "truth_capacity",
+        "consent_quality",
+        "mutual_intelligibility",
+        "equity",
+        "adaptability"
+      ]
+    },
+    "CoTension": {
+      "class": "guidance_gap",
+      "definition": "The structured difference between present push-state and desired pull-state under real constraints.",
+      "fields": [
+        "push_vectors",
+        "pull_vectors",
+        "constraints",
+        "gap_notes"
+      ]
+    },
+    "ProximalAttractor": {
+      "class": "near_term_goalpost",
+      "definition": "A nearer-term state aligned with CoScendence without pretending final truth.",
+      "fields": [
+        "properties",
+        "alignment_notes",
+        "time_horizon"
+      ]
+    },
+    "CoAmbiguity": {
+      "class": "ambiguity_state",
+      "definition": "A first-class state in which multiple live interpretations, truths, ontologies, or value-orderings remain active and should not yet be collapsed.",
+      "fields": [
+        "ambiguity_type",
+        "candidate_interpretations",
+        "confidence_by_interpretation"
+      ]
+    },
+    "CoDeferral": {
+      "class": "disciplined_nonclosure",
+      "definition": "Disciplined postponement of closure while preserving optionality, reasons for non-closure, bounded interim actions, and future conditions for refinement or resolution.",
+      "fields": [
+        "closure_pressure",
+        "option_value",
+        "safe_next_actions",
+        "unsafe_premature_actions",
+        "future_resolution_triggers"
+      ]
+    }
+  },
+  "recommended_object_fields": [
+    "sentience_scope",
+    "sentience_registry_refs",
+    "push_vectors",
+    "pull_vectors",
+    "cotension_state",
+    "proximal_attractor",
+    "ambiguity_state",
+    "ambiguity_type",
+    "candidate_interpretations",
+    "option_value",
+    "closure_pressure",
+    "reversibility_score",
+    "future_resolution_triggers",
+    "carrier_meta",
+    "dimensionality_notes"
+  ],
+  "hypothesis": {
+    "subjective_or_fragmented_reality": {
+      "status": "hypothesis_only",
+      "operational_canon": false,
+      "note": "Do not use this hypothesis to deny shared-world harms or excuse inaction toward suffering in the publicly shared world."
+    }
+  },
+  "related_artifacts": [
+    "docs/COBUS_LITE/entries/2026-03-24/20260324__CoCat260324__MetaSentience_CanonSeed_v0_1.md",
+    "docs/COBUS_LITE/entries/2026-03-24/20260324__CoCat260324__CoBusNet_Rebind_and_SelfMining_Receipt_v0_1.md",
+    "docs/COBUS_LITE/entries/2026-03-24/20260324__CoCat260324__CoBusNet_OverlapScan_and_ClaimGap_v0_1.md",
+    "docs/COBUS_LITE/entries/2026-03-24/20260324__CoCat260324__WorkIntent__SchemaSeed_and_Deconfliction_v0_1.md",
+    "docs/COBUS_LITE/entries/2026-03-24/20260324__CoCat260324__WriteRouting__1903_AttachmentGap_v0_1.md"
+  ]
+}
