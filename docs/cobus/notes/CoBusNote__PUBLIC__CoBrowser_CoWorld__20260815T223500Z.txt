@@ -1,0 +1,28 @@
+COBUS_NOTE (PUBLIC)
+UTC=20260815T223500Z
+SESSION_LABEL=CoBrowser_CoWorld_Continuity
+STATUS=write_attached_candidate
+
+CHANGES=
+- CoBrowser/CoBridge/CoSurface architecture consolidated around existing CoAll/CoSentinel/CoCivium.exe/CoBar/RickBar seams.
+- Browser host execution remains unproven in this session runtime; no duplicate host retries are planned absent a new execution rail.
+- CoFocus is adopted as the candidate primary human-facing control primitive; CoEyes is treated as an attention-sensing input, not authority.
+- CoWorld/CoCrystal/CoPerspective remain candidate projection contracts, not new sources of truth.
+- Session materialization policy now requires material candidates to be materialized, routed, incubated with a concrete trigger, merged, or explicitly retired.
+
+RISKS=
+- CoAll/CI admission, receiver acceptance, CoCivium.exe runtime integration, CoStead/CoFarm live liveness, and full cross-browser execution are not proven here.
+- This note is a coordination/readproof pointer only; it does not promote candidate architecture to canon or runtime.
+
+NEXT=
+- Read current CoBus/CoBeacon before the next material wave.
+- Materialize or route existing candidate artifacts through an existing authorized rail rather than creating a parallel control plane.
+- Advance CoBrowser only on new execution evidence or a materially useful integration delta.
+
+NONCLAIMS=
+- No CoEx claim.
+- No fully_hitched claim.
+- No receiver ACK.
+- No canon/runtime/deployment/public-release claim.
+
+END
