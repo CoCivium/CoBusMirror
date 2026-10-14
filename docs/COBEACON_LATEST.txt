@@ -1,3 +1,10 @@
+# MODERN CURRENTNESS BRIDGE (DISCOVERY ONLY; NOT AUTHORITY)
+MODERN_SESSION_BOOTSTRAP_CURRENT=https://raw.githubusercontent.com/CoCivium/CoCivium/main/ai/session-bootstrap.json
+MODERN_SESSION_BOOTSTRAP_OBSERVED_PIN=https://raw.githubusercontent.com/CoCivium/CoCivium/2d3da61bddec70900bfe52cf7a27c1633dcf57c6/ai/session-bootstrap.json
+MODERN_WAITLESS_POLICY_PIN=https://raw.githubusercontent.com/CoCivium/CoCivium/2d3da61bddec70900bfe52cf7a27c1633dcf57c6/docs/Architecture/COWAITLESS_EXECUTION_R0.md
+RULES=BEACON_NE_AUTHORITY;POINTER_NE_ACK;DELIVERY_NE_PICKUP;VIRTUAL_ARMADA_NE_AUTHORITY_MULTIPLICATION
+OBSERVED_UTC=20261014T225116Z
+
 COBEACON_LATEST (FULL URL POINTERS ONLY) UTC=20260126T040146Z
 START_HERE (FULL URL POINTERS)=
 - CoRepoPreflight Rail: https://raw.githubusercontent.com/CoCivium/CoBusMirror/587aa38629482d283b223e5a9cdb152136507106/docs/inbox/LATEST__CoBusNote__PUBLIC__CoRepoPreflight_Rail__LATEST.ps1

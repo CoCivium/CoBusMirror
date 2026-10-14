@@ -1,0 +1,26 @@
+name: CoBeacon Integrity
+
+on:
+  pull_request:
+    paths:
+      - "docs/COBEACON_LATEST.txt"
+      - "docs/COBEACON_LATEST.txt.sha256"
+      - ".github/workflows/cobeacon-integrity.yml"
+
+jobs:
+  verify-cobeacon:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify exact beacon sidecar
+        working-directory: docs
+        run: sha256sum -c COBEACON_LATEST.txt.sha256
+      - name: Verify discovery-only bridge rails
+        shell: bash
+        run: |
+          grep -Fq 'MODERN_SESSION_BOOTSTRAP_CURRENT=https://raw.githubusercontent.com/CoCivium/CoCivium/main/ai/session-bootstrap.json' docs/COBEACON_LATEST.txt
+          grep -Fq 'MODERN_WAITLESS_POLICY_PIN=https://raw.githubusercontent.com/CoCivium/CoCivium/2d3da61bddec70900bfe52cf7a27c1633dcf57c6/docs/Architecture/COWAITLESS_EXECUTION_R0.md' docs/COBEACON_LATEST.txt
+          grep -Fq 'BEACON_NE_AUTHORITY' docs/COBEACON_LATEST.txt
+          grep -Fq 'POINTER_NE_ACK' docs/COBEACON_LATEST.txt
+          grep -Fq 'DELIVERY_NE_PICKUP' docs/COBEACON_LATEST.txt
+          grep -Fq 'VIRTUAL_ARMADA_NE_AUTHORITY_MULTIPLICATION' docs/COBEACON_LATEST.txt
